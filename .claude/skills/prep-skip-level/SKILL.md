@@ -1,4 +1,5 @@
 ---
+
 skill_name: prep-skip-level
 title: Prep Skip-Level 1:1
 description: Prepares a skip-level 1:1 with person context, manager context, team health signals, and trust-building questions

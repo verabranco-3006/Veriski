@@ -1,4 +1,4 @@
-# 90-Day Goals — [YEAR] [QUARTER]
+# 90-Day Goals — 2026 Q1
 
 *Current quarter priorities*
 

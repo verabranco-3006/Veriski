@@ -1,4 +1,4 @@
-# 1-Year Goals — [YEAR]
+# 1-Year Goals — 2026
 
 *This year's focus*
 

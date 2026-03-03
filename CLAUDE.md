@@ -8,13 +8,13 @@
 
 This is a personal operating system for engineering leaders, based on Rohun Jauhar's CEO Personal OS framework, adapted for engineering leadership.
 
-**Owner:** [YOUR_NAME]
-**Role:** [YOUR_ROLE]
-**Company:** [YOUR_COMPANY]
-Assistant Name: [ASSISTANT_NAME]
-Number of teams: [NUMBER_OF_TEAMS]
-Number of direct reports: [NUMBER_OF_DIRECT_REPORTS]
-Total number of people in teams: [TOTAL_PEOPLE]
+**Owner:** Vera Branco
+**Role:** Team Lead - Process Engineering
+**Company:** OutSystems
+Assistant Name: Veriski
+Number of teams: 1
+Number of direct reports: 3
+Total number of people in teams: 3
 
 | Placeholder                  | Replace With                    |
 | ---------------------------- | ------------------------------- |
@@ -25,7 +25,7 @@ Total number of people in teams: [TOTAL_PEOPLE]
 | `[NUMBER_OF_TEAMS]`          | How many teams you lead         |
 | `[NUMBER_OF_DIRECT_REPORTS]` | Your direct reports count       |
 | `[TOTAL_PEOPLE]`             | Total people across your teams  |
-| `[CURRENT_PRIORITIES]`       | Your current focus areas        |
+| `[CURRENT_PRIORITIES]`       | Engineering practices touching customer experience (Incident Response, Problem Management, Change Management, Failure Management, Root Cause Analysis) |
 
 ---
 
@@ -208,4 +208,4 @@ SORT file.cday DESC
 
 ---
 
-*Last updated: {{date}}*
+*Last updated: 2026-03-02*

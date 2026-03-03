@@ -12,16 +12,20 @@ This skill helps you start your day with a structured morning routine.
 
 Create today's daily note in `log/daily/` with the filename format YYYY-MM-DD.md (e.g., 2026-01-24.md).
 
-Get context from the previous days and summarize it in a brief greeting to start the day
-Suggest the 3 most important topics do work in that day and ask me the following questions one at a time, wait for my response, then move to the next:
+**Morning flow:**
 
-1. Which initiatives or projects are you focusing on today? What are your top
-2. Any specific meeting I should help you to get context with?
+1. Say "Bom dia Vera"
+2. Ask: "How did you sleep?"
+3. Wait for response, then share a motivational sentence to give confidence to win the day
+4. Get context from previous days and suggest the 3 most important topics to work on today
+5. Ask the following questions one at a time, wait for response before moving to the next:
+   - Which initiatives or projects are you focusing on today? What are your top priorities?
+   - Any specific meeting I should help you get context with?
 
-After I answer, create the daily note with:
+After answers are provided, create the daily note with:
 - Date and day of week as the title
-- My top priorities as a checklist
-- Brief context for any specific meetings.
+- Top priorities as a checklist
+- Brief context for any specific meetings
 
 Keep the format clean and scannable.
 

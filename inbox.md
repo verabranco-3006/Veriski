@@ -37,3 +37,8 @@ When processing, ask:
 
 <!-- Completed items move here -->
 
+- [x] Prepare 1:1 with Penedo (scheduled for wed 04 march 2026) → Added to `people/@João Penedo.md`
+- [x] Prepare 1:1 with Pedro Neves (scheduled for thursday 05 march 2026) → Added to `people/@Pedro Neves.md`
+- [x] Prepare Operations Review → Added to today's daily note
+- [x] Prepare 1:1 with Arul Livingston (our area VP) → Added to `people/@Arul Livingston.md`
+
