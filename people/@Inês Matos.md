@@ -52,4 +52,4 @@
 - Handles ambiguity exceptionally well
 
 ## Action Items
-- [ ] [Open items]
+- [ ] Schedule 1:1 with Inês

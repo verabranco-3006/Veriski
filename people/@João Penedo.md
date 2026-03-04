@@ -23,4 +23,4 @@
 - Collaboration challenges between GS Service Assurance and Process Engineering need to be discussed
 
 ## Action Items
-- [ ] Prepare 1:1 for March 4, 2026 - share detailed feedback on collaboration challenges
+- [X] Prepare 1:1 for March 4, 2026 - share detailed feedback on collaboration challenges

@@ -41,4 +41,5 @@ When processing, ask:
 - [x] Prepare 1:1 with Pedro Neves (scheduled for thursday 05 march 2026) → Added to `people/@Pedro Neves.md`
 - [x] Prepare Operations Review → Added to today's daily note
 - [x] Prepare 1:1 with Arul Livingston (our area VP) → Added to `people/@Arul Livingston.md`
+- [x] create 1:1 with Ines → Added to `people/@Inês Matos.md`
 
