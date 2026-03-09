@@ -59,4 +59,17 @@ PE is willing to collaborate — we've proven that repeatedly. But we cannot ope
 3. Where is GSSA's accountability in driving solutions to these problems? What happens after GSSA points a problem to PE?
 
 ## Notes
-[Fill during meeting]
+
+**Meeting Outcome:**
+- Agreed that the perception ("GSSA cannot operate due to PE") was not reality
+- Agreed to collaborate more closely going forward
+- João attempted to justify the situation by claiming PE didn't understand the Jira status meanings
+  - I found this line of reasoning paternalistic
+  - Chose not to continue pushing my rationale — they weren't focused on understanding
+  - Preferred to move forward with what actually matters
+- João's primary concern was ensuring GSSA is not perceived as problematic in Engineering
+  - This should not be the focus of the conversation
+
+**Action Item:**
+- Next sync with Penedo: drill down on defining the scope of each type of problem
+  - Goal: make it clear when Process Engineering can help directly vs. when they cannot

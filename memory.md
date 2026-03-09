@@ -53,6 +53,7 @@
 - Identifying and mentoring the right person to lead implementation (Inês on ISP)
 - Building structured frameworks that reveal gaps (BCDR drills methodology)
 - Acting as translator between technical teams during transitions
+- Disengaging from unproductive justification loops when stakeholders aren't focused on understanding — redirect energy toward productive collaboration instead (GSSA 1:1s, March 2026)
 
 ### What Doesn't
 - Taking total control during high-criticality moments instead of empowering team to handle it
@@ -112,6 +113,18 @@
 
 *Add insights from quarterly reviews here*
 
+### Cross-Team Dynamics (2026)
+
+**Pattern: Defensive Positioning Over Joint Problem-Solving**
+- **Context:** March 2026 1:1s with GSSA leadership (Pedro Neves, João Penedo) addressing narrative that "GSSA cannot operate due to PE"
+- **What happened:** Both stakeholders agreed perception wasn't reality, committed to closer collaboration, but then defaulted to defensive positioning
+  - Attempted to justify situation by claiming PE "didn't understand Jira statuses" (paternalistic framing)
+  - Primary concern was ensuring GSSA not perceived as problematic in Engineering
+  - Focus was on optics, not joint problem-solving
+- **My response:** Chose to disengage from justification loop rather than continue pushing rationale. They weren't focused on understanding; I redirected to what matters.
+- **Outcome:** Aligned on next sync to define clear scope of when PE can help vs. when they cannot
+- **Learning:** This demonstrates Strategic "No" in action — recognizing when continuing a discussion won't move the needle and choosing to redirect energy toward productive outcomes. Trust that data speaks for itself; don't get drawn into unproductive loops defending PE's track record when stakeholders are more focused on perception management.
+
 ---
 
 ## Anti-Patterns
@@ -136,6 +149,7 @@
 
 *Track when this file is updated*
 
+- 2026-03-05: Added cross-team dynamics pattern (GSSA defensive positioning), decision pattern (disengage from unproductive loops), demonstrates Strategic "No" in action
 - 2026-03-03: Added 2025 performance review feedback — Strengths (Growing People: Exceeding), Growth Edges (Measure Results: Not There Yet), Anti-Patterns (One Woman Show)
 - 2026-03-02: Initial memory file created for Vera Branco
 

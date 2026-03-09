@@ -62,4 +62,13 @@ PE is willing to collaborate — we've proven that repeatedly. But collaboration
 3. How do we establish clear expectations for collaboration going forward — with explicit asks, joint ownership, and accurate narratives?
 
 ## Notes
-[Fill during meeting]
+
+**Meeting Outcome:**
+- Agreed that the perception ("GSSA cannot operate due to PE") was not reality
+- Agreed to collaborate more closely going forward
+- Pedro attempted to justify the situation by claiming PE didn't understand the Jira status meanings
+  - I found this line of reasoning paternalistic
+  - Chose not to continue pushing my rationale — they weren't focused on understanding
+  - Preferred to move forward with what actually matters
+- Pedro's primary concern was ensuring GSSA is not perceived as problematic in Engineering
+  - This should not be the focus of the conversation

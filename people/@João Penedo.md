@@ -22,5 +22,13 @@
 ## Notes
 - Collaboration challenges between GS Service Assurance and Process Engineering need to be discussed
 
+**March 5, 2026 1:1:**
+- Addressed the narrative that "GSSA cannot operate due to PE" — João agreed this was perception, not reality
+- Agreed to collaborate more closely going forward
+- João attempted to justify the situation by saying PE didn't understand Jira status meanings (paternalistic framing)
+- Primary concern was ensuring GSSA not perceived as problematic in Engineering — misses the point of collaboration
+- Pattern: defensive positioning rather than joint problem-solving
+
 ## Action Items
-- [X] Prepare 1:1 for March 4, 2026 - share detailed feedback on collaboration challenges
+- [x] Prepare 1:1 for March 4, 2026 - share detailed feedback on collaboration challenges
+- [ ] Next sync with Penedo: drill down on defining scope of each type of problem — clarify when PE can help directly vs. when they cannot
