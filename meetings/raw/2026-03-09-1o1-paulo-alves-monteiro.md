@@ -26,4 +26,19 @@ Nothing documented recently — Paulo just joined the team 8 days ago.
 - Is the Strategic Metrics Orchestration method exciting to you, or would you prefer a different focus area?
 
 ## Notes
-[Fill during meeting]
+
+**Team Transfer Approved**
+- ✓ Backfill approved - can now trigger formal transfer to Process Engineering team
+
+**Career Goals Assessment**
+- Paulo wants to deep dive on process engineering scope rather than be the data expert in Engineering
+- Completing Method 4 (Strategic Metrics Orchestration) is a given, but he wants to fully jump into team's broader scope
+- Clear preference: process engineering generalist over data specialist
+
+**KODA Ramp-Up Sessions**
+- Paulo suggested creating dedicated sessions to ramp up the team on KODA
+- Goal: Work together to create confidence using the tool
+- Action: Book sessions after returning from vacation
+
+**Next 1:1 Focus**
+- Define yearly goals for Paulo

@@ -10,13 +10,10 @@ M3.3: Clarify Operational Accountability by Refining Triage Models & OLAs
 
 ## Notes
 
-### Quick Recap
-Meeting focused on discussing and refining the support model proposal, with Vera and Inês analyzing how to align the current proposal with the Salesforce model. Vera explained the proposal needs adaptation to include a more detailed classification model and mechanisms for support to declare service incidents earlier. Discussed the difference between support cases and incidents, the need to separate rituals (like retrospectives) from the artifacts that manage them, and the importance of clearly defining artifacts and workflows involved. Vera will rescue previous conversations on the topic and create a working copy of the document to make necessary adjustments, with the goal of finalizing the proposal by end of month.
-
 ### Key Discussion Topics
 
 **1. Salesforce Support Model**
-- Proposed model separates services and incidents, based on Salesforce documentation - https://help.salesforce.com/s/articleView?id=service.incident_mgmt_case_vs_incident.htm&type=5
+- Proposed model separates services and incidents, based on Salesforce documentation - https://help.salesforce.com/s/articleView?id=service.incident_mgmt_case_vs_incident.htm&type=5 
 - Model includes support cases and incidents, with Engineering acting as advanced support line for support cases
 - Need to refine proposal, create clear definitions, and develop appropriate workflows for artifact integration
 - Concerns about practical implementation, especially managing transition from incidents to support cases when necessary
@@ -37,7 +34,7 @@ Meeting focused on discussing and refining the support model proposal, with Vera
 ## Action Items and tasks to include on the project
 ### Vera
 - [ ] Consult Valentim about probability and handling of incident demotion to support case, discuss theoretical and practical approach for these cases
-- [ ] Retrieve previous conversations and diagrams (e.g., Lucy Short diagram) to serve as basis for new artifact integration proposal - https://lucid.app/lucidchart/1d1d7b4c-0070-4dfa-b094-f408ebc3b27d/edit?invitationId=inv_224533ce-c8a3-40c6-9240-f096393da555&referringApp=slack&page=ioy.g1lc27aq#
+- [ ] Retrieve previous conversations and diagrams (e.g., Lucid Charts diagram) to serve as basis for new artifact integration proposal - https://lucid.app/lucidchart/1d1d7b4c-0070-4dfa-b094-f408ebc3b27d/edit?invitationId=inv_224533ce-c8a3-40c6-9240-f096393da555&referringApp=slack&page=ioy.g1lc27aq#
 
 
 ### Inês

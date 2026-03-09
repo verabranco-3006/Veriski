@@ -6,6 +6,7 @@
 
 ## To Process
 
+- [ ] Book KODA ramp-up sessions for the team after returning from vacation (Paulo's suggestion to build confidence using the tool)
 
 ---
 
