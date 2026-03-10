@@ -6,7 +6,7 @@
 
 ## To Process
 
-- [ ] Book KODA ramp-up sessions for the team after returning from vacation (Paulo's suggestion to build confidence using the tool)
+<!-- No items to process -->
 
 ---
 
@@ -38,6 +38,7 @@ When processing, ask:
 
 <!-- Completed items move here -->
 
+- [x] Book KODA ramp-up sessions for the team after returning from vacation → Engaged with Maria Chec (TPM for DevEX/KODA). Enablement session scheduled for 2 weeks out for non-tech people
 - [x] Prepare 1:1 with Penedo (scheduled for wed 04 march 2026) → Added to `people/@João Penedo.md`
 - [x] Prepare 1:1 with Pedro Neves (scheduled for thursday 05 march 2026) → Added to `people/@Pedro Neves.md`
 - [x] Prepare Operations Review → Added to today's daily note
