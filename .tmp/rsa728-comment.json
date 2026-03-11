@@ -1,0 +1,372 @@
+{
+  "version": 1,
+  "type": "doc",
+  "content": [
+    {
+      "type": "heading",
+      "attrs": { "level": 3 },
+      "content": [{ "type": "text", "text": "M3.3 Drill Down - Meeting Summary (2026-03-09)" }]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "Meeting with Inês Matos to refine support model proposal and align with Salesforce model for separating support cases from service incidents." }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": { "level": 3 },
+      "content": [{ "type": "text", "text": "KEY DISCUSSION TOPICS" }]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "1. Salesforce Support Model", "marks": [{ "type": "strong" }] }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "content": [
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                { "type": "text", "text": "Proposed model separates services and incidents based on " },
+                {
+                  "type": "text",
+                  "text": "Salesforce documentation",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": { "href": "https://help.salesforce.com/s/articleView?id=service.incident_mgmt_case_vs_incident.htm&type=5" }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                { "type": "text", "text": "Model includes support cases and incidents, with Engineering acting as advanced support line for support cases" }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                { "type": "text", "text": "Need to refine proposal, create clear definitions, and develop appropriate workflows for artifact integration" }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                { "type": "text", "text": "Concerns about practical implementation, especially managing transition from incidents to support cases when necessary" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "2. Separation of Rituals and Artifacts", "marks": [{ "type": "strong" }] }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "content": [
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                { "type": "text", "text": "Retrospectives should be treated as mandatory rituals after incidents, separate from the artifacts that manage them" }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                { "type": "text", "text": "Artifacts must be controlled and measured appropriately" }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                { "type": "text", "text": "Review existing " },
+                {
+                  "type": "text",
+                  "text": "Incident Response Process diagram",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": { "href": "https://outsystemsrd.atlassian.net/wiki/spaces/RKB/pages/4977361294/Incident+Response+Process" }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "3. Action Items Organization", "marks": [{ "type": "strong" }] }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "content": [
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                { "type": "text", "text": "Need better understanding of which elements are rituals vs. artifacts in the system" }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                { "type": "text", "text": "Proposal to review previous Sara conversations and adapt to Salesforce model" }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                { "type": "text", "text": "Current heuristic is defined but needs validation" }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                { "type": "text", "text": "Processes are too high-level and need more detail" }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                { "type": "text", "text": "Importance of validating heuristic and clearly defining organic streams" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": { "level": 3 },
+      "content": [{ "type": "text", "text": "ACTION ITEMS" }]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "Vera:", "marks": [{ "type": "strong" }] }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "content": [
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                { "type": "text", "text": "Consult Valentim about probability and handling of incident demotion to support case, discuss theoretical and practical approach for these cases" }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                { "type": "text", "text": "Retrieve previous conversations and " },
+                {
+                  "type": "text",
+                  "text": "Lucid Charts diagram",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": { "href": "https://lucid.app/lucidchart/1d1d7b4c-0070-4dfa-b094-f408ebc3b27d/edit?invitationId=inv_224533ce-c8a3-40c6-9240-f096393da555&referringApp=slack&page=ioy.g1lc27aq#" }
+                    }
+                  ]
+                },
+                { "type": "text", "text": " to serve as basis for new artifact integration proposal" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "Inês:", "marks": [{ "type": "strong" }] }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "content": [
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                { "type": "text", "text": "Verify and ensure access to display channel and Slack to understand communication flows between Engineering and Support" }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                { "type": "text", "text": "Refine classification and support/incident process model, aligning with Salesforce model and including Core User Journey layer" }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                { "type": "text", "text": "Validate and detail heuristic for differentiating support case vs. service incident" }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                { "type": "text", "text": "Create or update workflow diagrams and artifact architecture, showing integration between all artifacts (cases, incidents, problem records, action items) and associated rituals (retrospectives)" }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                { "type": "text", "text": "Implement control mechanisms to ensure retrospectives and identified problems are conducted and monitored, especially within problem management scope (method 3.4)" }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                { "type": "text", "text": "Ensure support has mechanisms to declare service incident earlier, including defining flows and integration between Engineering and Support (e.g., Slack button/form to trigger Zendesk communications)" }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                { "type": "text", "text": "Define and document clear criteria for incident definition (e.g., affects multiple customers) and support case, aligning with Salesforce examples" }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                { "type": "text", "text": "Review and, if necessary, update retrospective mechanisms, ensuring it's a mandatory ritual after service incidents, with appropriate structure and review" }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                { "type": "text", "text": "Ensure proposal includes follow-up mechanisms for customers, especially in service incident cases, ensuring effective communication and customer unblocking" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "Goal: Finalize proposal by end of month.", "marks": [{ "type": "strong" }] }
+      ]
+    }
+  ]
+}
