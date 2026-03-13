@@ -6,7 +6,7 @@
 
 ## To Process
 
-<!-- No items to process -->
+- [ ] Schedule follow-up on metrics implementation discussion
 
 ---
 

@@ -1,6 +1,6 @@
 # @Inês Matos
 
-*Last updated: 2026-03-03*
+*Last updated: 2026-03-12*
 
 ## Role & Context
 - **Role:** Senior Process Analyst
@@ -51,5 +51,38 @@
 - Proactively identifies gaps and fills them without waiting for assignments
 - Handles ambiguity exceptionally well
 
+## V2MOM Progress (2026)
+
+### Method 3: Incident Response Resilience
+
+#### M3.3: Clarify Operational Accountability (Triage Models & OLAs)
+
+**Status:** In Progress
+
+**Latest Milestone (2026-03-12):** Retrospective Process Transformation kickoff
+- Led retrospective process review meeting with SRE leadership (Pedro Charola, João Rodrigues, João Brandão)
+- Secured alignment on shift from SRE-led to team-led retrospectives
+- Defined collaborative model with Process Engineering and Quality
+- Established outcome-focused narrative requirement
+- Initiative tracker created: `initiatives/active/m3.3_retrospective_transformation/`
+
+**Key Action Items from M3.3 Drill-down (2026-03-09):**
+- [ ] Refine Salesforce-based support case vs incident model
+- [ ] Validate heuristic for differentiating support case vs service incident
+- [ ] Create workflow diagrams showing artifact integration (cases, incidents, problems, action items)
+- [x] Review and update retrospective mechanisms (In Progress — transformation initiative launched)
+- [ ] Define mandatory retrospective criteria with auditing mechanisms
+- [ ] Ensure retrospective quality and completion tracking for Operations Review
+
+**Links:**
+- M3.3 Drill-down notes: `meetings/raw/2026-03-09-submethod-m33-ines.md`
+- Retrospective transformation initiative: `initiatives/active/m3.3_retrospective_transformation/`
+- Retrospective review meeting: `meetings/raw/2026-03-12-retrospective-process-review.md`
+
+---
+
 ## Action Items
 - [ ] Schedule 1:1 with Inês
+- [ ] Share detailed notes from retrospective process review meeting (2026-03-12)
+- [ ] Document collaborative model and role definitions (with Vera)
+- [ ] Draft outcome-based narrative template for retrospectives
