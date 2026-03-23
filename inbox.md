@@ -6,7 +6,7 @@
 
 ## To Process
 
-- [ ] Schedule follow-up on metrics implementation discussion
+<!-- All items processed -->
 
 ---
 
@@ -37,6 +37,8 @@ When processing, ask:
 ## Archive
 
 <!-- Completed items move here -->
+
+- [x] Schedule follow-up on metrics implementation discussion → Added to today's daily note as "Complete V2MOM metrics definition exercise"
 
 - [x] Book KODA ramp-up sessions for the team after returning from vacation → Engaged with Maria Chec (TPM for DevEX/KODA). Enablement session scheduled for 2 weeks out for non-tech people
 - [x] Prepare 1:1 with Penedo (scheduled for wed 04 march 2026) → Added to `people/@João Penedo.md`
