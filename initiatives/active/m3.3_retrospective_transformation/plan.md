@@ -23,22 +23,34 @@
 
 **New Model: Team-Led, Collaborative Retrospectives**
 
-### Ownership
-- **Team with asset causing incident** leads the retrospective
-- Collaborates with:
+### Ownership & Roles (CONFIRMED)
+- **Lead:** Team with asset causing the incident
+- **Reviewers:** Engineering Managers (NEW)
+- **Approvers:** Value Stream Leaders (maintained)
+- **Collaborators:**
   - Process Engineering (framework, governance)
   - Quality (testing gaps, quality metrics)
   - SRE (reliability patterns, infrastructure)
   - Other impacted teams
 
+### Approach (CONFIRMED)
+- **Offline-first:** No mandatory readouts
+- **AI/Koda-assisted auditing:** Ensure RCA quality based on framework TBD
+- **Quality assurance:** Framework-based evaluation of RCA completeness and depth
+
 ### Guiding Principles
 Based on:
-- Production Readiness Checklist
+- Production Readiness Checklist (primary reference)
 - Reliability Platform principles
 
 ### Narrative Shift
 - **From:** Output-focused (timeline, root cause)
 - **To:** Outcome-focused (what we learned, what changed, how we prevented recurrence)
+
+### Message to Teams
+- Less bureaucracy, more autonomy
+- Focus on outcomes instead of outputs
+- Collaborative process between all involved teams
 
 ---
 
@@ -140,33 +152,47 @@ Based on:
 
 ## Implementation Approach
 
-### Phase 1: Design & Pilot (Q2 2026)
-- Document collaborative model
-- Create retrospective template (outcome-focused)
+### Phase 1: Design & Proposal (March - April 13, 2026)
+- **Owner:** Process Engineering (Vera + Inês)
+- **Activities:**
+  - Document new collaborative model with confirmed roles (Lead: teams, Reviewers: EMs, Approvers: VS Leaders)
+  - Develop quality framework for RCA evaluation (AI/Koda-assisted)
+  - Create outcome-focused retrospective template
+  - Define metrics per area (# incidents, detection ratio, RCA lead time)
+- **Alignment:** João Rodrigues takes proposal to Product Leadership
+- **Milestone:** Week of April 13, 2026 — Present to VS Leaders & Engineering Managers
+
+### Phase 2: Pilot & Enablement (Q2-Q3 2026)
 - Select 2-3 pilot value streams
-- Run pilot retrospectives with coaching
+- Run pilot retrospectives with coaching (offline-first approach)
+- Brown Bag sessions to teach RCA best practices
+- Train all value stream managers and engineering managers on new model
+- Establish AI/Koda-assisted auditing mechanisms
 
-### Phase 2: Enablement (Q3 2026)
-- Train all value stream managers
+### Phase 3: Full Rollout & Optimization (Q3-Q4 2026)
 - Roll out to all teams
-- Establish auditing mechanisms
+- Track metrics per area (incidents, detection ratio, RCA lead time)
 - Integrate with Operations Review
-
-### Phase 3: Optimization (Q4 2026)
-- Review analytics (detection, SLO, RCA metrics)
 - Refine framework based on feedback
-- Automate tracking where possible
+- Automate quality checks where possible
 
 ---
 
 ## Open Questions
 
-1. **Criteria for mandatory retrospectives?** (All incidents? Threshold?)
-2. **Timeline expectations?** (How quickly after incident resolution?)
-3. **Quality scoring?** (How do we measure outcome-focus objectively?)
-4. **Pilot value streams?** (Who are early adopters?)
-5. **Retrospective duration?** (30 min? 60 min? Depends on complexity?)
-6. **Tooling?** (Where do we run these? Confluence? Jira? Live sessions?)
+**Resolved:**
+- ✓ Ownership model: Teams lead, EMs review, VS Leaders approve
+- ✓ Approach: Offline-first (no mandatory readouts)
+- ✓ Quality assurance: AI/Koda-assisted auditing
+
+**Still To Define:**
+1. **Quality framework specifics:** What criteria will AI/Koda use to evaluate RCA quality?
+2. **Mandatory retrospective criteria:** All incidents? Threshold based on severity/impact?
+3. **Timeline expectations:** How quickly after incident resolution should RCA be completed?
+4. **Pilot value streams:** Who are the early adopters for pilot phase?
+5. **Tooling integration:** How does AI/Koda auditing integrate with existing tools (Jira/Confluence)?
+6. **Metrics baseline:** What are current detection ratio, RCA lead time benchmarks per area?
+7. **Brown Bag content:** What RCA best practices will be taught in enablement sessions?
 
 ---
 
@@ -179,8 +205,24 @@ Based on:
 - Operations Review will use analytics to drive discussions
 - Process Engineering + SRE partnership critical for enablement
 
-*Waiting for detailed notes from Inês*
+### 2026-03-13 — Inês's Follow-Up Notes
+**Tracking:** [Slack #retrospective-transformation](https://outsystems.enterprise.slack.com/archives/C0AL7MA0KBL)
+
+**Confirmed decisions:**
+- Roles defined: Teams lead, EMs review, VS Leaders approve
+- Offline-first approach (no mandatory readouts)
+- AI/Koda-assisted quality auditing
+- Production Readiness Checklist as reference
+- Metrics to track: # incidents, detection ratio, RCA lead time
+
+**Key milestone:** Week of April 13, 2026 — Present new model to VS Leaders & Engineering Managers
+
+**Next actions:**
+- Process Engineering: Start proposal development
+- João Rodrigues: Align with Product Leadership
+- Develop quality framework for AI/Koda auditing
+- Plan Brown Bag sessions for RCA best practices
 
 ---
 
-*Last updated: 2026-03-12*
+*Last updated: 2026-03-13*

@@ -59,12 +59,17 @@
 
 **Status:** In Progress
 
-**Latest Milestone (2026-03-12):** Retrospective Process Transformation kickoff
-- Led retrospective process review meeting with SRE leadership (Pedro Charola, João Rodrigues, João Brandão)
-- Secured alignment on shift from SRE-led to team-led retrospectives
-- Defined collaborative model with Process Engineering and Quality
-- Established outcome-focused narrative requirement
-- Initiative tracker created: `initiatives/active/m3.3_retrospective_transformation/`
+**Latest Milestone (2026-03-13):** Retrospective Process Transformation — Detailed Model Defined
+- **2026-03-12:** Led retrospective process review meeting with leadership (Pedro Charola, João Rodrigues, João Brandão)
+- **2026-03-13:** Shared detailed meeting notes confirming new model
+- **Confirmed roles:**
+  - Teams lead retrospectives (no longer SRE-led)
+  - Engineering Managers = Reviewers (NEW)
+  - Value Stream Leaders = Approvers
+- **Approach:** Offline-first, AI/Koda-assisted quality auditing, Production Readiness Checklist as reference
+- **Key milestone:** Week of April 13, 2026 — Present to VS Leaders & Engineering Managers
+- **Tracking:** [Slack #retrospective-transformation](https://outsystems.enterprise.slack.com/archives/C0AL7MA0KBL)
+- Initiative tracker: `initiatives/active/m3.3_retrospective_transformation/`
 
 **Key Action Items from M3.3 Drill-down (2026-03-09):**
 - [ ] Refine Salesforce-based support case vs incident model
@@ -83,6 +88,9 @@
 
 ## Action Items
 - [ ] Schedule 1:1 with Inês
-- [ ] Share detailed notes from retrospective process review meeting (2026-03-12)
-- [ ] Document collaborative model and role definitions (with Vera)
-- [ ] Draft outcome-based narrative template for retrospectives
+- [x] Share detailed notes from retrospective process review meeting (2026-03-12) — Completed 2026-03-13
+- [ ] Document collaborative model and role definitions (with Vera) — Now part of proposal development
+- [ ] Draft outcome-based narrative template for retrospectives — Part of proposal
+- [ ] Develop quality framework for AI/Koda-assisted RCA auditing
+- [ ] Plan Brown Bag sessions for RCA best practices
+- [ ] Define metrics baseline per area (# incidents, detection ratio, RCA lead time)

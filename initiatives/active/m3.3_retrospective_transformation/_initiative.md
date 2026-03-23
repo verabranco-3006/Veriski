@@ -88,7 +88,32 @@ Tasks will be created in Jira under Epic RSA-728 by Inês after plan refinement.
 - Agreed on shift to team-led retrospectives guided by Production Readiness Checklist
 - Discussed Operations Review evolution with analytics-driven discussions
 - Established narrative shift requirement: outcome over output
-- Action: Inês to refine plan and create Jira tasks under RSA-728
+
+### 2026-03-13
+**Inês's Detailed Meeting Notes - New Model Defined**
+
+**Slack Channel:** [#retrospective-transformation](https://outsystems.enterprise.slack.com/archives/C0AL7MA0KBL)
+
+**New Retrospective Model:**
+- **Ownership shift:** Teams that caused the incident lead retrospectives (no longer SRE-led)
+- **Reviewers:** Engineering Managers
+- **Approvers:** Value Stream Leaders (maintained)
+- **Approach:** Offline-first (no mandatory readouts)
+- **Quality assurance:** AI/Koda-assisted auditing to ensure RCA quality, based on framework TBD
+- **Reference framework:** Production Readiness Checklist
+
+**Message to Teams:**
+- Less bureaucracy, more autonomy
+- Focus on outcomes instead of outputs
+- Collaborative process between teams involved in incident (SRE, Quality, Process Engineering, etc.)
+
+**Next Steps & Timeline:**
+- Process Engineering: Start working on proposal
+- João Rodrigues: Take proposal to Product Leadership for alignment
+- **Week of April 13, 2026:** Present new model to VS Leaders and Engineering Managers
+- Develop quality framework and guidance for RCAs
+- Brown Bag sessions to teach RCA best practices
+- Track metrics per area: # incidents, detection ratio, RCA lead time
 
 ## Links
 

@@ -46,7 +46,49 @@ Retrospectives must recenter the narrative to be based on **outcome, not output*
 - Will continue to report current data
 - Process Engineering to enable value streams for this transition
 
-*Note: Will complement with follow-up from Inês*
+---
+
+## Follow-Up Notes from Inês (2026-03-13)
+
+**Tracking:** [Slack #retrospective-transformation](https://outsystems.enterprise.slack.com/archives/C0AL7MA0KBL)
+
+### New Retrospective Model (Agreed)
+
+**Ownership & Roles:**
+- **Lead:** Teams that caused the incident (no longer SRE-led)
+- **Reviewers:** Engineering Managers (new role)
+- **Approvers:** Value Stream Leaders (maintained from current model)
+
+**Approach:**
+- **Offline-first** — No mandatory readouts
+- **AI/Koda-assisted auditing** — Ensure RCA quality based on framework TBD
+- **Reference framework** — Production Readiness Checklist
+
+### Message to Teams
+
+**Key themes:**
+- Less bureaucracy, more autonomy
+- Focus on **outcomes** instead of outputs
+- Collaborative process between all teams involved in incident (SRE, Quality, Process Engineering, etc.)
+
+### Timeline & Next Steps
+
+**Immediate (March 2026):**
+- Process Engineering: Start working on proposal
+- João Rodrigues: Take proposal to Product Leadership for alignment
+
+**Week of April 13, 2026:**
+- **Milestone:** Present new model to VS Leaders and Engineering Managers
+
+**Implementation Phase:**
+- Develop quality framework and guidance for RCAs
+- Brown Bag sessions to teach RCA best practices
+- Track metrics per area:
+  - Number of incidents
+  - Detection ratio
+  - RCA lead time
+
+---
 
 ## Action Items
 
