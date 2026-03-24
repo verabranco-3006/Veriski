@@ -93,8 +93,6 @@ After they provide the meeting notes, generate an OutPerform-formatted note foll
 **[Topic 3 Header]:**
 [2-4 sentences describing additional topics as needed]
 
-**Context:** [1-2 sentences providing relevant background — how long they've been on the team, current role, what they're working on, or any relevant situational context]
-
 **Next Steps:**
 - [Action item with owner] - [Owner name]
 - [Action item with owner] - [Owner name]
@@ -106,7 +104,6 @@ After they provide the meeting notes, generate an OutPerform-formatted note foll
 - **Key Outcomes:** Should capture the most important decision, shift, or agreement from the meeting
 - **Topic Headers:** Use 2-4 descriptive headers that capture the main themes discussed (e.g., "Managing Onboarding Pressure", "Asking for Help Earlier", "Collaborative Work with Inês", "Career Direction Clarity", "Team Enablement Initiative")
 - **Topic Content:** Each topic should be 2-4 sentences describing what was discussed and any outcomes
-- **Context:** Provides situational background (tenure, role, current focus, V2MOM ownership)
 - **Next Steps:** Clear action items with owner names, formatted as bullet points with dashes
 - **Tone:** Professional, direct, focused on outcomes and patterns
 - **Length:** Keep each section concise — this is a summary for the record, not a transcript

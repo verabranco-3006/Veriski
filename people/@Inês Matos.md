@@ -1,6 +1,6 @@
 # @Inês Matos
 
-*Last updated: 2026-03-12*
+*Last updated: 2026-03-24*
 
 ## Role & Context
 - **Role:** Senior Process Analyst
@@ -59,6 +59,16 @@
 
 **Status:** In Progress
 
+**Latest Update (2026-03-24):** Retrospective Transformation - Decision Phase
+- Moving forward with conversations as backlog increases
+- **Decision needed:** Assign retros using old model or new model
+- **Proposed change:** Remove Reviewer role (appears redundant in new model)
+- **Confirmed role structure:**
+  - RCA Commanders: Managers/Team Leads (or designated team members)
+  - Approvers: Value Stream Leads
+  - Exception: Sev1 service incidents with system-wide impact → Led by SRE
+- Change Management: New notification workflow — tag Reviewer if Requester doesn't fill in Approver at RFC creation
+
 **Latest Milestone (2026-03-13):** Retrospective Process Transformation — Detailed Model Defined
 - **2026-03-12:** Led retrospective process review meeting with leadership (Pedro Charola, João Rodrigues, João Brandão)
 - **2026-03-13:** Shared detailed meeting notes confirming new model
@@ -87,10 +97,34 @@
 ---
 
 ## Action Items
-- [ ] Schedule 1:1 with Inês
+- [x] Schedule 1:1 with Inês — Completed 2026-03-24
 - [x] Share detailed notes from retrospective process review meeting (2026-03-12) — Completed 2026-03-13
 - [ ] Document collaborative model and role definitions (with Vera) — Now part of proposal development
 - [ ] Draft outcome-based narrative template for retrospectives — Part of proposal
 - [ ] Develop quality framework for AI/Koda-assisted RCA auditing
 - [ ] Plan Brown Bag sessions for RCA best practices
 - [ ] Define metrics baseline per area (# incidents, detection ratio, RCA lead time)
+- [ ] Complete BCDR Policy update for auditors (provide latest version) — Added 2026-03-24
+
+---
+
+## 1:1 History
+
+### March 24, 2026
+
+**1:1 with Inês Matos — March 24, 2026**
+
+**Key Outcomes:** Decision to move forward with retrospective transformation model despite increasing backlog. Proposed removal of Reviewer role and confirmed new role structure with team-led approach.
+
+**Retrospective Transformation Progress:**
+The team is moving forward with the new retrospective model as the backlog continues to grow, forcing a decision point. Ines proposed removing the Reviewer role as it appears redundant in the new model. The confirmed structure assigns RCA Commanders to Managers/Team Leads (or designated team members), Approvers to Value Stream Leads, with SRE leading only Sev1 service incidents with system-wide impact. This represents a significant shift from the SRE-led model established in the March 12-13 sessions.
+
+**Change Management Workflow:**
+Discussed new notification workflow for RFC process. Decision made to tag the Reviewer if the Requester doesn't fill in the Approver at RFC creation time, ensuring no requests slip through without proper approval path.
+
+**Context:** Ines is Senior Process Analyst on Process Engineering team, started September 2024. She is Method Owner for M3.3 (Incident Response Resilience) in 2026 V2MOM and led the retrospective transformation initiative during the March 12-13 sessions with SRE and ODC leadership.
+
+**Next Steps:**
+- Complete BCDR Policy update and provide latest version to auditors - Ines
+- Finalize decision on old vs new model for backlog retrospective assignments - Ines + Vera
+- Document updated role structure with Reviewer role removal - Ines
