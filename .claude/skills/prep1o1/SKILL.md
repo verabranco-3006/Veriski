@@ -112,7 +112,7 @@ After generating the OutPerform note, ask:
 
 5. Want me to add this to `people/@[Person Name].md` under their 1:1 History section?
 
-If they say yes, add the OutPerform note to their person file under `## 1:1 History` (create the section if it doesn't exist), and update the `*Last updated:*` date at the top of the file.
+If they say yes, add the OutPerform note to their person file under `## 1:1 History` (create the section if it doesn't exist). **Add new notes at the top of the section**, keeping the newest date first (reverse chronological order). Update the `*Last updated:*` date at the top of the file.
 
 ## Tips
 
@@ -124,3 +124,4 @@ If they say yes, add the OutPerform note to their person file under `## 1:1 Hist
 - The OutPerform note (for direct reports) should focus on key themes and outcomes, not be a transcript
 - OutPerform notes should capture patterns (e.g., "Laura only asks for help when stress is high")
 - Always include Next Steps with clear ownership in OutPerform notes
+- In ## 1:1 History section, newest meetings appear first (reverse chronological order)

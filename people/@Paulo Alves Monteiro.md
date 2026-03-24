@@ -51,8 +51,6 @@ Paulo expressed concerns about the continuity of his role on the measurements tr
 **Bug Escape Review:**
 Paulo shared that Vijay requested a review on Bug Escape metrics to separate customer-reported bugs from internal ones, expanding the scope of measurement refinement work.
 
-**Context:** Paulo is Lead Process Analyst on Process Engineering team, transitioned to the role March 1, 2026. He is Method Owner for Strategic Metrics Orchestration in the 2026 V2MOM and is actively working on metrics definitions across multiple methods while collaborating with the data team.
-
 **Next Steps:**
 - Update PE V2MOM Method 4 goals to reflect Paulo's measurement work - Paulo
 - Understand continuity plan for measurements track after Method 4 delivery - Vera

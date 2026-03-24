@@ -122,8 +122,6 @@ The team is moving forward with the new retrospective model as the backlog conti
 **Change Management Workflow:**
 Discussed new notification workflow for RFC process. Decision made to tag the Reviewer if the Requester doesn't fill in the Approver at RFC creation time, ensuring no requests slip through without proper approval path.
 
-**Context:** Ines is Senior Process Analyst on Process Engineering team, started September 2024. She is Method Owner for M3.3 (Incident Response Resilience) in 2026 V2MOM and led the retrospective transformation initiative during the March 12-13 sessions with SRE and ODC leadership.
-
 **Next Steps:**
 - Complete BCDR Policy update and provide latest version to auditors - Ines
 - Finalize decision on old vs new model for backlog retrospective assignments - Ines + Vera
