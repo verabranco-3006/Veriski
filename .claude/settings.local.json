@@ -5,7 +5,9 @@
       "mcp__playwright__browser_tabs",
       "mcp__playwright__browser_snapshot",
       "mcp__playwright__browser_navigate",
-      "mcp__playwright__browser_wait_for"
+      "mcp__playwright__browser_wait_for",
+      "Read(//c/Users/vbr/Desktop/Veriski/ProcessEngineering/**)",
+      "Bash(mkdir -p .github)"
     ]
   }
 }
