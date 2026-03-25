@@ -189,7 +189,7 @@
 
 **Rationale:**
 - Lower % over time indicates successful automation implementation (fewer repetitive manual changes)
-- Provides data-driven input for automation backlog (M6.x Process as Code)
+- Provides data-driven input for automation backlog (M5.x Process as Code)
 - Enables tracking of "toil reduction" opportunities
 - Note: Decreasing rate = success (we're eliminating manual/repetitive patterns)
 
@@ -301,9 +301,7 @@ AND created >= startOfQuarter() AND created <= endOfQuarter()
 - **M2.1 (Change Lead Time):** Automated changes reduce lead time
 - **M2.2 (Standard Change Promotion):** Some candidates become Standard vs full automation
 - **M2.5 (CFR Correlation):** Automated changes improve traceability
-- **M6.2 (Process as Code Blueprints):** Flagged candidates become blueprint use cases
-- **M6.3 (2027 Backlog):** Prioritized candidates become backlog items
-- **M6.4 (Pilot Success Rate):** Automation candidates become pilot projects
+- **M5.2 (Process as Code Blueprints):** Flagged candidates become blueprint use cases
 
 **Validation Checks:**
 - **Q1 2026:** Validate baseline - manually review 50 flagged RFCs, confirm ≥80% are valid candidates
@@ -320,7 +318,7 @@ AND created >= startOfQuarter() AND created <= endOfQuarter()
 - **Risk:** Reviewer fatigue (additional work) → **Mitigation:** Keep assessment <3 min, provide clear decision tree
 - **Risk:** Over-flagging (false positives) → **Mitigation:** Weekly validation, provide feedback to reviewers
 - **Risk:** Under-flagging (missing opportunities) → **Mitigation:** Automated alerts for repetitive patterns, quarterly spot-checks
-- **Risk:** Identification without implementation → **Mitigation:** Integration with M6.x, monthly prioritization, close the loop with reviewers
+- **Risk:** Identification without implementation → **Mitigation:** Integration with M5.x, monthly prioritization, close the loop with reviewers
 
 **SMART Assessment:** ✓ Complete - Measurable (%), clear baseline approach, validation mechanisms, integration with V2MOM
 
@@ -429,7 +427,7 @@ ORDER BY resolved DESC
 **Integration with Other Metrics:**
 - **M2.1 (Change Lead Time):** Faster lead time shouldn't compromise quality (CFR stays low)
 - **M2.4 (Manual Resilience):** Automated changes should have lower CFR than manual
-- **M6.x (Process as Code):** Automation candidates with higher CFR justify automation investment
+- **M5.x (Process as Code):** Automation candidates with higher CFR justify automation investment
 - **M3.x (Incident Response):** Accurate correlation speeds incident resolution (know exactly what to rollback)
 
 **Validation Checks:**
@@ -945,6 +943,342 @@ Action: Add comment tagging Process Engineering team, send Slack notification
 
 ---
 
+### M3.5: RCA Completion Rate & Lead Time (NEW - Retrospective Transformation)
+
+**Metric:** % of mandatory retrospectives completed within SLA + Average RCA lead time
+
+**Definition:**
+- **Completion Rate:** % of incidents requiring retrospectives that have RCA completed
+- **Lead Time:** Average time from incident resolution to retrospective completion
+
+**Target:**
+- > 90% completion rate by end of Q4 2026
+- < 14 days RCA lead time by end of Q4 2026
+
+**Rationale:**
+- Validates team-led retrospective model is working (teams actually complete them)
+- Measures learning loop responsiveness (faster RCA = faster learning)
+- Directly supports Operations Review metrics mentioned in retrospective transformation plan
+- Baseline metric for Inês's retrospective transformation success
+
+**Measurement Logic:**
+- **Mandatory retrospectives:** Incidents meeting criteria (severity, customer impact, recurrence patterns - to be defined in transformation Phase 1)
+- **Completed:** Retrospective document exists and approved by Value Stream Leader
+- **Lead Time:** `(Retrospective Approval Date - Incident Resolution Date)` in days
+- **Calculation:** `(Approved Retrospectives / Mandatory Incidents) × 100`
+
+**Implementation:**
+- **Data Source:** Jira RDINC project + Retrospective tracker (Confluence or Jira)
+- **Collection Method:**
+  - Q1 2026: Define mandatory retrospective criteria (with Inês and SRE)
+  - Identify incidents requiring retrospectives (based on mandatory criteria)
+  - Track retrospective status: Not Started → In Progress → Review (EM) → Approved (VS Leader)
+  - Calculate completion rate: `(Approved Retrospectives / Mandatory Incidents) × 100`
+  - Calculate lead time: Average days from resolution to approval
+- **Frequency:** Monthly tracking, quarterly reporting
+- **Owner:** Inês Matos
+- **Dashboard:** Operations Review dashboard per value stream
+  - Completion rate trend by value stream
+  - Lead time trend over quarters
+  - Overdue retrospectives alert view
+- **Automation:** Jira link between RDINC incidents and retrospective documents, automated alerts for overdue retrospectives
+
+**Baseline:** To be established Q1 2026 from current SRE-led retrospective model
+
+**Integration with Other Metrics:**
+- **M3.2 (Action Item Closure):** Retrospectives generate action items tracked by M3.2
+- **M3.6 (RCA Quality):** Completion is necessary but not sufficient - M3.6 measures quality
+- **M3.8 (Improvement Rate):** Faster completion enables faster operational improvements
+
+**Integration with Retrospective Transformation:**
+- Aligns with Phase 2 pilot tracking (Q2-Q3 2026)
+- Feeds Operations Review analytics
+- Establishes baseline before full rollout in Q3-Q4
+- Tracks adoption of team-led model
+
+**SMART Assessment:** ✓ SMART - Clear deliverable (completion %), measurable (days), time-bound, aligned with transformation
+
+---
+
+### M3.6: RCA Quality Score (Outcome-Focused) (NEW - Retrospective Transformation)
+
+**Metric:** Average quality score for retrospectives based on outcome-focused criteria
+
+**Definition:** AI/Koda-assisted quality assessment measuring if retrospectives focus on outcomes (what changed) vs outputs (what happened)
+
+**Target:** Average quality score > 4.0/5.0 by end of Q4 2026
+
+**Rationale:**
+- Validates narrative shift from output to outcome focus (key transformation goal)
+- Ensures team-led retrospectives maintain quality without SRE facilitation
+- Measures depth of analysis (not just completion checkbox)
+- Enables coaching and continuous improvement
+- Directly implements AI/Koda-assisted auditing mentioned in transformation plan
+
+**Measurement Logic:**
+
+Quality framework criteria (5-point scale per criterion):
+
+1. **Context Setting:** Clear incident timeline and customer impact documented? (1-5)
+   - 5: Complete timeline, customer impact quantified, asset/system clearly identified
+   - 3: Basic timeline exists, customer impact mentioned
+   - 1: Incomplete or missing context
+
+2. **Root Cause Analysis:** Deep analysis vs surface-level? (1-5)
+   - 5: Multiple contributing factors identified, root cause validated with evidence
+   - 3: Root cause stated but limited supporting analysis
+   - 1: Superficial or unclear root cause
+
+3. **Outcome Focus:** Action items with owners and timelines? (1-5)
+   - 5: All action items have owners, deadlines, success criteria, measurable outcomes
+   - 3: Action items listed with owners but incomplete details
+   - 1: Vague action items or no clear ownership
+
+4. **Learning Captured:** Patterns identified, preventability assessed? (1-5)
+   - 5: Patterns identified, similar incidents referenced, prevention strategy clear
+   - 3: Some pattern discussion but limited depth
+   - 1: No pattern identification or learning captured
+
+5. **Completeness:** All sections addressed per framework? (1-5)
+   - 5: All framework sections complete (Context, Analysis, Outcomes, Learning)
+   - 3: Most sections complete, some gaps
+   - 1: Major sections missing
+
+**Overall RCA Quality Score:** Average across all 5 criteria
+
+**Implementation:**
+- **Data Source:** Retrospective documents (Confluence pages)
+- **Collection Method:**
+  - **Phase 1 (Q1-Q2 2026):** Manual quality assessment by Process Engineering using rubric
+  - **Phase 2-3 (Q3-Q4 2026):** AI/Koda-assisted auditing tool (to be developed)
+  - Quarterly sample: 20-30 retrospectives per value stream (statistically significant)
+  - Automated scoring based on framework criteria
+  - Manual spot-check validation (10% sample) to calibrate AI
+  - Provide feedback to teams on quality gaps
+- **Frequency:** Quarterly measurement (sample-based), monthly pilot tracking
+- **Owner:** Inês Matos + Process Engineering
+- **Dashboard:** Operations Review with quality trends per value stream
+  - Average quality score by value stream
+  - Criteria breakdown (which criteria are weakest?)
+  - Trend: Quality improvement over quarters
+  - Coaching priority: Teams/value streams needing support
+- **Automation:** AI/Koda evaluation pipeline (Phase 2-3 implementation)
+
+**Baseline:** To be established Q2 2026 during pilot phase
+
+**Integration with Other Metrics:**
+- **M3.5 (RCA Completion):** Completion tracked by M3.5, quality measured here
+- **M3.8 (Improvement Rate):** Higher quality retrospectives should drive better improvements
+- **M3.9 (Recurrence Prevention):** Better analysis should prevent repeat incidents
+
+**Integration with Retrospective Transformation:**
+- Directly implements AI/Koda-assisted auditing mentioned in transformation plan (Phase 2-3)
+- Provides data for coaching and Brown Bag enablement sessions
+- Tracks quality improvement through pilot and rollout phases
+- Enables outcome-focused narrative shift measurement
+
+**SMART Assessment:** ✓ SMART - Clear criteria (5-point rubric), measurable (average score), time-bound, achievable with AI/Koda tooling
+
+---
+
+### M3.7: Incident Detection Ratio (NEW - Retrospective Transformation)
+
+**Metric:** % of incidents detected by proactive monitoring vs reactive customer reports
+
+**Definition:** Detection ratio = (Proactively Detected Incidents / Total Incidents) × 100
+
+**Target:** > 70% proactive detection by end of Q4 2026
+
+**Rationale:**
+- Explicitly mentioned in Operations Review evolution (retrospective transformation plan)
+- Measures effectiveness of monitoring and SLO coverage
+- Proactive detection = faster response, lower customer impact
+- Retrospectives should drive monitoring improvements through action items
+- Enables value stream-specific coaching on observability gaps
+
+**Measurement Logic:**
+- **Proactive Detection:** Incident detected by monitoring, alerts, SLO violations, internal testing BEFORE customer report
+- **Reactive Detection:** Customer-reported incident (support case escalation, customer email, status page report) with NO prior alert/detection
+- **Calculation:** `(Proactive Incidents / Total Incidents) × 100`
+
+**Scope:**
+- **Include:** All incidents (system-wide, localized, internal)
+- **Detection source tracking:** First notification source determines detection method
+
+**Implementation:**
+- **Data Source:** Jira RDINC project
+- **Collection Method:**
+  - Add or use Jira field: "Detection Method" (dropdown: Proactive/Reactive)
+  - Populate during incident triage (IC Leader or SRE)
+  - Detection source examples:
+    - **Proactive:** PagerDuty alert, Grafana alert, SLO violation, Synthetic monitoring, Internal QA testing
+    - **Reactive:** Customer support case, Customer email, Twitter/social media, Status page customer report
+  - Track per quarter: Count proactive vs reactive by value stream
+  - Calculate detection ratio overall and per value stream
+- **Frequency:** Monthly tracking, quarterly reporting
+- **Owner:** Inês Matos + SRE
+- **Dashboard:** Operations Review per value stream (analytics-driven)
+  - Detection ratio trend by value stream
+  - Comparison: Value streams with strong vs weak detection
+  - Action item linkage: Did retrospective action items improve detection?
+- **Automation:** Jira report filtering by detection method, automated calculation
+
+**Baseline:** To be established Q1 2026 from historical RDINC data
+
+**Integration with Other Metrics:**
+- **M3.1 (Public MTTA):** Proactive detection enables faster customer communication
+- **M3.5 (RCA Completion):** Retrospectives should include monitoring gaps analysis
+- **M3.8 (Improvement Rate):** Action items targeting monitoring should improve detection ratio
+
+**Integration with Retrospective Transformation:**
+- Feeds Operations Review analytics mentioned in transformation plan
+- Retrospective action items should improve this metric over time (measurable outcome)
+- Enables value stream-specific coaching on monitoring gaps
+- Validates SRE + team collaboration on observability improvements
+
+**SMART Assessment:** ✓ SMART - Clear metric (%), measurable (proactive count), time-bound, relevant to observability goals
+
+---
+
+### M3.8: Retrospective-Driven Improvement Rate (NEW - Retrospective Transformation)
+
+**Metric:** % of high-priority retrospective action items that demonstrate measurable improvement
+
+**Definition:** Implementation rate for high-priority action items from retrospectives that result in measurable operational improvement within 90 days
+
+**Target:** > 60% of high-priority action items show measurable improvement within 90 days (Q4 2026)
+
+**Rationale:**
+- Closes the learning loop: Do retrospectives actually improve operations?
+- Validates ROI of retrospective transformation investment
+- Measures if team-led model drives accountability for action items
+- Different from M3.2 (which measures on-time closure) - this measures actual impact
+- Proves retrospectives aren't just documentation, they drive real change
+
+**Measurement Logic:**
+- Track high-priority action items from retrospectives
+- After 90 days, assess: Did the action item result in measurable improvement?
+- **Measurable improvement examples:**
+  - **Incident recurrence reduced:** No similar incident in 90 days (tracked by M3.9)
+  - **Detection improved:** Monitoring/alerting added, similar incidents now proactively detected (M3.7)
+  - **MTTA improved:** Faster response to similar incident types (M3.1)
+  - **Monitoring gap closed:** New SLO/alert created and operational
+  - **Process improvement validated:** RFC/deployment process changed, measurable reduction in related incidents
+- **Calculation:** `(Action Items with Demonstrated Improvement / High-Priority Action Items) × 100`
+
+**Scope:**
+- **Include:** High-priority action items only (Critical/High in Jira)
+- **Evidence required:** Quantitative or qualitative evidence of improvement
+- **Validation:** Process Engineering + Value Stream Leader review
+
+**Implementation:**
+- **Data Source:** Retrospective action items (Jira) + Incident data (RDINC)
+- **Collection Method:**
+  - Tag action items with expected outcome type (e.g., "Improve detection", "Prevent recurrence", "Reduce MTTA")
+  - After 90 days: Review if outcome achieved
+  - Evidence collection:
+    - **No repeat incidents:** Query RDINC for similar failures in 90-day window
+    - **Detection improved:** Verify new alert/SLO exists and triggered (if applicable)
+    - **MTTA improved:** Compare response time for similar incidents
+    - **Process change:** Verify RFC/process documentation updated and used
+  - Quarterly assessment per value stream with validation
+- **Frequency:** Quarterly measurement (90-day lagging window)
+- **Owner:** Inês Matos
+- **Dashboard:** Operations Review - "Action Item Impact" view
+  - Improvement rate by value stream
+  - Outcome type breakdown (which improvements are most common?)
+  - High-impact examples (case studies for enablement)
+- **Automation:** Semi-automated tracking with manual validation (pattern matching for recurrence, alert checks)
+
+**Baseline:** To be established Q3 2026 (90 days after Q2 pilot retrospectives)
+
+**Integration with Other Metrics:**
+- **M3.2 (Action Item Closure):** M3.2 tracks on-time closure, M3.8 tracks actual impact
+- **M3.7 (Detection Ratio):** Action items improving monitoring feed M3.7 improvement
+- **M3.9 (Recurrence Prevention):** Primary evidence of improvement is no recurrence (M3.9)
+- **M5.x (Process as Code):** Some action items may be automation candidates
+
+**Integration with Retrospective Transformation:**
+- Validates team-led retrospectives drive real operational improvements
+- Feeds Operations Review discussion per value stream (data-driven coaching)
+- Provides case studies for Brown Bag enablement sessions
+- Proves ROI of transformation investment
+
+**SMART Assessment:** ✓ SMART - Clear outcome (measurable improvement), quantifiable (%), time-bound (90 days), achievable with evidence tracking
+
+---
+
+### M3.9: Incident Recurrence Prevention Rate (NEW - Retrospective Transformation)
+
+**Metric:** % of incidents where similar failure pattern doesn't repeat within 180 days after retrospective
+
+**Definition:** Effectiveness of retrospectives in preventing repeat incidents of same root cause category
+
+**Target:** < 15% recurrence rate by end of Q4 2026 (inverse metric - lower is better)
+
+**Rationale:**
+- Ultimate measure of retrospective effectiveness: Do we learn from failures?
+- Validates team-led model prevents repeat mistakes
+- Enables pattern identification across value streams (systemic issues)
+- Directly measures learning loop closure
+- Proves retrospectives aren't theater - they prevent future incidents
+
+**Measurement Logic:**
+- For each incident with completed retrospective, track if similar incident occurs within 180 days
+- **Similar incident defined as:**
+  - **Same root cause category** (e.g., "Configuration Error", "Deployment Failure", "Capacity Issue", "Dependency Failure")
+  - AND **Same asset/service** OR **Same failure mode**
+- **Recurrence:** Binary Yes/No flag if similar incident found in 180-day window
+- **Calculation:** `(Incidents with Recurrence / Total Retrospectives Completed) × 100`
+
+**Scope:**
+- **Include:** All completed retrospectives with defined root cause
+- **Exclude:** Retrospectives where root cause is "Unknown" or "External dependency" (outside team control)
+- **Validation:** Pattern matching algorithm + manual spot-check
+
+**Implementation:**
+- **Data Source:** Retrospective tracker + RDINC incident database
+- **Collection Method:**
+  - Tag retrospectives with root cause pattern (structured taxonomy)
+    - Examples: "Config error - Platform Server Hub", "Deployment failure - LifeTime", "Capacity - Database CPU", "Network - Load Balancer"
+  - Root cause taxonomy to be defined in Phase 1 (Inês + SRE)
+  - Monitor subsequent incidents within 180-day window after retrospective approval
+  - Pattern matching algorithm:
+    - Query RDINC for incidents matching: Same root cause category + (Same asset OR Same failure symptoms)
+  - Flag recurrence if pattern match found
+  - Manual validation: 20% sample to validate algorithm accuracy
+  - Quarterly analysis per value stream
+- **Frequency:** Quarterly measurement (180-day rolling window)
+- **Owner:** Inês Matos + SRE (pattern matching and taxonomy)
+- **Dashboard:** Operations Review - "Repeat Incident Tracking"
+  - Recurrence rate by value stream
+  - Most common repeat patterns (systemic issues requiring cross-team attention)
+  - Success stories: Retrospectives that prevented recurrence
+- **Automation:** Pattern matching algorithm (semi-automated with manual validation), Jira query for similar incidents
+
+**Baseline:** To be established Q3 2026 (180 days after Q1 retrospectives)
+
+**Integration with Other Metrics:**
+- **M3.5 (RCA Completion):** Can only measure recurrence if retrospective completed
+- **M3.6 (RCA Quality):** Higher quality RCA should correlate with lower recurrence
+- **M3.8 (Improvement Rate):** Primary evidence of improvement is no recurrence
+- **M2.5 (CFR Correlation):** Change-related incidents link to change management patterns
+
+**Integration with Retrospective Transformation:**
+- Validates retrospectives prevent repeat failures (ultimate success measure)
+- Highlights value streams needing additional coaching or systemic interventions
+- Identifies recurring patterns requiring cross-team solutions
+- Proves learning loop is closed: Analysis → Action → Prevention
+
+**Validation Checks:**
+- **Q3 2026:** Validate root cause taxonomy with 50 sample retrospectives
+- **Quarterly:** False positive/negative analysis (sample 20 flagged recurrences)
+- **Quarterly:** Pattern matching accuracy (algorithm vs manual validation)
+
+**SMART Assessment:** ✓ SMART - Clear outcome (no recurrence), measurable (%), time-bound (180 days), achievable with pattern matching
+
+---
+
 ## Method 4: Strategic Metrics Orchestration
 
 ### M4.1: Executive Metric Literacy ✓ SMART
@@ -1004,154 +1338,85 @@ Action: Add comment tagging Process Engineering team, send Slack notification
 
 ---
 
-## Method 5: Unified Platform Governance - **NEW MEASUREMENTS**
+## Method 5: Process as Code Industrialization - **NEW MEASUREMENTS**
 
-### M5.1: Platform Gap Closure Rate (NEW)
+### M5.1: Engineering Process Execution Skill Deployment
 
-**Metric:** % of identified O11/ODC process gaps closed by end of quarter
+**Metric:** Successfully deploy at least 1 process execution skill to production that is actively used by Engineering teams
 
-**Definition:** Closure rate of process gaps identified during O11/ODC audit
+**Definition:** Proof of capability by shipping a working skill that automates or assists Engineering teams in executing a PE-owned process using AI @ Product platform
 
-**Target:** 100% of High priority gaps closed by Q3 2026, 80% of Medium by Q4 2026
+**Target:** 1 production skill with documented Engineering team adoption by end of Q2 2026
 
-**Measurement Logic:** Track gap closure status from initial audit through remediation
+**Rationale:**
+- No formal training program exists for AI @ Product platform
+- Real readiness is demonstrated through actual delivery, not theoretical training
+- Validates PE can build customer-facing automation that Engineering teams adopt
+- Proves "Process as Code" value proposition with real engineering usage
+- De-risks Method 5 execution by demonstrating both technical capability AND customer adoption early
+- Shifts from internal tooling to customer-facing value delivery
+
+**Measurement Logic:** Binary success - has PE deployed a skill to production that Engineering teams actively use for process execution?
+
+**Scope - Eligible Process Execution Workflows:**
+- **Incident Response:** Triage automation, RCA generation, post-mortem drafting
+- **Change Management:** RFC creation/validation, risk assessment, evidence collection
+- **Problem Management:** Problem investigation workflow, root cause analysis support
+- **Post-Incident Reviews:** Review template generation, action item extraction
+- **Compliance Checks:** Pre-change validation, FedRAMP control adherence verification
+- **Failure Management:** Incident pattern analysis, recurring issue detection
+
+**Success Criteria:**
+- Skill is deployed to production environment (not dev/test)
+- Skill addresses a PE-owned process executed by Engineering teams (documented use case)
+- Skill is actively used by at least 1 Engineering team (usage tracked with examples)
+- Skill provides measurable value (time saved, quality improved, compliance increased, or friction reduced)
+- Engineering team provides feedback confirming utility
 
 **Implementation:**
-- **Data Source:** Gap Analysis Report (Confluence) + Remediation Tracker (Jira)
+- **Data Source:** Skill Registry (Confluence) + Production deployment log + Engineering team usage feedback
 - **Collection Method:**
-  - Q1: Complete O11/ODC gap audit → Create gap registry (Confluence)
-  - Classify gaps by priority: High, Medium, Low
-  - Create Jira tickets for each gap (Issue Type = "Process Gap")
-  - Track: `(Closed Gaps / Total Gaps by Priority) * 100`
-- **Frequency:** Quarterly measurement
-- **Owner:** Vera Branco
-- **Dashboard:** Jira dashboard filtering Process Gap tickets by Priority + Status
-- **Automation:** Scheduled Jira query for gap closure rate by priority
+  - Q1: Identify candidate process with Engineering team input (1-2 weeks)
+  - Q1-Q2: Build, test with Engineering team, iterate on pilot skill (6-8 weeks)
+  - Q2: Deploy to production with at least 1 Engineering team (1 week)
+  - Q2: Track adoption: Skill name, target process, deployment date, engineering teams using it, usage examples, value delivered
+- **Frequency:** Milestone tracking (weekly status updates)
+- **Owner:** Vera Branco (team execution)
+- **Dashboard:** Confluence pilot tracker with status updates and engineering adoption metrics
+- **Automation:** Manual tracking with usage logs from AI @ Product platform
 
-**SMART Assessment:** ✓ SMART - Specific gaps, measurable (%), time-bound by priority
+**Baseline:** 0 PE engineering-facing process skills in production (as of Q1 2026)
+
+**Integration with Other Metrics:**
+- **M5.2 (Blueprint Completion):** Pilot skill creates blueprint template for future Engineering automations
+- **M5.3 (Skills Package):** Pilot skill becomes first skill in PE Skills Extension Package
+- **M2.4 (Manual Resilience):** Pilot may reduce Engineering toil in RFC/incident workflows
+- **M3.x (Incident/Change Metrics):** Pilot may improve speed or quality of process execution (secondary benefit)
+
+**Risk Mitigation:**
+- Start with narrow scope (single workflow, clear boundaries)
+- Prioritize quick win over complex automation
+- Budget 8-10 weeks for learning curve and iteration
+- Accept "good enough" for v1.0 - iterate after deployment
+
+**SMART Assessment:** ✓ SMART - Clear deliverable (1 production skill), measurable (binary), time-bound (Q2 2026), achievable (narrow scope)
 
 ---
 
-### M5.2: Platform SLA Parity Achievement (NEW)
-
-**Metric:** % of incident/change SLAs harmonized across O11 and ODC platforms
-
-**Definition:** % of process SLAs with identical definitions and thresholds across both platforms
-
-**Target:** 100% by end of Q3 2026
-
-**Measurement Logic:** Compare SLA definitions and thresholds across platforms, track harmonization
-
-**Implementation:**
-- **Data Source:** SLA Registry (Confluence) tracking O11 vs ODC SLAs
-- **Collection Method:**
-  - Create SLA Registry with columns: Process, SLA Name, O11 Threshold, ODC Threshold, Status (Aligned/Misaligned)
-  - For each SLA: Compare definitions and thresholds
-  - Aligned: O11 threshold = ODC threshold AND definition identical
-  - Calculation: `(Aligned SLAs / Total SLAs) * 100`
-- **Frequency:** Quarterly measurement
-- **Owner:** Vera Branco
-- **Dashboard:** Confluence SLA Registry with status tracking
-- **Automation:** Manual tracking (no automation initially)
-
-**SMART Assessment:** ✓ SMART - Clear comparison criteria, measurable, target defined
-
----
-
-### M5.3: Unified Dashboard Uptime (EXISTING - ADD DETAIL)
-
-**Metric:** % uptime for Unified Operational Visibility Dashboard
-
-**Definition:** Availability of unified dashboard for executive consumption
-
-**Target:** > 99.5% uptime (< 3.65 hours downtime per month)
-
-**Measurement Logic:** Monitor dashboard availability and data refresh success rate
-
-**Implementation:**
-- **Data Source:** Dashboard hosting platform (Power BI Service, Tableau, etc.)
-- **Collection Method:**
-  - Monitor: Dashboard page load success + data refresh success
-  - Downtime: Time when dashboard unavailable OR data >6 hours stale
-  - Calculation: `(Available Time / Total Time) * 100`
-- **Frequency:** Monthly measurement, real-time monitoring
-- **Owner:** Vera Branco + Paulo Alves Monteiro
-- **Dashboard:** Power BI Service monitoring + alerting
-- **Automation:** Built-in platform monitoring (Power BI Service health metrics)
-
-**SMART Assessment:** ✓ SMART - Specific metric (uptime %), clear target, measurable
-
----
-
-### M5.4: Cross-Platform Compliance Score (NEW)
-
-**Metric:** % of RFC submissions meeting unified compliance standards across both O11 and ODC
-
-**Definition:** Compliance rate with harmonized RFC criteria and risk scoring
-
-**Target:** > 90% by end of Q4 2026
-
-**Measurement Logic:** Track RFC compliance with unified standards post-harmonization
-
-**Implementation:**
-- **Data Source:** Jira Change Management (both O11 and ODC projects)
-- **Collection Method:**
-  - Post-harmonization (after M5.2 complete): Track RFCs against unified checklist
-  - Compliant RFC: Meets all mandatory criteria for unified standard (evidence, risk score, approvals)
-  - Calculation: `(Compliant RFCs / Total RFCs) * 100`
-- **Frequency:** Quarterly measurement (start after M5.2 completion in Q3)
-- **Owner:** Vera Branco + Laura Ferreira
-- **Dashboard:** Jira dashboard tracking RFC compliance by platform
-- **Automation:** Jira Automation rules to flag non-compliant RFCs
-
-**SMART Assessment:** ✓ SMART - Measurable compliance (%), clear target, time-bound
-
----
-
-## Method 6: Process as Code Industrialization - **NEW MEASUREMENTS**
-
-### M6.1: AI Platform Skill Certification Rate (NEW)
-
-**Metric:** % of PE team members completing AI @ Product platform certification
-
-**Definition:** Completion rate for technical upskilling on AI @ Product framework
-
-**Target:** 100% by end of Q2 2026
-
-**Measurement Logic:** Track training completion and skill assessment results
-
-**Implementation:**
-- **Data Source:** Training Registry + AI @ Product certification program
-- **Collection Method:**
-  - Define PE team roster (current: 4 people - Vera, Inês, Laura, Paulo)
-  - Track completion of:
-    - AI @ Product framework training
-    - Pilot integration task (hands-on skill check)
-  - Certification criteria: Training complete + successful pilot task
-  - Calculation: `(Certified Team Members / Total PE Team) * 100`
-- **Frequency:** Monthly tracking during Q1-Q2
-- **Owner:** Vera Branco
-- **Dashboard:** Training registry spreadsheet or Confluence page
-- **Automation:** Manual tracking (certification program managed externally)
-
-**SMART Assessment:** ✓ SMART - Clear population (PE team), binary certification, time-bound
-
----
-
-### M6.2: Process as Code Blueprint Completion Rate (NEW)
+### M5.2: Process as Code Blueprint Completion Rate (NEW)
 
 **Metric:** % of high-impact automation candidates with completed "Process as Code" blueprints
 
 **Definition:** Completion rate of technical blueprints for prioritized automation use cases
 
-**Target:** 100% of Q1-identified candidates have blueprints by end of Q3 2026
+**Target:** 100% of Q2-identified candidates have blueprints by end of Q3 2026
 
 **Measurement Logic:** Track blueprint creation status from use case identification to blueprint delivery
 
 **Implementation:**
 - **Data Source:** Use Case Registry (Confluence) + Blueprint Repository
 - **Collection Method:**
-  - Q1: Identify automation candidates from Incident, Change, Problem workflows
+  - Q2: Identify automation candidates from Incident, Change, Problem workflows
   - Prioritize: High-impact use cases (top 10-15)
   - Track blueprint status: Not Started, In Progress, Complete
   - Blueprint complete criteria: Technical design, AI @ Product integration approach, success criteria defined
@@ -1165,60 +1430,99 @@ Action: Add comment tagging Process Engineering team, send Slack notification
 
 ---
 
-### M6.3: 2027 Backlog Refinement Score (EXISTING - ADD DETAIL)
+### M5.3: PE Skills Extension Package Delivery & Adoption
 
-**Metric:** % of strategic blueprints converted to ready-to-code technical backlog items
+**Metric:** Deliver a Process Engineering Skills Extension Package to production with ≥ 4.0/5.0 satisfaction rating from Engineering teams
 
-**Definition:** Refinement completeness score for technical backlogs derived from blueprints
+**Definition:** A curated, published extension package containing high-impact process execution skills for PE-governed processes (Incident, Change, Problem, Compliance), actively used by Engineering teams with measured satisfaction
 
-**Target:** 100% of blueprints have refined backlogs by end of Q4 2026
+**Target:**
+- Extension package published to production by end of Q4 2026
+- Minimum 4.0/5.0 average satisfaction score from engineering users
+- Minimum 3 skills included in package (based on M5.1 pilot + M5.2 blueprints)
 
-**Measurement Logic:** Assess backlog readiness using Definition of Ready criteria
+**Rationale:**
+- Validates full "Process as Code Industrialization" capability: design → build → package → distribute → adopt
+- Proves Engineering teams value PE automation enough to install and use it
+- Measures quality and impact, not just delivery (satisfaction requirement)
+- Productizes learnings from M5.1 pilot and M5.2 blueprints into reusable asset
+- Extension package becomes foundation for 2027 scale-out
+
+**Measurement Logic:**
+1. **Binary: Package Published** - PE Skills Extension Package available in production registry
+2. **Quantitative: Satisfaction Score** - Average rating from engineering team feedback
+
+**Scope - Skills Extension Package Contents:**
+Curated collection of 3-5 high-impact skills for PE-governed processes:
+- **Incident Response** skill (e.g., RCA generation, post-mortem drafting)
+- **Change Management** skill (e.g., RFC validation, risk assessment)
+- **Problem Management** skill (e.g., root cause analysis support)
+- **Compliance/Audit** skill (e.g., FedRAMP evidence collection)
+- **Failure Management** skill (optional, based on Q3 priorities)
+
+**Success Criteria:**
+- **Package Delivery:**
+  - Extension package published to AI @ Product production registry
+  - Package includes 3-5 working skills addressing PE processes
+  - Documentation complete (README, skill descriptions, usage examples)
+  - Installation instructions clear for Engineering teams
+
+- **Adoption:**
+  - At least 2 Engineering teams have installed the package
+  - Usage logs show active invocations across multiple skills
+
+- **Satisfaction:**
+  - Survey sent to engineering teams using the package
+  - Questions cover: ease of use, time saved, quality improvement, likelihood to recommend
+  - Rating scale: 1-5 (1=poor, 5=excellent)
+  - Target: Average ≥ 4.0/5.0 across all questions
+  - Minimum 5 survey responses for statistical validity
 
 **Implementation:**
-- **Data Source:** Technical Backlog (Jira or AI @ Product platform backlog)
+- **Data Source:**
+  - Extension Package Registry (AI @ Product platform)
+  - Usage logs (AI @ Product platform analytics)
+  - Engineering Team Satisfaction Survey (Google Forms or similar)
+
 - **Collection Method:**
-  - For each blueprint: Create corresponding Jira Epic/Story
-  - Definition of Ready criteria:
-    - User story defined
-    - Acceptance criteria clear
-    - Technical dependencies identified
-    - Effort estimated
-    - AI @ Product framework APIs/methods specified
-  - Refinement score: % of criteria met per backlog item
-  - Calculation: `(Backlog Items Meeting 100% DoR / Total Backlog Items) * 100`
-- **Frequency:** Quarterly measurement
-- **Owner:** Vera Branco
-- **Dashboard:** Jira backlog view with "Refinement Status" field
-- **Automation:** Jira checklist or custom field tracking DoR criteria
+  - Q2: Deliver M5.1 pilot skill
+  - Q3: Select 2-4 additional high-impact skills from M5.2 blueprints
+  - Q3: Build and test remaining skills with Engineering team partners
+  - Q4: Package all skills into unified extension
+  - Q4: Publish to production registry
+  - Q4: Collect satisfaction feedback (2-4 weeks post-installation)
 
-**SMART Assessment:** ✓ SMART - Clear criteria (DoR), measurable (%), time-bound
+- **Survey Questions (example):**
+  1. How easy was it to install and use PE Skills? (1-5)
+  2. How much time did PE Skills save you on process execution? (1-5)
+  3. How would you rate the quality/accuracy of skill outputs? (1-5)
+  4. How likely are you to recommend PE Skills to other teams? (1-5)
+  5. Open feedback: What should we improve?
 
----
+- **Frequency:**
+  - Package delivery: One-time (Q4 2026)
+  - Satisfaction survey: Post-deployment (Q4 2026) + quarterly refresh in 2027
 
-### M6.4: Automation Throughput - Pilot Success Rate (NEW)
+- **Owner:** Vera Branco (team execution)
+- **Dashboard:** Confluence tracker with package status, installation count, satisfaction scores
+- **Automation:** AI @ Product platform usage analytics + manual survey collection
 
-**Metric:** % of piloted "Process as Code" automations successfully deployed to production
+**Baseline:** 0 PE Skills Extension Packages exist (as of Q1 2026)
 
-**Definition:** Success rate of pilot automations transitioning from PoC to production
+**Integration with Other Metrics:**
+- **M5.1 (Pilot Skill):** First skill in the extension package
+- **M5.2 (Blueprints):** Blueprints inform which skills to include in package
+- **M2.x/M3.x (Process Metrics):** Skills in package may improve Change/Incident execution quality
+- **M4.x (Training):** Skills reduce training burden by automating process execution
 
-**Target:** > 80% of pilots succeed by end of Q4 2026
+**Risk Mitigation:**
+- Start with 3 skills minimum (achievable) vs 5 (stretch)
+- Select skills with clear, measurable value (time saved, quality improved)
+- Partner with 2 friendly Engineering teams early for co-development
+- Accept "good enough" v1.0 - iterate based on satisfaction feedback
+- If satisfaction < 4.0, conduct follow-up interviews to understand gaps
 
-**Measurement Logic:** Track pilot outcomes from initiation to production deployment
-
-**Implementation:**
-- **Data Source:** Pilot Tracker (Confluence or Jira)
-- **Collection Method:**
-  - For each pilot: Track lifecycle (Initiated → PoC → Testing → Production OR Failed)
-  - Success criteria: Pilot reaches Production status
-  - Failure criteria: Pilot abandoned or decommissioned before production
-  - Calculation: `(Successful Pilots / Total Pilots Initiated) * 100`
-- **Frequency:** Quarterly measurement
-- **Owner:** Vera Branco
-- **Dashboard:** Confluence pilot tracker with status column
-- **Automation:** Manual tracking (pilot lifecycle managed manually initially)
-
-**SMART Assessment:** ✓ SMART - Clear success definition (production deployment), measurable (%), target set
+**SMART Assessment:** ✓ SMART - Clear deliverable (extension package), measurable (satisfaction score), time-bound (Q4 2026), achievable (3-5 skills), relevant (proves industrialization)
 
 ---
 
@@ -1233,21 +1537,18 @@ Action: Add comment tagging Process Engineering team, send Slack notification
 2. **Create tracking mechanisms:**
    - M3.4 Alert Validation Log (Jira or Confluence)
    - M2.4 Reviewer Decision Reason field (Jira custom field)
-   - M5.1 Gap Analysis Registry (Confluence + Jira)
-   - M6.1 AI Platform Training Registry (Confluence)
+   - M5.1 Engineering Process Skill Pilot Tracker (Confluence)
 
 3. **Define standards:**
    - M3.2 OLA/Deadline definitions for action items
    - M4.2 Metrics documentation template
-   - M5.2 SLA Registry structure
-   - M6.2 Blueprint template
+   - M5.2 Blueprint template
 
 ### Q2 2026 Actions
 1. **Deploy dashboards:**
    - M1.2 Jira Governance Dashboard (FedRAMP customer filter)
    - M2.1 Change Lead Time dashboard (Jira or Power BI)
    - M4.1 Training literacy assessment tool
-   - M5.3 Unified Platform Dashboard
 
 2. **Automate data collection:**
    - M2.3 RFC Rejection Velocity (Jira Automation)
@@ -1272,7 +1573,7 @@ Action: Add comment tagging Process Engineering team, send Slack notification
 
 4. **Define measurement standards** - Templates and checklists ensure consistency (OLAs, documentation templates, DoR)
 
-5. **Start with high-value, low-effort metrics** - M1.3 (Training Rate), M4.2 (Documentation Coverage), M6.1 (Certification Rate) are straightforward wins
+5. **Start with high-value, low-effort metrics** - M1.3 (Training Rate), M4.2 (Documentation Coverage), M5.1 (Engineering Skill Pilot) are straightforward wins
 
 6. **Address measurement gaps immediately:**
    - M3.4 needs Alert Validation practice defined
