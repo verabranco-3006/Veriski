@@ -36,8 +36,9 @@
   - Challenge #3: Swarming at SEV-1/SEV-2 Incidents
 
 - **14:00–16:00** — Align Possible Solutions
-  - Challenge #4: RCA Ownership and Collaboration
-  - Challenge #5: System-Wide Impact Communication
+  - Challenge #4: Service Incidents vs Support Cases Paradigm
+  - Challenge #5: RCA Ownership and Collaboration
+  - Challenge #6: System-Wide Impact Communication
   - Discussion: Possible Solutions & Trade-offs
 
 **Tuesday, March 31**
@@ -166,7 +167,66 @@ GS escalates through process without formal warm hand-over. No effective collabo
 
 ---
 
-## Slide 7: Challenge #4 — RCA Ownership and Collaboration
+## Slide 7: Challenge #4 — Service Incidents vs Support Cases Paradigm
+
+### The Problem
+Service incidents and support cases are conflated in the current escalation model. High-priority support cases are automatically routed to SRE using severity mapping (Urgent/High → SEV1/SEV2), regardless of actual system-wide impact. This forces SRE to validate each escalation and hand-over non-systemic issues back to product teams, creating organizational drag and resource waste.
+
+### Impact
+- **On Customers:** Confused reporting and misalignment — single MTTR metric blurs system stability issues with customer-specific support cases
+- **On Engineering:** Wasted resources pulling highly specialized SRE staff into non-systemic issues during recovery **and** aftermath (complex retrospectives for what should be standard Problem Management)
+- **On SRE:** Staff exhaustion from over-escalation, diverted from critical system stability work
+- **On Organization:** Misalignment of expectations across stakeholders due to ambiguity in ownership and urgency definitions
+
+### Current State
+- Support cases automatically escalate to SRE based on severity mapping (Urgent/High → SEV1/SEV2)
+- SRE must validate every escalation to confirm system-wide impact
+- If no system-wide impact → SRE hands over to product teams, but damage is done (resources mobilized, processes triggered)
+- GS can declare "Major Incident" for high-priority cases **without** SRE validation
+- Same MTTR metric used for system stability and customer experience issues
+
+### Proposed Solution
+**Separate two distinct motions with clear triggers, ownership, and metrics:**
+
+**Service Incidents 🔥**
+- **Trigger:** SLO breaches or customer reports confirmed by SRE as system-wide impact
+- **Ownership:** SRE Team
+- **Platform:** Rootly
+- **Metrics:** Engineering MTTR, Engineering MTTA
+- **Coverage:** 24x7 SRE On-Call
+- **Follow-up:** Retrospective Process, Problem Management, Continuous Improvement
+
+**Support Cases 🧑**
+- **Trigger:** Support cases escalated to Product Teams or incidents handed over by SRE (no system-wide impact confirmed)
+- **Ownership:** Global Support (Product Teams act as L4)
+- **Platform:** Jira
+- **Metrics:** Escalation Ratio, Escalation Lead Time, Engineering Lead Time (since escalation), Red Button activation
+- **Coverage:** 8x5 (with Red Button activation by GS)
+- **Follow-up:** Problem Management, Bug Fixing
+
+**Critical Change:** GS must **stop declaring Major Incidents for unvalidated incidents** unless confirmed by Engineering. This reverses current practice and ensures mobilization of Engineering teams happens **only** for validated Service Incidents.
+
+### Transition Protocols ("Hand-shake" between motions)
+
+**Support Case → Service Incident (Escalation):**
+- GS flags potential system-wide impact in Zendesk
+- SRE performs validation check
+- If confirmed → Support Case linked to new Service Incident in Rootly, ownership shifts to SRE
+
+**Service Incident → Support Case (Demotion/Hand-over):**
+- SRE determines no system-wide impact
+- Service Incident closed in Rootly with "No System Impact" resolution
+- Warm hand-over to Product Engineering via Jira with all SRE findings
+
+### What We Need to Decide
+- [ ] Adopt Service Incident vs Support Case separation with distinct metrics
+- [ ] GS stops declaring Major Incidents without Engineering validation
+- [ ] Define clear escalation heuristics: what qualifies as "system-wide impact"
+- [ ] Establish warm hand-over protocol for incident demotion/escalation transitions
+
+---
+
+## Slide 8: Challenge #5 — RCA Ownership and Collaboration
 
 ### The Problem
 GS delivers RCAs on cloud incidents either without any alignment with SRE/Engineering or simply sends the RCA over. They pick and choose based on unknown criteria. One-sided approach.
@@ -195,7 +255,7 @@ Collaborate on RCAs with clear ownership:
 
 ---
 
-## Slide 8: Challenge #5 — System-Wide Impact Communication
+## Slide 9: Challenge #6 — System-Wide Impact Communication
 
 ### The Problem
 System-wide incidents are failing to communicate effectively—to Engineering internally and to customers externally. 44% of system-wide incidents have zero communication posted. The current IC Leader model (VS/EM) creates role redundancy and delays, while SRE already holds the full technical context needed for updates.
@@ -229,7 +289,7 @@ Streamline the IC role and automate bi-directional visibility:
 
 ---
 
-## Slide 9: Decisions & Next Steps
+## Slide 10: Decisions & Next Steps
 
 ### Decisions Made Today
 1. [Decision #1]
