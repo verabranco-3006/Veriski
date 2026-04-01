@@ -1,0 +1,751 @@
+- generic [ref=e1]:
+  - generic:
+    - generic:
+      - button "Skip to main content" [ref=e2] [cursor=pointer]:
+        - generic [ref=e4]: Skip to main content
+      - button "Keyboard shortcuts" [ref=e5] [cursor=pointer]:
+        - generic [ref=e7]: Keyboard shortcuts
+      - button "Accessibility Feedback" [ref=e8] [cursor=pointer]:
+        - generic [ref=e10]: Accessibility Feedback
+  - generic [ref=e13]:
+    - banner [ref=e14]:
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - button "Main drawer" [expanded] [ref=e17] [cursor=pointer]:
+            - img [ref=e18]
+          - generic "Calendar" [ref=e22]:
+            - img [ref=e23]
+            - heading "Calendar" [level=1] [ref=e24]
+        - generic [ref=e25]:
+          - generic [ref=e29]:
+            - generic [ref=e31]:
+              - generic [ref=e32]:
+                - button "Today, Wednesday, March 25" [ref=e34] [cursor=pointer]:
+                  - generic [ref=e36]: Today
+                - tooltip [ref=e37]: Wednesday, March 25
+              - generic [ref=e38]:
+                - button "Previous week" [ref=e39] [cursor=pointer]:
+                  - img [ref=e42]
+                - tooltip [ref=e45]: Previous week
+              - generic [ref=e46]:
+                - button "Next week" [active] [ref=e47] [cursor=pointer]:
+                  - img [ref=e50]
+                - tooltip [ref=e53]: Next week
+            - generic [ref=e56]:
+              - generic [ref=e57]: March – April 2026
+              - generic [ref=e60]: Mar – Apr 2026
+          - generic [ref=e64]:
+            - generic [ref=e66]:
+              - button "Search" [ref=e67] [cursor=pointer]:
+                - generic [ref=e69]: search
+              - tooltip [ref=e71]: Search
+            - generic [ref=e73]:
+              - button "Support" [ref=e74] [cursor=pointer]:
+                - img [ref=e77]
+              - tooltip [ref=e80]: Support
+            - generic [ref=e84]:
+              - button "Settings menu" [ref=e85] [cursor=pointer]:
+                - img [ref=e87]
+              - tooltip [ref=e91]: Settings menu
+            - button "Week" [ref=e97] [cursor=pointer]:
+              - generic [ref=e99]: Week
+              - generic [ref=e101]: arrow_drop_down
+            - generic [ref=e103]:
+              - generic [ref=e104]:
+                - button "Switch to Calendar" [ref=e105]:
+                  - img [ref=e107]
+                - tooltip [ref=e109]: Switch to Calendar
+              - generic [ref=e110]:
+                - button "Switch to Tasks" [ref=e111]:
+                  - img [ref=e113]
+                - tooltip [ref=e115]: Switch to Tasks
+        - generic [ref=e117]:
+          - button "Google apps" [ref=e121] [cursor=pointer]:
+            - img [ref=e122]
+          - 'button "Google Account: Vera Branco (vera.branco@outsystems.com)" [ref=e125] [cursor=pointer]':
+            - 'button "Google Account: Vera Branco (vera.branco@outsystems.com)" [ref=e130]':
+              - img [ref=e132]
+    - generic [ref=e136]:
+      - button "Create " [ref=e137] [cursor=pointer]:
+        - generic [ref=e139]: add
+        - generic [ref=e140]: Create
+        - text: 
+      - tooltip [ref=e141]: Create
+    - generic [ref=e142]:
+      - generic [ref=e146]:
+        - heading "Drawer" [level=1] [ref=e147]
+        - generic [ref=e148]:
+          - heading "Navigation calendar" [level=2] [ref=e149]
+          - generic [ref=e150]:
+            - generic [ref=e151]:
+              - generic [ref=e152]: March 2026
+              - generic [ref=e153]:
+                - generic [ref=e155]:
+                  - button "Previous month" [ref=e156] [cursor=pointer]:
+                    - img [ref=e159]
+                  - tooltip [ref=e162]: Previous month
+                - generic [ref=e164]:
+                  - button "Next month" [ref=e165] [cursor=pointer]:
+                    - img [ref=e168]
+                  - tooltip [ref=e171]: Next month
+            - grid "March 2026" [ref=e172]:
+              - rowgroup [ref=e173]:
+                - row "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" [ref=e174]:
+                  - columnheader "Monday" [ref=e175]:
+                    - generic [ref=e176]:
+                      - generic [ref=e177]: M
+                      - tooltip [ref=e178]: Monday
+                    - generic [ref=e179]: Monday
+                  - columnheader "Tuesday" [ref=e180]:
+                    - generic [ref=e181]:
+                      - generic [ref=e182]: T
+                      - tooltip [ref=e183]: Tuesday
+                    - generic [ref=e184]: Tuesday
+                  - columnheader "Wednesday" [ref=e185]:
+                    - generic [ref=e186]:
+                      - generic [ref=e187]: W
+                      - tooltip [ref=e188]: Wednesday
+                    - generic [ref=e189]: Wednesday
+                  - columnheader "Thursday" [ref=e190]:
+                    - generic [ref=e191]:
+                      - generic [ref=e192]: T
+                      - tooltip [ref=e193]: Thursday
+                    - generic [ref=e194]: Thursday
+                  - columnheader "Friday" [ref=e195]:
+                    - generic [ref=e196]:
+                      - generic [ref=e197]: F
+                      - tooltip [ref=e198]: Friday
+                    - generic [ref=e199]: Friday
+                  - columnheader "Saturday" [ref=e200]:
+                    - generic [ref=e201]:
+                      - generic [ref=e202]: S
+                      - tooltip [ref=e203]: Saturday
+                    - generic [ref=e204]: Saturday
+                  - columnheader "Sunday" [ref=e205]:
+                    - generic [ref=e206]:
+                      - generic [ref=e207]: S
+                      - tooltip [ref=e208]: Sunday
+                    - generic [ref=e209]: Sunday
+              - rowgroup [ref=e210]:
+                - row "February 23, Monday February 24, Tuesday February 25, Wednesday February 26, Thursday February 27, Friday February 28, Saturday 1, Sunday" [ref=e211]:
+                  - gridcell "February 23, Monday" [ref=e212]:
+                    - button "February 23, Monday" [ref=e213]:
+                      - generic [ref=e214]: "23"
+                  - gridcell "February 24, Tuesday" [ref=e215]:
+                    - button "February 24, Tuesday" [ref=e216]:
+                      - generic [ref=e217]: "24"
+                  - gridcell "February 25, Wednesday" [ref=e218]:
+                    - button "February 25, Wednesday" [ref=e219]:
+                      - generic [ref=e220]: "25"
+                  - gridcell "February 26, Thursday" [ref=e221]:
+                    - button "February 26, Thursday" [ref=e222]:
+                      - generic [ref=e223]: "26"
+                  - gridcell "February 27, Friday" [ref=e224]:
+                    - button "February 27, Friday" [ref=e225]:
+                      - generic [ref=e226]: "27"
+                  - gridcell "February 28, Saturday" [ref=e227]:
+                    - button "February 28, Saturday" [ref=e228]:
+                      - generic [ref=e229]: "28"
+                  - gridcell "1, Sunday" [ref=e230]:
+                    - button "1, Sunday" [ref=e231]:
+                      - generic [ref=e232]: "1"
+                - row "2, Monday 3, Tuesday 4, Wednesday 5, Thursday 6, Friday 7, Saturday 8, Sunday" [ref=e233]:
+                  - gridcell "2, Monday" [ref=e234]:
+                    - button "2, Monday" [ref=e235]:
+                      - generic [ref=e236]: "2"
+                  - gridcell "3, Tuesday" [ref=e237]:
+                    - button "3, Tuesday" [ref=e238]:
+                      - generic [ref=e239]: "3"
+                  - gridcell "4, Wednesday" [ref=e240]:
+                    - button "4, Wednesday" [ref=e241]:
+                      - generic [ref=e242]: "4"
+                  - gridcell "5, Thursday" [ref=e243]:
+                    - button "5, Thursday" [ref=e244]:
+                      - generic [ref=e245]: "5"
+                  - gridcell "6, Friday" [ref=e246]:
+                    - button "6, Friday" [ref=e247]:
+                      - generic [ref=e248]: "6"
+                  - gridcell "7, Saturday" [ref=e249]:
+                    - button "7, Saturday" [ref=e250]:
+                      - generic [ref=e251]: "7"
+                  - gridcell "8, Sunday" [ref=e252]:
+                    - button "8, Sunday" [ref=e253]:
+                      - generic [ref=e254]: "8"
+                - row "9, Monday 10, Tuesday 11, Wednesday 12, Thursday 13, Friday 14, Saturday 15, Sunday" [ref=e255]:
+                  - gridcell "9, Monday" [ref=e256]:
+                    - button "9, Monday" [ref=e257]:
+                      - generic [ref=e258]: "9"
+                  - gridcell "10, Tuesday" [ref=e259]:
+                    - button "10, Tuesday" [ref=e260]:
+                      - generic [ref=e261]: "10"
+                  - gridcell "11, Wednesday" [ref=e262]:
+                    - button "11, Wednesday" [ref=e263]:
+                      - generic [ref=e264]: "11"
+                  - gridcell "12, Thursday" [ref=e265]:
+                    - button "12, Thursday" [ref=e266]:
+                      - generic [ref=e267]: "12"
+                  - gridcell "13, Friday" [ref=e268]:
+                    - button "13, Friday" [ref=e269]:
+                      - generic [ref=e270]: "13"
+                  - gridcell "14, Saturday" [ref=e271]:
+                    - button "14, Saturday" [ref=e272]:
+                      - generic [ref=e273]: "14"
+                  - gridcell "15, Sunday" [ref=e274]:
+                    - button "15, Sunday" [ref=e275]:
+                      - generic [ref=e276]: "15"
+                - row "16, Monday 17, Tuesday 18, Wednesday 19, Thursday 20, Friday 21, Saturday 22, Sunday" [ref=e277]:
+                  - gridcell "16, Monday" [ref=e278]:
+                    - button "16, Monday" [ref=e279]:
+                      - generic [ref=e280]: "16"
+                  - gridcell "17, Tuesday" [ref=e281]:
+                    - button "17, Tuesday" [ref=e282]:
+                      - generic [ref=e283]: "17"
+                  - gridcell "18, Wednesday" [ref=e284]:
+                    - button "18, Wednesday" [ref=e285]:
+                      - generic [ref=e286]: "18"
+                  - gridcell "19, Thursday" [ref=e287]:
+                    - button "19, Thursday" [ref=e288]:
+                      - generic [ref=e289]: "19"
+                  - gridcell "20, Friday" [ref=e290]:
+                    - button "20, Friday" [ref=e291]:
+                      - generic [ref=e292]: "20"
+                  - gridcell "21, Saturday" [ref=e293]:
+                    - button "21, Saturday" [ref=e294]:
+                      - generic [ref=e295]: "21"
+                  - gridcell "22, Sunday" [ref=e296]:
+                    - button "22, Sunday" [ref=e297]:
+                      - generic [ref=e298]: "22"
+                - row "23, Monday 24, Tuesday 25, Wednesday, today 26, Thursday 27, Friday 28, Saturday 29, Sunday" [ref=e299]:
+                  - gridcell "23, Monday" [ref=e300]:
+                    - button "23, Monday" [ref=e301]:
+                      - generic [ref=e302]: "23"
+                  - gridcell "24, Tuesday" [ref=e303]:
+                    - button "24, Tuesday" [ref=e304]:
+                      - generic [ref=e305]: "24"
+                  - gridcell "25, Wednesday, today" [ref=e306]:
+                    - button "25, Wednesday, today" [ref=e307]:
+                      - generic [ref=e308]: "25"
+                  - gridcell "26, Thursday" [ref=e309]:
+                    - button "26, Thursday" [ref=e310]:
+                      - generic [ref=e311]: "26"
+                  - gridcell "27, Friday" [ref=e312]:
+                    - button "27, Friday" [ref=e313]:
+                      - generic [ref=e314]: "27"
+                  - gridcell "28, Saturday" [ref=e315]:
+                    - button "28, Saturday" [ref=e316]:
+                      - generic [ref=e317]: "28"
+                  - gridcell "29, Sunday" [ref=e318]:
+                    - button "29, Sunday" [ref=e319]:
+                      - generic [ref=e320]: "29"
+                - row "30, Monday 31, Tuesday April 1, Wednesday April 2, Thursday April 3, Friday April 4, Saturday April 5, Sunday" [ref=e321]:
+                  - gridcell "30, Monday" [ref=e322]:
+                    - button "30, Monday" [pressed] [ref=e323]:
+                      - generic [ref=e324]: "30"
+                  - gridcell "31, Tuesday" [ref=e325]:
+                    - button "31, Tuesday" [ref=e326]:
+                      - generic [ref=e327]: "31"
+                  - gridcell "April 1, Wednesday" [ref=e328]:
+                    - button "April 1, Wednesday" [ref=e329]:
+                      - generic [ref=e330]: "1"
+                  - gridcell "April 2, Thursday" [ref=e331]:
+                    - button "April 2, Thursday" [ref=e332]:
+                      - generic [ref=e333]: "2"
+                  - gridcell "April 3, Friday" [ref=e334]:
+                    - button "April 3, Friday" [ref=e335]:
+                      - generic [ref=e336]: "3"
+                  - gridcell "April 4, Saturday" [ref=e337]:
+                    - button "April 4, Saturday" [ref=e338]:
+                      - generic [ref=e339]: "4"
+                  - gridcell "April 5, Sunday" [ref=e340]:
+                    - button "April 5, Sunday" [ref=e341]:
+                      - generic [ref=e342]: "5"
+        - search [ref=e343]:
+          - generic [ref=e344]: Meet with…
+          - generic [ref=e345]:
+            - combobox "Search for people to meet" [ref=e351]
+            - generic:
+              - img
+              - generic: Search for people
+        - generic [ref=e352]:
+          - heading "Bookable pages" [level=2] [ref=e353]
+          - complementary "Booking pages" [ref=e355]:
+            - generic [ref=e356]:
+              - button "Booking pages" [expanded] [ref=e357]:
+                - generic [ref=e359]:
+                  - generic [ref=e360]: Booking pages
+                  - generic [ref=e361]: keyboard_arrow_up
+              - generic:
+                - button "Create appointment schedule" [ref=e362] [cursor=pointer]:
+                  - generic [ref=e364]: add
+                - tooltip [ref=e366]: Create appointment schedule
+            - list "Bookable pages" [ref=e368]:
+              - listitem "30 min with Vera" [ref=e369]:
+                - generic [ref=e370]:
+                  - button "30 min with Vera" [ref=e371] [cursor=pointer]:
+                    - generic [ref=e373]: date_range
+                    - generic [ref=e376]: 30 min with Vera
+                  - generic:
+                    - generic [ref=e377]:
+                      - button "Copy link" [ref=e378] [cursor=pointer]:
+                        - generic [ref=e380]: link
+                      - tooltip [ref=e382]: Copy link
+                    - generic [ref=e383]:
+                      - button "Options for 30 min with Vera" [ref=e384] [cursor=pointer]:
+                        - generic [ref=e386]: more_vert
+                      - tooltip [ref=e388]: Options for 30 min with Vera
+        - generic [ref=e391]:
+          - heading "Time Insights" [level=2] [ref=e392]
+          - generic [ref=e393]:
+            - button "Time Insights" [expanded] [ref=e394]:
+              - generic [ref=e396]:
+                - generic [ref=e397]: Time Insights
+                - generic [ref=e398]: keyboard_arrow_up
+            - tooltip [ref=e399]: More insights
+            - generic [ref=e400]:
+              - generic [ref=e401]:
+                - generic [ref=e402]: Mar 30 – Apr 5, 2026
+                - button "Routine Ops 1 hr Process fixing 0 hr Process Improvement 0 hr Initiative Tasks 0 hr Personal Development 0 hr Focus time 0 hr Retrospectives 0 hr Task Force 0 hr Default 12 hr Remaining 32.5 hr Based on your working hours" [ref=e1186]
+              - button "More insights" [ref=e407] [cursor=pointer]:
+                - img [ref=e411]
+                - generic [ref=e414]: More insights
+        - generic [ref=e415]:
+          - heading "Calendar list" [level=2] [ref=e416]
+          - complementary [ref=e419]:
+            - generic [ref=e420]:
+              - button "My calendars" [expanded] [ref=e421]:
+                - generic [ref=e423]:
+                  - generic [ref=e424]: My calendars
+                  - generic [ref=e425]: keyboard_arrow_up
+              - list "My calendars" [ref=e427]:
+                - listitem [ref=e428]:
+                  - generic [ref=e429] [cursor=pointer]:
+                    - generic [ref=e432]:
+                      - checkbox "Vera Branco" [checked] [ref=e433]
+                      - generic:
+                        - img
+                    - generic [ref=e434]: Vera Branco
+                - listitem [ref=e435]:
+                  - generic [ref=e436] [cursor=pointer]:
+                    - generic [ref=e439]:
+                      - checkbox "Birthdays" [checked] [ref=e440]
+                      - generic:
+                        - img
+                    - generic [ref=e441]: Birthdays
+                - listitem [ref=e442]:
+                  - generic [ref=e443] [cursor=pointer]:
+                    - generic [ref=e446]:
+                      - checkbox "Focus Time" [ref=e447]
+                      - generic:
+                        - img
+                    - generic [ref=e448]: Focus Time
+                - listitem [ref=e449]:
+                  - generic [ref=e450] [cursor=pointer]:
+                    - generic [ref=e453]:
+                      - checkbox "Pessoal" [ref=e454]
+                      - generic:
+                        - img
+                    - generic [ref=e455]: Pessoal
+                - listitem [ref=e456]:
+                  - generic [ref=e457] [cursor=pointer]:
+                    - generic [ref=e460]:
+                      - checkbox "Process Engineering Team" [checked] [ref=e461]
+                      - generic:
+                        - img
+                    - generic [ref=e462]: Process Engineering Team
+                - listitem [ref=e463]:
+                  - generic [ref=e464] [cursor=pointer]:
+                    - generic [ref=e467]:
+                      - checkbox "Tasks" [checked] [ref=e468]
+                      - generic:
+                        - img
+                    - generic [ref=e469]: Tasks
+              - generic [ref=e471]:
+                - button "Other calendars" [expanded] [ref=e472]:
+                  - generic [ref=e474]:
+                    - generic [ref=e475]: Other calendars
+                    - generic [ref=e476]: keyboard_arrow_up
+                - generic [ref=e480]:
+                  - button "Add other calendars" [ref=e481] [cursor=pointer]:
+                    - img [ref=e483]
+                  - tooltip [ref=e486]: Add other calendars
+              - list "Other calendars" [ref=e488]:
+                - listitem [ref=e489]:
+                  - generic [ref=e490] [cursor=pointer]:
+                    - generic [ref=e493]:
+                      - checkbox "Feriados em Portugal" [checked] [ref=e494]
+                      - generic:
+                        - img
+                    - generic [ref=e495]: Feriados em Portugal
+                - listitem [ref=e496]:
+                  - generic [ref=e497] [cursor=pointer]:
+                    - generic [ref=e500]:
+                      - checkbox "Planning Master Calendar" [ref=e501]
+                      - generic:
+                        - img
+                    - generic [ref=e502]: Planning Master Calendar
+      - main [ref=e505]:
+        - heading "Week of March 30, 2026, 31 events" [level=1] [ref=e1187]
+        - grid [ref=e508]:
+          - generic [ref=e509]:
+            - generic [ref=e514]: GMT+00
+            - row "Monday, March 30 Tuesday, March 31 Wednesday, April 1 Thursday, April 2 Friday, April 3 Saturday, April 4 Sunday, April 5" [ref=e1188]:
+              - columnheader "Monday, March 30" [ref=e1189]:
+                - heading "Monday, March 30" [level=2] [ref=e1190]:
+                  - generic [ref=e1191]: Mon
+                  - button "Monday, March 30" [ref=e1192]:
+                    - generic [ref=e1193]: "30"
+              - columnheader "Tuesday, March 31" [ref=e1194]:
+                - heading "Tuesday, March 31" [level=2] [ref=e1195]:
+                  - generic [ref=e1196]: Tue
+                  - button "Tuesday, March 31" [ref=e1197]:
+                    - generic [ref=e1198]: "31"
+              - columnheader "Wednesday, April 1" [ref=e1199]:
+                - heading "Wednesday, April 1" [level=2] [ref=e1200]:
+                  - generic [ref=e1201]: Wed
+                  - button "Wednesday, April 1" [ref=e1202]:
+                    - generic [ref=e1203]: "1"
+              - columnheader "Thursday, April 2" [ref=e1204]:
+                - heading "Thursday, April 2" [level=2] [ref=e1205]:
+                  - generic [ref=e1206]: Thu
+                  - button "Thursday, April 2" [ref=e1207]:
+                    - generic [ref=e1208]: "2"
+              - columnheader "Friday, April 3" [ref=e1209]:
+                - heading "Friday, April 3" [level=2] [ref=e1210]:
+                  - generic [ref=e1211]: Fri
+                  - button "Friday, April 3" [ref=e1212]:
+                    - generic [ref=e1213]: "3"
+              - columnheader "Saturday, April 4" [ref=e1214]:
+                - heading "Saturday, April 4" [level=2] [ref=e1215]:
+                  - generic [ref=e1216]: Sat
+                  - button "Saturday, April 4" [ref=e1217]:
+                    - generic [ref=e1218]: "4"
+              - columnheader "Sunday, April 5" [ref=e1219]:
+                - heading "Sunday, April 5" [level=2] [ref=e1220]:
+                  - generic [ref=e1221]: Sun
+                  - button "Sunday, April 5" [ref=e1222]:
+                    - generic [ref=e1223]: "5"
+            - 'row "Working location: Home, Vera Branco, March 30 – April 3, 2026 Change working location, Vera Branco, March 30, 2026. Current location is Home Change working location, Vera Branco, March 31, 2026. Current location is Home Change working location, Vera Branco, April 1, 2026. Current location is Home Change working location, Vera Branco, April 2, 2026. Current location is Home Change working location, Vera Branco, April 3, 2026. Current location is Home Add a working location, Vera Branco, April 4, 2026. Add a working location, Vera Branco, April 5, 2026." [ref=e1224]':
+              - generic [ref=e564]:
+                - 'gridcell "Working location: Home, Vera Branco, March 30 – April 3, 2026 Change working location, Vera Branco, March 30, 2026. Current location is Home" [ref=e1227]':
+                  - generic [ref=e1228]:
+                    - 'button "Working location: Home, Vera Branco, March 30 – April 3, 2026" [ref=e1229] [cursor=pointer]':
+                      - generic [ref=e1230]:
+                        - img [ref=e1232]
+                        - generic [ref=e1234]: Home
+                    - button "Change working location, Vera Branco, March 30, 2026. Current location is Home" [ref=e1235] [cursor=pointer]:
+                      - img [ref=e1238]
+                - gridcell "Change working location, Vera Branco, March 31, 2026. Current location is Home" [ref=e1241]:
+                  - button "Change working location, Vera Branco, March 31, 2026. Current location is Home" [ref=e1242] [cursor=pointer]:
+                    - generic [ref=e1243]:
+                      - img [ref=e1245]
+                      - generic [ref=e1247]: Change
+                - gridcell "Change working location, Vera Branco, April 1, 2026. Current location is Home" [ref=e1249]:
+                  - button "Change working location, Vera Branco, April 1, 2026. Current location is Home" [ref=e1250] [cursor=pointer]:
+                    - generic [ref=e1251]:
+                      - img [ref=e1253]
+                      - generic [ref=e1255]: Change
+                - gridcell "Change working location, Vera Branco, April 2, 2026. Current location is Home" [ref=e1257]:
+                  - button "Change working location, Vera Branco, April 2, 2026. Current location is Home" [ref=e1258] [cursor=pointer]:
+                    - generic [ref=e1259]:
+                      - img [ref=e1261]
+                      - generic [ref=e1263]: Change
+                - gridcell "Change working location, Vera Branco, April 3, 2026. Current location is Home" [ref=e1265]:
+                  - button "Change working location, Vera Branco, April 3, 2026. Current location is Home" [ref=e1266] [cursor=pointer]:
+                    - generic [ref=e1267]:
+                      - img [ref=e1269]
+                      - generic [ref=e1271]: Change
+                - gridcell "Add a working location, Vera Branco, April 4, 2026." [ref=e1273]:
+                  - button "Add a working location, Vera Branco, April 4, 2026." [ref=e1274] [cursor=pointer]:
+                    - generic [ref=e1275]:
+                      - img [ref=e1277]
+                      - generic [ref=e1279]: Add location
+                - gridcell "Add a working location, Vera Branco, April 5, 2026." [ref=e1281]:
+                  - button "Add a working location, Vera Branco, April 5, 2026." [ref=e1282] [cursor=pointer]:
+                    - generic [ref=e1283]:
+                      - img [ref=e1285]
+                      - generic [ref=e1287]: Add location
+            - row "2 all day events, Monday, March 30 2 all day events, Tuesday, March 31 2 all day events, Wednesday, April 1 1 all day event, Thursday, April 2 1 all day event, Friday, April 3 No all day events, Saturday, April 4 1 all day event, Sunday, April 5" [ref=e1289]:
+              - list [ref=e629]:
+                - listitem [ref=e630]
+                - listitem [ref=e631]
+                - listitem [ref=e632]
+                - listitem [ref=e633]
+                - listitem [ref=e634]
+                - listitem [ref=e635]
+                - listitem [ref=e636]
+              - gridcell "2 all day events, Monday, March 30" [ref=e1290]:
+                - heading "2 all day events, Monday, March 30" [level=2] [ref=e1291]
+                - 'button "All day, Arul in Lisbon, Calendar: Process Engineering Team, No location, March 25 – April 2, 2026" [ref=e1292] [cursor=pointer]':
+                  - generic [ref=e1295]: Arul in Lisbon
+                  - generic [ref=e1296]: "All day, Arul in Lisbon, Calendar: Process Engineering Team, No location, March 25 – April 2, 2026"
+                - 'button "March 30, 2026 at 14:45 to March 31, 2026 at 23:00, Placeholder: Global Support & SRE Workshop, Vera Branco, Accepted, Location: LaV-3rd-B051-Justice League (10) [TV]," [ref=e1297] [cursor=pointer]':
+                  - generic [ref=e1298]:
+                    - generic [ref=e1299]: "Placeholder: Global Support & SRE Workshop"
+                    - generic [ref=e1300]: ","
+                    - generic [ref=e1301]: 14:45
+                  - generic [ref=e1302]: "March 30, 2026 at 14:45 to March 31, 2026 at 23:00, Placeholder: Global Support & SRE Workshop, Vera Branco, Accepted, Location: LaV-3rd-B051-Justice League (10) [TV],"
+              - gridcell "2 all day events, Tuesday, March 31" [ref=e1303]:
+                - heading "2 all day events, Tuesday, March 31" [level=2] [ref=e1304]
+                - generic:
+                  - 'button "All day, Arul in Lisbon, Calendar: Process Engineering Team, No location, March 25 – April 2, 2026"':
+                    - generic:
+                      - generic: Arul in Lisbon
+                    - generic: "All day, Arul in Lisbon, Calendar: Process Engineering Team, No location, March 25 – April 2, 2026"
+                - generic:
+                  - 'button "March 30, 2026 at 14:45 to March 31, 2026 at 23:00, Placeholder: Global Support & SRE Workshop, Vera Branco, Accepted, Location: LaV-3rd-B051-Justice League (10) [TV],"':
+                    - generic:
+                      - generic: "Placeholder: Global Support & SRE Workshop"
+                      - generic: ","
+                      - generic: 14:45
+                    - generic: "March 30, 2026 at 14:45 to March 31, 2026 at 23:00, Placeholder: Global Support & SRE Workshop, Vera Branco, Accepted, Location: LaV-3rd-B051-Justice League (10) [TV],"
+              - gridcell "2 all day events, Wednesday, April 1" [ref=e1305]:
+                - heading "2 all day events, Wednesday, April 1" [level=2] [ref=e1306]
+                - generic:
+                  - 'button "All day, Arul in Lisbon, Calendar: Process Engineering Team, No location, March 25 – April 2, 2026"':
+                    - generic:
+                      - generic: Arul in Lisbon
+                    - generic: "All day, Arul in Lisbon, Calendar: Process Engineering Team, No location, March 25 – April 2, 2026"
+                - 'button "All day, Tiago Ribeiro - Birthday, Vera Branco, No location, Color: Retrospectives, April 1, 2026" [ref=e1307] [cursor=pointer]':
+                  - generic [ref=e1309]: Tiago Ribeiro - Birthday
+                  - generic [ref=e1310]: "All day, Tiago Ribeiro - Birthday, Vera Branco, No location, Color: Retrospectives, April 1, 2026"
+              - gridcell "1 all day event, Thursday, April 2" [ref=e1311]:
+                - heading "1 all day event, Thursday, April 2" [level=2] [ref=e1312]
+                - generic:
+                  - 'button "All day, Arul in Lisbon, Calendar: Process Engineering Team, No location, March 25 – April 2, 2026"':
+                    - generic:
+                      - generic: Arul in Lisbon
+                    - generic: "All day, Arul in Lisbon, Calendar: Process Engineering Team, No location, March 25 – April 2, 2026"
+              - gridcell "1 all day event, Friday, April 3" [ref=e1313]:
+                - heading "1 all day event, Friday, April 3" [level=2] [ref=e1314]
+                - 'button "All day, Sexta-feira Santa, Calendar: Feriados em Portugal, April 3, 2026" [ref=e1315] [cursor=pointer]':
+                  - generic [ref=e1317]: Sexta-feira Santa
+                  - generic [ref=e1318]: "All day, Sexta-feira Santa, Calendar: Feriados em Portugal, April 3, 2026"
+              - gridcell "No all day events, Saturday, April 4" [ref=e1319]:
+                - heading "No all day events, Saturday, April 4" [level=2] [ref=e1320]
+              - gridcell "1 all day event, Sunday, April 5" [ref=e1321]:
+                - heading "1 all day event, Sunday, April 5" [level=2] [ref=e1322]
+                - 'button "All day, Páscoa, Calendar: Feriados em Portugal, April 5, 2026" [ref=e1323] [cursor=pointer]':
+                  - generic [ref=e1325]: Páscoa
+                  - generic [ref=e1326]: "All day, Páscoa, Calendar: Feriados em Portugal, April 5, 2026"
+          - generic [ref=e665]:
+            - generic [ref=e667]:
+              - generic [ref=e670]: 01:00
+              - generic [ref=e672]: 02:00
+              - generic [ref=e674]: 03:00
+              - generic [ref=e676]: 04:00
+              - generic [ref=e678]: 05:00
+              - generic [ref=e680]: 06:00
+              - generic [ref=e682]: 07:00
+              - generic [ref=e684]: 08:00
+              - generic [ref=e686]: 09:00
+              - generic [ref=e688]: 10:00
+              - generic [ref=e690]: 11:00
+              - generic [ref=e692]: 12:00
+              - generic [ref=e694]: 13:00
+              - generic [ref=e696]: 14:00
+              - generic [ref=e698]: 15:00
+              - generic [ref=e700]: 16:00
+              - generic [ref=e702]: 17:00
+              - generic [ref=e704]: 18:00
+              - generic [ref=e706]: 19:00
+              - generic [ref=e708]: 20:00
+              - generic [ref=e710]: 21:00
+              - generic [ref=e712]: 22:00
+              - generic [ref=e714]: 23:00
+            - row "5 events, Monday, March 30 5 events, Tuesday, March 31 5 events, Wednesday, April 1 5 events, Thursday, April 2 5 events, Friday, April 3 No events, Saturday, April 4 No events, Sunday, April 5" [ref=e1327]:
+              - gridcell "5 events, Monday, March 30" [ref=e1328]:
+                - heading "5 events, Monday, March 30" [level=2] [ref=e1329]
+                - generic [ref=e1331]:
+                  - 'button "10:00 to 12:00, [Eng-GS Summit] Introduction & Challenges, Vera Branco, Accepted, Location: https://outsystems.zoom.us/j/94856002616?pwd=qDZOCSNq7QZISq3gcTuxu0OBAaDaNH.1&jst=3, March 30, 2026" [ref=e1332]':
+                    - generic [ref=e1333]: "10:00 to 12:00, [Eng-GS Summit] Introduction & Challenges, Vera Branco, Accepted, Location: https://outsystems.zoom.us/j/94856002616?pwd=qDZOCSNq7QZISq3gcTuxu0OBAaDaNH.1&jst=3, March 30, 2026"
+                    - generic [ref=e1335]:
+                      - generic [ref=e1338]: "[Eng-GS Summit] Introduction & Challenges"
+                      - generic [ref=e1339]: 10:00 – 12:00
+                      - generic [ref=e1340]: https://outsystems.zoom.us/j/94856002616?pwd=qDZOCSNq7QZISq3gcTuxu0OBAaDaNH.1&jst=3
+                  - button "13:00 to 14:00, Lunch Time, Vera Branco, No location, March 30, 2026" [ref=e1341]:
+                    - generic [ref=e1342]: 13:00 to 14:00, Lunch Time, Vera Branco, No location, March 30, 2026
+                    - generic [ref=e1344]:
+                      - generic [ref=e1347]: Lunch Time
+                      - generic [ref=e1348]: 13:00 – 14:00
+                  - button "13:45 to 14:00, O11 Support Scrum, Vera Branco, Needs RSVP, No location, March 30, 2026" [ref=e1350]:
+                    - generic [ref=e1351]: 13:45 to 14:00, O11 Support Scrum, Vera Branco, Needs RSVP, No location, March 30, 2026
+                    - generic [ref=e1355]:
+                      - generic [ref=e1356]: O11 Support Scrum
+                      - generic [ref=e1357]: ","
+                      - generic [ref=e1358]: 13:45
+                  - 'button "14:00 to 16:00, [Eng-GS Summit] Align Possible Solutions, Vera Branco, Accepted, Location: https://outsystems.zoom.us/j/99146733676?pwd=uujDMSd1kUAUqSDdNpo95IJh0erwsn.1&jst=3, March 30, 2026" [ref=e1360]':
+                    - generic [ref=e1361]: "14:00 to 16:00, [Eng-GS Summit] Align Possible Solutions, Vera Branco, Accepted, Location: https://outsystems.zoom.us/j/99146733676?pwd=uujDMSd1kUAUqSDdNpo95IJh0erwsn.1&jst=3, March 30, 2026"
+                    - generic [ref=e1363]:
+                      - generic [ref=e1366]: "[Eng-GS Summit] Align Possible Solutions"
+                      - generic [ref=e1367]: 14:00 – 16:00
+                      - generic [ref=e1368]: https://outsystems.zoom.us/j/99146733676?pwd=uujDMSd1kUAUqSDdNpo95IJh0erwsn.1&jst=3
+                  - 'button "18:30 to 20:00, out of office: Out of office, Vera Branco, March 30, 2026" [ref=e1369]':
+                    - generic [ref=e1370]: "18:30 to 20:00, out of office: Out of office, Vera Branco, March 30, 2026"
+                    - generic [ref=e1371]:
+                      - img [ref=e1373]
+                      - generic [ref=e1376]:
+                        - generic [ref=e1379]: Out of office
+                        - generic [ref=e1380]: 18:30 – 20:00
+              - gridcell "5 events, Tuesday, March 31" [ref=e1382]:
+                - heading "5 events, Tuesday, March 31" [level=2] [ref=e1383]
+                - generic [ref=e1385]:
+                  - button "13:00 to 14:00, Lunch Time, Vera Branco, No location, March 31, 2026" [ref=e1386]:
+                    - generic [ref=e1387]: 13:00 to 14:00, Lunch Time, Vera Branco, No location, March 31, 2026
+                    - generic [ref=e1389]:
+                      - generic [ref=e1392]: Lunch Time
+                      - generic [ref=e1393]: 13:00 – 14:00
+                  - 'button "14:30 to 15:30, Platform Engineering Updates, Vera Branco, Needs RSVP, Location: https://outsystems.zoom.us/j/99388644349?pwd=cbInBbAj2zN2Abju7c5YFGg0Lxkcrc.1&jst=3, March 31, 2026" [ref=e1395]':
+                    - generic [ref=e1396]: "14:30 to 15:30, Platform Engineering Updates, Vera Branco, Needs RSVP, Location: https://outsystems.zoom.us/j/99388644349?pwd=cbInBbAj2zN2Abju7c5YFGg0Lxkcrc.1&jst=3, March 31, 2026"
+                    - generic [ref=e1398]:
+                      - generic [ref=e1401]: Platform Engineering Updates
+                      - generic [ref=e1402]:
+                        - generic [ref=e1403]: 14:30
+                        - generic [ref=e1404]: ","
+                        - generic [ref=e1405]: https://outsystems.zoom.us/j/99388644349?pwd=cbInBbAj2zN2Abju7c5YFGg0Lxkcrc.1&jst=3
+                  - button "15:00 to 15:30, Outsystems/Knox Weekly TCR/CAB, Vera Branco, Needs RSVP, No location, March 31, 2026" [ref=e1406]:
+                    - generic [ref=e1407]: 15:00 to 15:30, Outsystems/Knox Weekly TCR/CAB, Vera Branco, Needs RSVP, No location, March 31, 2026
+                    - generic [ref=e1411]:
+                      - generic [ref=e1412]: Outsystems/Knox Weekly TCR/CAB
+                      - generic [ref=e1413]: ","
+                      - generic [ref=e1414]: 15:00
+                  - 'button "15:30 to 17:00, [Eng-GS Summit] Strategic Alignment for Customer Excellence, Vera Branco, Accepted, Location: https://outsystems.zoom.us/j/93529257678?pwd=bmVL4yApQ3iC9UCESnSHlAkO8NnaUS.1&jst=3, March 31, 2026" [ref=e1415]':
+                    - generic [ref=e1416]: "15:30 to 17:00, [Eng-GS Summit] Strategic Alignment for Customer Excellence, Vera Branco, Accepted, Location: https://outsystems.zoom.us/j/93529257678?pwd=bmVL4yApQ3iC9UCESnSHlAkO8NnaUS.1&jst=3, March 31, 2026"
+                    - generic [ref=e1418]:
+                      - generic [ref=e1421]: "[Eng-GS Summit] Strategic Alignment for Customer Excellence"
+                      - generic [ref=e1422]: 15:30 – 17:00
+                      - generic [ref=e1423]: https://outsystems.zoom.us/j/93529257678?pwd=bmVL4yApQ3iC9UCESnSHlAkO8NnaUS.1&jst=3
+                  - 'button "17:30 to 18:00, Process Eng Weekly Status, Vera Branco, Needs RSVP, Location: https://outsystems.zoom.us/j/93692329889?pwd=i60RYduyxq4DLutKgKffNVT7pmLLfC.1&jst=3, March 31, 2026" [ref=e1424]':
+                    - generic [ref=e1425]: "17:30 to 18:00, Process Eng Weekly Status, Vera Branco, Needs RSVP, Location: https://outsystems.zoom.us/j/93692329889?pwd=i60RYduyxq4DLutKgKffNVT7pmLLfC.1&jst=3, March 31, 2026"
+                    - generic [ref=e1429]:
+                      - generic [ref=e1430]: Process Eng Weekly Status
+                      - generic [ref=e1431]: ","
+                      - generic [ref=e1432]: 17:30, https://outsystems.zoom.us/j/93692329889?pwd=i60RYduyxq4DLutKgKffNVT7pmLLfC.1&jst=3
+              - gridcell "5 events, Wednesday, April 1" [ref=e1434]:
+                - heading "5 events, Wednesday, April 1" [level=2] [ref=e1435]
+                - generic [ref=e1437]:
+                  - 'button "11:00 to 11:25, Vera | Arul - monthly sync , Vera Branco, Needs RSVP, Location: LaV-3rd-B075-Captain America (3) [Zoom], April 1, 2026" [ref=e1438]':
+                    - generic [ref=e1439]: "11:00 to 11:25, Vera | Arul - monthly sync , Vera Branco, Needs RSVP, Location: LaV-3rd-B075-Captain America (3) [Zoom], April 1, 2026"
+                    - generic [ref=e1443]:
+                      - generic [ref=e1444]: Vera | Arul - monthly sync
+                      - generic [ref=e1445]: ","
+                      - generic [ref=e1446]: 11:00, LaV-3rd-B075-Captain America (3) [Zoom]
+                  - button "13:00 to 14:00, Lunch Time, Vera Branco, No location, April 1, 2026" [ref=e1447]:
+                    - generic [ref=e1448]: 13:00 to 14:00, Lunch Time, Vera Branco, No location, April 1, 2026
+                    - generic [ref=e1450]:
+                      - generic [ref=e1453]: Lunch Time
+                      - generic [ref=e1454]: 13:00 – 14:00
+                  - 'button "14:00 to 15:00, Claude Code Enablement 🚀 EMEA/NA Session, Vera Branco, Accepted, Location: https://outsystems.zoom.us/j/92441415574?pwd=SXhGdOgIOqI26Jf94UOiRgN3GPHJm8.1&jst=3, April 1, 2026" [ref=e1456]':
+                    - generic [ref=e1457]: "14:00 to 15:00, Claude Code Enablement 🚀 EMEA/NA Session, Vera Branco, Accepted, Location: https://outsystems.zoom.us/j/92441415574?pwd=SXhGdOgIOqI26Jf94UOiRgN3GPHJm8.1&jst=3, April 1, 2026"
+                    - generic [ref=e1459]:
+                      - generic [ref=e1462]: Claude Code Enablement 🚀 EMEA/NA Session
+                      - generic [ref=e1463]:
+                        - generic [ref=e1464]: 14:00
+                        - generic [ref=e1465]: ","
+                        - generic [ref=e1466]: https://outsystems.zoom.us/j/92441415574?pwd=SXhGdOgIOqI26Jf94UOiRgN3GPHJm8.1&jst=3
+                  - 'button "16:00 to 16:30, Atlas Platform Leadership, Vera Branco, Accepted, Location: https://outsystems.zoom.us/j/92229249842?pwd=dN93bLILtK4WFtyfA0naqvk1jg9O2O.1&jst=3, April 1, 2026" [ref=e1467]':
+                    - generic [ref=e1468]: "16:00 to 16:30, Atlas Platform Leadership, Vera Branco, Accepted, Location: https://outsystems.zoom.us/j/92229249842?pwd=dN93bLILtK4WFtyfA0naqvk1jg9O2O.1&jst=3, April 1, 2026"
+                    - generic [ref=e1472]:
+                      - generic [ref=e1473]: Atlas Platform Leadership
+                      - generic [ref=e1474]: ","
+                      - generic [ref=e1475]: 16:00, https://outsystems.zoom.us/j/92229249842?pwd=dN93bLILtK4WFtyfA0naqvk1jg9O2O.1&jst=3
+                  - 'button "18:00 to 19:30, out of office: Out of office, Vera Branco, April 1, 2026" [ref=e1476]':
+                    - generic [ref=e1477]: "18:00 to 19:30, out of office: Out of office, Vera Branco, April 1, 2026"
+                    - generic [ref=e1478]:
+                      - img [ref=e1480]
+                      - generic [ref=e1483]:
+                        - generic [ref=e1486]: Out of office
+                        - generic [ref=e1487]: 18:00 – 19:30
+              - gridcell "5 events, Thursday, April 2" [ref=e1489]:
+                - heading "5 events, Thursday, April 2" [level=2] [ref=e1490]
+                - generic [ref=e1492]:
+                  - 'button "10:00 to 11:00, Process Engineering - Regular Team Meeting, Vera Branco, Needs RSVP, Location: https://outsystems.zoom.us/j/98334798972?pwd=e7vsaxBYj9Ifa3M4zXnyP3LYbzNubP.1&jst=3, Color: Routine Ops, April 2, 2026" [ref=e1493]':
+                    - generic [ref=e1496]: "10:00 to 11:00, Process Engineering - Regular Team Meeting, Vera Branco, Needs RSVP, Location: https://outsystems.zoom.us/j/98334798972?pwd=e7vsaxBYj9Ifa3M4zXnyP3LYbzNubP.1&jst=3, Color: Routine Ops, April 2, 2026"
+                    - generic [ref=e1498]:
+                      - generic [ref=e1501]: Process Engineering - Regular Team Meeting
+                      - generic [ref=e1502]:
+                        - generic [ref=e1503]: 10:00
+                        - generic [ref=e1504]: ","
+                        - generic [ref=e1505]: https://outsystems.zoom.us/j/98334798972?pwd=e7vsaxBYj9Ifa3M4zXnyP3LYbzNubP.1&jst=3
+                  - button "13:00 to 14:00, Lunch Time, Vera Branco, No location, April 2, 2026" [ref=e1506]:
+                    - generic [ref=e1507]: 13:00 to 14:00, Lunch Time, Vera Branco, No location, April 2, 2026
+                    - generic [ref=e1509]:
+                      - generic [ref=e1512]: Lunch Time
+                      - generic [ref=e1513]: 13:00 – 14:00
+                  - 'button "15:00 to 16:00, Bi-weekly Operations Review, Vera Branco, Needs RSVP, Location: https://outsystems.zoom.us/j/97273622697?pwd=sPhqw52jvqtIP2Gxh37F6DyONJyLIm.1, April 2, 2026" [ref=e1515]':
+                    - generic [ref=e1516]: "15:00 to 16:00, Bi-weekly Operations Review, Vera Branco, Needs RSVP, Location: https://outsystems.zoom.us/j/97273622697?pwd=sPhqw52jvqtIP2Gxh37F6DyONJyLIm.1, April 2, 2026"
+                    - generic [ref=e1518]:
+                      - generic [ref=e1521]: Bi-weekly Operations Review
+                      - generic [ref=e1522]:
+                        - generic [ref=e1523]: 15:00
+                        - generic [ref=e1524]: ","
+                        - generic [ref=e1525]: https://outsystems.zoom.us/j/97273622697?pwd=sPhqw52jvqtIP2Gxh37F6DyONJyLIm.1
+                  - 'button "16:00 to 17:00, [Placeholder] ODC CAB Meeting, Vera Branco, Accepted, Location: https://outsystems.zoom.us/j/92347320564?pwd=T2lCZ2NjWEtaaGE5aVc5UllvcWtBUT09, Color: Routine Ops, April 2, 2026" [ref=e1526]':
+                    - generic [ref=e1529]: "16:00 to 17:00, [Placeholder] ODC CAB Meeting, Vera Branco, Accepted, Location: https://outsystems.zoom.us/j/92347320564?pwd=T2lCZ2NjWEtaaGE5aVc5UllvcWtBUT09, Color: Routine Ops, April 2, 2026"
+                    - generic [ref=e1531]:
+                      - generic [ref=e1534]: "[Placeholder] ODC CAB Meeting"
+                      - generic [ref=e1535]:
+                        - generic [ref=e1536]: 16:00
+                        - generic [ref=e1537]: ","
+                        - generic [ref=e1538]: https://outsystems.zoom.us/j/92347320564?pwd=T2lCZ2NjWEtaaGE5aVc5UllvcWtBUT09
+                  - 'button "16:00 to 16:30, Bi-weekly Execution Review, Vera Branco, Needs RSVP, Location: https://outsystems.zoom.us/j/97273622697?pwd=sPhqw52jvqtIP2Gxh37F6DyONJyLIm.1, April 2, 2026" [ref=e1540]':
+                    - generic [ref=e1541]: "16:00 to 16:30, Bi-weekly Execution Review, Vera Branco, Needs RSVP, Location: https://outsystems.zoom.us/j/97273622697?pwd=sPhqw52jvqtIP2Gxh37F6DyONJyLIm.1, April 2, 2026"
+                    - generic [ref=e1545]:
+                      - generic [ref=e1546]: Bi-weekly Execution Review
+                      - generic [ref=e1547]: ","
+                      - generic [ref=e1548]: 16:00, https://outsystems.zoom.us/j/97273622697?pwd=sPhqw52jvqtIP2Gxh37F6DyONJyLIm.1
+              - gridcell "5 events, Friday, April 3" [ref=e1549]:
+                - heading "5 events, Friday, April 3" [level=2] [ref=e1550]
+                - generic [ref=e1552]:
+                  - 'button "08:30 to 09:30, out of office: Out of office, Vera Branco, April 3, 2026" [ref=e1553]':
+                    - generic [ref=e1554]: "08:30 to 09:30, out of office: Out of office, Vera Branco, April 3, 2026"
+                    - generic [ref=e1555]:
+                      - img [ref=e1557]
+                      - generic [ref=e1560]:
+                        - generic [ref=e1563]: Out of office
+                        - generic [ref=e1564]: 08:30 – 09:30
+                  - 'button "11:30 to 12:00, Koda coffee ☕️ AMA style, Vera Branco, Needs RSVP, Location: https://outsystems.zoom.us/j/99601078808?pwd=Gb3E0xwHbCIdeGhsMDkKh3GwceMn7v.1&jst=3, April 3, 2026" [ref=e1566]':
+                    - generic [ref=e1567]: "11:30 to 12:00, Koda coffee ☕️ AMA style, Vera Branco, Needs RSVP, Location: https://outsystems.zoom.us/j/99601078808?pwd=Gb3E0xwHbCIdeGhsMDkKh3GwceMn7v.1&jst=3, April 3, 2026"
+                    - generic [ref=e1571]:
+                      - generic [ref=e1572]: Koda coffee ☕️ AMA style
+                      - generic [ref=e1573]: ","
+                      - generic [ref=e1574]: 11:30, https://outsystems.zoom.us/j/99601078808?pwd=Gb3E0xwHbCIdeGhsMDkKh3GwceMn7v.1&jst=3
+                  - 'button "12:00 to 13:00, out of office: Out of office, Vera Branco, April 3, 2026" [ref=e1575]':
+                    - generic [ref=e1576]: "12:00 to 13:00, out of office: Out of office, Vera Branco, April 3, 2026"
+                    - generic [ref=e1577]:
+                      - img [ref=e1579]
+                      - generic [ref=e1582]:
+                        - generic [ref=e1585]: Out of office
+                        - generic [ref=e1586]: 12:00 – 13:00
+                  - button "13:00 to 14:00, Lunch Time, Vera Branco, No location, April 3, 2026" [ref=e1588]:
+                    - generic [ref=e1589]: 13:00 to 14:00, Lunch Time, Vera Branco, No location, April 3, 2026
+                    - generic [ref=e1591]:
+                      - generic [ref=e1594]: Lunch Time
+                      - generic [ref=e1595]: 13:00 – 14:00
+                  - 'button "task: Aprovar timesheet da Laura, Not completed, April 3, 2026, 18:00" [ref=e1597]':
+                    - generic [ref=e1600]: "task: Aprovar timesheet da Laura, Not completed, April 3, 2026, 18:00"
+                    - generic [ref=e1601]:
+                      - button [ref=e1604] [cursor=pointer]:
+                        - img [ref=e1608]
+                      - generic [ref=e1613]:
+                        - generic [ref=e1614]: Aprovar timesheet da Laura
+                        - generic [ref=e1615]: ","
+                        - generic [ref=e1616]: 18:00
+              - gridcell "No events, Saturday, April 4" [ref=e1617]:
+                - heading "No events, Saturday, April 4" [level=2] [ref=e1618]
+              - gridcell "No events, Sunday, April 5" [ref=e1621]:
+                - heading "No events, Sunday, April 5" [level=2] [ref=e1622]
+      - complementary "Side panel" [ref=e1166]:
+        - tablist [ref=e1168]:
+          - tab "Keep"
+          - tab "Tasks"
+          - tab "Contacts"
+          - tab "Maps"
+          - separator [disabled] [ref=e1173]
+          - tab "Miro"
+          - tab "Lucidchart"
+          - tab "Zoom for Google Workspace™️"
+          - tab "Get Add-ons"
+      - generic:
+        - button "Hide side panel":
+          - img [ref=e1179] [cursor=pointer]
+  - generic [ref=e1185]: March 30
