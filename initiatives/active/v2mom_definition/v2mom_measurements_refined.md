@@ -89,13 +89,13 @@
 
 **Baseline (H2 2025):** 16 days average (382 hours) - Validated from 117 completed RFCs
 
-**Target:** -30% reduction by end of Q4 2026 → **11 days** (11.2 days target)
+**Target:** -30% reduction by Q1 2027 → **11 days** (11.2 days target)
 
 **Intermediate Milestones:**
-- Q1 2026: 15 days (-6% vs baseline)
-- Q2 2026: 14 days (-12% vs baseline)
-- Q3 2026: 12 days (-25% vs baseline)
-- Q4 2026: 11 days (-30% vs baseline)
+- Q2 2026: 15 days (-6% vs baseline)
+- Q3 2026: 14 days (-12% vs baseline)
+- Q4 2026: 12 days (-25% vs baseline)
+- Q1 2027: 11 days (-30% vs baseline)
 
 **Measurement Logic:**
 - Calculation: `Implementation Timestamp - Created Date` for all Completed RFCs
@@ -131,7 +131,7 @@
 
 **Definition:** Growth in number of Standard Change executions compared to baseline
 
-**Target:** +50% increase by end of Q4 2026
+**Target:** +50% increase by Q1 2027
 
 **Measurement Logic:** Track number of unique Change Models classified as "Standard" and their execution frequency
 
@@ -185,7 +185,7 @@
 
 **Definition:** Percentage of Normal RFCs reviewed by CAB where the reviewer identifies the change as repetitive, manual, or automatable
 
-**Target:** < 20% by end of Q4 2026
+**Target:** < 20% by Q1 2027
 
 **Rationale:**
 - Lower % over time indicates successful automation implementation (fewer repetitive manual changes)
@@ -330,7 +330,7 @@ AND created >= startOfQuarter() AND created <= endOfQuarter()
 
 **Definition:** Accuracy rate of asset-version-to-incident correlation, validated against RCA findings
 
-**Target:** > 90% by end of Q4 2026
+**Target:** > 90% by Q1 2027
 
 **Rationale:**
 - Enables accurate CFR measurement by identifying which specific asset-version caused each failure
@@ -457,7 +457,7 @@ ORDER BY resolved DESC
 
 **Definition:** Average time from system-wide incident declaration to first external status page post (https://status.outsystems.com/)
 
-**Target:** < 30 minutes by end of Q4 2026
+**Target:** < 30 minutes by Q1 2027
 
 **Rationale:**
 - Measures customer communication speed during system-wide incidents
@@ -860,7 +860,7 @@ Action: Add comment tagging Process Engineering team, send Slack notification
 
 **Definition:** On-time closure rate for action items from system-wide impact incidents
 
-**Target:** > 80% by end of Q4 2026
+**Target:** > 80% by Q1 2027
 
 **Measurement Logic:** Monitor "Due Date" vs. "Closed Date" for action items linked to system-wide incidents
 
@@ -888,7 +888,7 @@ Action: Add comment tagging Process Engineering team, send Slack notification
 
 **Definition:** % of incidents where initial classification remains unchanged throughout lifecycle
 
-**Target:** > 80% by end of Q4 2026
+**Target:** > 80% by Q1 2027
 
 **Measurement Logic:** % of incidents where initial classification unchanged until resolution
 
@@ -910,13 +910,13 @@ Action: Add comment tagging Process Engineering team, send Slack notification
 
 ---
 
-### M3.4: Alert Validation Accuracy - **MISSING TARGET**
+### M3.4: Alert Validation Accuracy ✓ SMART
 
 **Metric:** % of alerts correctly validated and filtered before reaching Engineering
 
 **Definition:** % of alerts where "Validated as Incident" flag matches actual outcome
 
-**Target:** **> 85% by end of Q4 2026** (PROPOSED)
+**Target:** > 85% by Q1 2027
 
 **Measurement Logic:** % of alerts where validation decision (Yes/No) matches actual outcome
 
@@ -952,8 +952,8 @@ Action: Add comment tagging Process Engineering team, send Slack notification
 - **Lead Time:** Average time from incident resolution to retrospective completion
 
 **Target:**
-- > 90% completion rate by end of Q4 2026
-- < 14 days RCA lead time by end of Q4 2026
+- > 90% completion rate by Q1 2027
+- < 14 days RCA lead time by Q1 2027
 
 **Rationale:**
 - Validates team-led retrospective model is working (teams actually complete them)
@@ -1006,7 +1006,7 @@ Action: Add comment tagging Process Engineering team, send Slack notification
 
 **Definition:** AI/Koda-assisted quality assessment measuring if retrospectives focus on outcomes (what changed) vs outputs (what happened)
 
-**Target:** Average quality score > 4.0/5.0 by end of Q4 2026
+**Target:** Average quality score > 4.0/5.0 by Q1 2027
 
 **Rationale:**
 - Validates narrative shift from output to outcome focus (key transformation goal)
@@ -1087,7 +1087,7 @@ Quality framework criteria (5-point scale per criterion):
 
 **Definition:** Detection ratio = (Proactively Detected Incidents / Total Incidents) × 100
 
-**Target:** > 70% proactive detection by end of Q4 2026
+**Target:** > 70% proactive detection by Q1 2027
 
 **Rationale:**
 - Explicitly mentioned in Operations Review evolution (retrospective transformation plan)
@@ -1146,7 +1146,7 @@ Quality framework criteria (5-point scale per criterion):
 
 **Definition:** Implementation rate for high-priority action items from retrospectives that result in measurable operational improvement within 90 days
 
-**Target:** > 60% of high-priority action items show measurable improvement within 90 days (Q4 2026)
+**Target:** > 60% of high-priority action items show measurable improvement within 90 days by Q1 2027
 
 **Rationale:**
 - Closes the learning loop: Do retrospectives actually improve operations?
@@ -1214,7 +1214,7 @@ Quality framework criteria (5-point scale per criterion):
 
 **Definition:** Effectiveness of retrospectives in preventing repeat incidents of same root cause category
 
-**Target:** < 15% recurrence rate by end of Q4 2026 (inverse metric - lower is better)
+**Target:** < 15% recurrence rate by Q1 2027 (inverse metric - lower is better)
 
 **Rationale:**
 - Ultimate measure of retrospective effectiveness: Do we learn from failures?
@@ -1287,7 +1287,7 @@ Quality framework criteria (5-point scale per criterion):
 
 **Definition:** Comprehension rate from quarterly literacy assessments
 
-**Target:** > 85% by end of Q4 2026
+**Target:** > 85% by Q1 2027
 
 **Measurement Logic:** Quarterly "Pulse" survey or quiz following training sessions
 
@@ -1338,252 +1338,907 @@ Quality framework criteria (5-point scale per criterion):
 
 ---
 
-## Method 5: Process as Code Industrialization - **NEW MEASUREMENTS**
+## Method 5: AI-Enabled Organizational Capability
 
-### M5.1: Engineering Process Execution Skill Deployment
+**Note:** Method 5 restructured to include three pillars: Individual AI Enablement, Career Development & Progression, and Process Industrialization
 
-**Metric:** Successfully deploy at least 1 process execution skill to production that is actively used by Engineering teams
+### M5.1a: AI Adoption Rate ✓ SMART
 
-**Definition:** Proof of capability by shipping a working skill that automates or assists Engineering teams in executing a PE-owned process using AI @ Product platform
+**Metric:** % of team actively using AI tools weekly in their daily workflows
 
-**Target:** 1 production skill with documented Engineering team adoption by end of Q2 2026
+**Definition:** Track weekly active usage of AI tools (Claude Code, ChatGPT, AI @ Product, etc.) by team members for work tasks
+
+**Target:** 80%+ of team actively using AI tools weekly by Q1 2027
 
 **Rationale:**
-- No formal training program exists for AI @ Product platform
-- Real readiness is demonstrated through actual delivery, not theoretical training
-- Validates PE can build customer-facing automation that Engineering teams adopt
-- Proves "Process as Code" value proposition with real engineering usage
-- De-risks Method 5 execution by demonstrating both technical capability AND customer adoption early
-- Shifts from internal tooling to customer-facing value delivery
+- AI enablement starts with adoption - tools must be used to deliver value
+- Weekly usage indicates AI is integrated into daily workflows, not just experimentation
+- 80% threshold accounts for learning curves and role variations
+- Leading indicator for time savings and effectiveness gains
 
-**Measurement Logic:** Binary success - has PE deployed a skill to production that Engineering teams actively use for process execution?
-
-**Scope - Eligible Process Execution Workflows:**
-- **Incident Response:** Triage automation, RCA generation, post-mortem drafting
-- **Change Management:** RFC creation/validation, risk assessment, evidence collection
-- **Problem Management:** Problem investigation workflow, root cause analysis support
-- **Post-Incident Reviews:** Review template generation, action item extraction
-- **Compliance Checks:** Pre-change validation, FedRAMP control adherence verification
-- **Failure Management:** Incident pattern analysis, recurring issue detection
-
-**Success Criteria:**
-- Skill is deployed to production environment (not dev/test)
-- Skill addresses a PE-owned process executed by Engineering teams (documented use case)
-- Skill is actively used by at least 1 Engineering team (usage tracked with examples)
-- Skill provides measurable value (time saved, quality improved, compliance increased, or friction reduced)
-- Engineering team provides feedback confirming utility
+**Measurement Logic:**
+- **Active Usage:** Team member uses AI tools at least 1x per week for work tasks
+- **Work Tasks:** Documentation, analysis, meeting prep, problem-solving, code review, reporting
+- **Calculation:** `(Team Members Using AI Weekly / Total Team Members) × 100`
 
 **Implementation:**
-- **Data Source:** Skill Registry (Confluence) + Production deployment log + Engineering team usage feedback
+- **Data Source:** Self-reported usage tracking + tool usage logs (where available)
 - **Collection Method:**
-  - Q1: Identify candidate process with Engineering team input (1-2 weeks)
-  - Q1-Q2: Build, test with Engineering team, iterate on pilot skill (6-8 weeks)
-  - Q2: Deploy to production with at least 1 Engineering team (1 week)
-  - Q2: Track adoption: Skill name, target process, deployment date, engineering teams using it, usage examples, value delivered
-- **Frequency:** Milestone tracking (weekly status updates)
-- **Owner:** Vera Branco (team execution)
-- **Dashboard:** Confluence pilot tracker with status updates and engineering adoption metrics
-- **Automation:** Manual tracking with usage logs from AI @ Product platform
+  - Weekly pulse check: "Did you use AI tools for work this week? (Yes/No)"
+  - Monthly survey: "Which AI tools did you use and for what?"
+  - Supplemental: Claude Code usage logs, AI @ Product platform analytics
+  - Track adoption trend over time
+- **Frequency:** Weekly pulse, monthly deep-dive
+- **Owner:** Vera Branco
+- **Dashboard:** AI Adoption Tracker (Confluence or simple spreadsheet)
+  - Weekly adoption rate trend
+  - Most common use cases
+  - Adoption by role/level
 
-**Baseline:** 0 PE engineering-facing process skills in production (as of Q1 2026)
+**Baseline:** To be established Q2 2026 (start of V2MOM execution)
+
+**Expected Trend:**
+- Q2 2026: 40-50% adoption (post-training ramp-up)
+- Q3 2026: 60-70% adoption (workflow integration phase)
+- Q4 2026: 80%+ adoption (target achieved)
 
 **Integration with Other Metrics:**
-- **M5.2 (Blueprint Completion):** Pilot skill creates blueprint template for future Engineering automations
-- **M5.3 (Skills Package):** Pilot skill becomes first skill in PE Skills Extension Package
-- **M2.4 (Manual Resilience):** Pilot may reduce Engineering toil in RFC/incident workflows
-- **M3.x (Incident/Change Metrics):** Pilot may improve speed or quality of process execution (secondary benefit)
+- **M5.1b (Workflow Augmentation):** High adoption enables workflow documentation
+- **M5.1c (Time Savings):** Adoption is prerequisite for measurable time savings
+- **M5.3 (Process Industrialization):** Team AI literacy enables skill development
+
+**SMART Assessment:** ✓ SMART - Clear metric (%), measurable via tracking, target defined (80%), achievable with training, relevant to AI enablement, time-bound (Q1 2027)
+
+---
+
+### M5.1b: AI-Augmented Workflow Documentation ✓ SMART
+
+**Metric:** Number of core team workflows with documented AI augmentation patterns
+
+**Definition:** Count of PE team workflows that have documented, repeatable AI usage patterns for improved efficiency or quality
+
+**Target:** 5+ documented AI-augmented workflows by Q1 2027
+
+**Rationale:**
+- Individual AI adoption is step 1; repeatable, documented patterns are step 2
+- Documented workflows enable knowledge sharing and onboarding
+- Focuses AI usage on high-impact, repeatable activities
+- Creates team AI playbook for sustained capability
+
+**Measurement Logic:**
+- **Core Workflows:** Meeting prep, incident analysis, RFC review, documentation writing, reporting, retrospective prep, trend analysis, CAB prep
+- **Documented Pattern:** Includes workflow description, AI tool(s) used, prompts/techniques, time saved, quality improvement, usage examples
+- **Minimum Quality Bar:** Pattern must be reusable by others (tested by at least 2 team members)
+
+**Implementation:**
+- **Data Source:** Team AI Playbook (Confluence)
+- **Collection Method:**
+  - Q2 2026: Identify candidate workflows for AI augmentation
+  - Q2-Q3 2026: Team experiments with AI for these workflows
+  - Q3-Q4 2026: Document proven patterns in team playbook
+  - Q1 2027: Review and finalize playbook
+  - Each pattern includes: workflow name, use case, AI tool, prompt template, before/after example, team feedback
+- **Frequency:** Quarterly review
+- **Owner:** Vera Branco (team contributions)
+- **Dashboard:** Confluence AI Playbook with pattern count and usage
+
+**Baseline:** 0 documented patterns (Q2 2026)
+
+**Example Patterns:**
+- **1:1 Meeting Prep:** Use Claude Code /prep1o1 skill to pull context
+- **Incident Pattern Analysis:** Use ChatGPT to identify trends in last 30 incidents
+- **CAB Prep Automation:** Use AI @ Product skill to pre-screen RFCs
+- **Documentation Updates:** Use Claude Code to update process docs from meeting notes
+- **Executive Reporting:** Use AI to generate executive summaries from raw data
+
+**Integration with Other Metrics:**
+- **M5.1a (AI Adoption):** Documented patterns drive adoption by lowering barrier to AI use
+- **M5.1c (Time Savings):** Patterns enable measurement of consistent time savings
+- **M5.3 (Process Industrialization):** Patterns inform automation blueprint priorities
+
+**SMART Assessment:** ✓ SMART - Clear deliverable (documented pattern), measurable (count), target defined (5+), achievable, relevant to AI capability building, time-bound (Q1 2027)
+
+---
+
+### M5.1c: Time Savings Through AI Augmentation ✓ SMART
+
+**Metric:** Estimated hours saved per person per week through AI tool usage
+
+**Definition:** Average time saved by team members using AI for work tasks, measured through self-reporting and pattern analysis
+
+**Target:** 2-4 hours/week/person saved by Q1 2027
+
+**Rationale:**
+- Time savings validate AI investment and justify continued enablement
+- 2-4 hours/week = 10-20% productivity gain (meaningful but achievable)
+- Focus on time saved (not just tasks completed faster) to capture quality improvements
+- Creates business case for AI enablement investment
+
+**Measurement Logic:**
+- **Time Saved:** Difference between pre-AI and post-AI task completion time
+- **Scope:** Time saved on tasks where AI was used (not total capacity)
+- **Calculation:** Average across all team members who use AI weekly
+
+**Implementation:**
+- **Data Source:** Monthly self-reported survey + pattern-based estimates
+- **Collection Method:**
+  - **Self-Report (Primary):** Monthly survey: "Estimate hours saved this month using AI tools" → Calculate weekly average
+  - **Pattern-Based (Supplemental):** For documented workflows, estimate time saved per usage → Aggregate across team
+  - **Validation:** Quarterly calibration discussion with team (sanity check estimates)
+- **Frequency:** Monthly measurement, quarterly reporting
+- **Owner:** Vera Branco
+- **Dashboard:** Time Savings Tracker
+  - Average weekly time saved per person
+  - Time saved by workflow type
+  - Trend over V2MOM period
+
+**Baseline:** 0 hours/week saved (Q2 2026 - before AI training)
+
+**Expected Trend:**
+- Q2 2026: 0-1 hour/week (training phase, minimal usage)
+- Q3 2026: 1-2 hours/week (workflow integration, early patterns)
+- Q4 2026: 2-3 hours/week (mature usage, documented patterns)
+- Q1 2027: 3-4 hours/week (target achieved, team AI playbook mature)
+
+**Breakdown by Activity (Estimated):**
+- Meeting prep: 30-60 min/week
+- Documentation writing: 30-60 min/week
+- Analysis and reporting: 30-60 min/week
+- Incident/RFC review: 30-60 min/week
+- Misc (problem-solving, learning): 30-60 min/week
+
+**Limitations & Mitigations:**
+- **Limitation:** Self-reported estimates may be biased
+- **Mitigation:** Use pattern-based estimates as cross-check; quarterly calibration discussions
+- **Limitation:** Hard to measure quality improvements (only time)
+- **Mitigation:** Supplemental qualitative feedback on quality gains
+
+**Integration with Other Metrics:**
+- **M5.1a (AI Adoption):** Adoption prerequisite for time savings
+- **M5.1b (Workflow Augmentation):** Documented patterns enable consistent time savings
+- **M6.1 (Operational Capacity):** Time savings should reduce M6 operational capacity consumption
+
+**SMART Assessment:** ✓ SMART - Clear metric (hours/week), measurable via survey, target defined (2-4h), achievable, relevant to productivity gains, time-bound (Q1 2027)
+
+---
+
+### M5.2a: Career Framework Completion ✓ SMART
+
+**Metric:** Business Process Analyst career framework documented and published
+
+**Definition:** Complete competency model for Associate → Analyst → Senior → Principal levels with advancement criteria
+
+**Target:** Career framework documented and published by Q3 2026
+
+**Rationale:**
+- Career clarity is foundational to development planning and retention
+- AI is redefining the Business Process Analyst role - must codify expectations
+- Framework enables transparent career conversations with direct reports
+- Creates organizational capability asset beyond individual development
+
+**Measurement Logic:** Binary deliverable - framework exists and is published
+
+**Scope - Career Framework Components:**
+
+1. **Role Levels Defined:**
+   - Associate Business Process Analyst (0-2 years)
+   - Business Process Analyst (2-4 years)
+   - Senior Business Process Analyst (4-7 years)
+   - Principal Business Process Analyst (7+ years)
+
+2. **Competency Dimensions:**
+   - Process Expertise (frameworks, governance, audit)
+   - Technical Capabilities (tools, automation, data analysis)
+   - AI Capabilities (AI tool usage, automation design, AI strategy)
+   - Stakeholder Management (communication, influence, partnership)
+   - Strategic Thinking (pattern recognition, systems thinking, organizational impact)
+
+3. **Advancement Criteria:**
+   - Expected competencies for each level
+   - Demonstration criteria (how to show competency)
+   - Typical time in level
+   - Advancement decision process
+
+4. **Career Paths:**
+   - Individual contributor progression
+   - Potential lateral moves (if applicable)
+   - Skills development roadmap by level
+
+**Success Criteria:**
+- Framework documented in Confluence
+- Reviewed and approved by Arul Livingston (VP)
+- Socialized with direct reports
+- Used in individual development plan creation
+
+**Implementation:**
+- **Data Source:** Career Framework Confluence page
+- **Collection Method:**
+  - Q2 2026: Draft framework with competency model
+  - Q2 2026: Socialize with direct reports for feedback
+  - Q3 2026: Finalize and get VP approval
+  - Q3 2026: Publish to Confluence and share with team
+- **Frequency:** One-time deliverable (Q3 2026)
+- **Owner:** Vera Branco
+- **Dashboard:** N/A (one-time deliverable)
+
+**Baseline:** No formal career framework exists for Business Process Analysts (Q1 2026)
+
+**Integration with Other Metrics:**
+- **M5.2b (Development Plan Execution):** Framework informs individual development plans
+- **M5.2c (Career Progression):** Framework defines advancement criteria
+- **M5.2d (Retention):** Career clarity supports retention
+
+**SMART Assessment:** ✓ SMART - Clear deliverable (framework), measurable (binary), target date (Q3 2026), achievable, relevant to career development
+
+---
+
+### M5.2b: Individual Development Plan Execution ✓ SMART
+
+**Metric:** % of planned development actions completed quarterly per individual development plan
+
+**Definition:** Completion rate of quarterly development milestones for each direct report
+
+**Target:** 80%+ completion rate on quarterly development actions (measured per quarter)
+
+**Rationale:**
+- Career frameworks are meaningless without execution
+- Quarterly milestones create accountability and momentum
+- 80% allows for flexibility (priorities shift, unexpected work) while maintaining progress
+- Measures both team commitment (Vera's coaching) and individual commitment
+
+**Measurement Logic:**
+- **Development Action:** Specific, time-bound activity to build competency (e.g., "Complete AI @ Product training", "Lead retrospective transformation pilot", "Present at brown bag")
+- **Quarterly Plan:** 3-5 development actions per person per quarter
+- **Completion:** Action finished within quarter or substantive progress made
+- **Calculation:** `(Completed Actions / Total Planned Actions) × 100` per quarter
+
+**Implementation:**
+- **Data Source:** Individual Development Plan tracker (Confluence or spreadsheet)
+- **Collection Method:**
+  - Q2 2026: Create individual development plans for each direct report
+  - Each plan includes: Current level, target level, quarterly milestones
+  - Quarterly check-ins (1:1s) to review progress
+  - Track status: Not Started, In Progress, Completed, Blocked
+  - Calculate quarterly completion rate
+- **Frequency:** Quarterly measurement
+- **Owner:** Vera Branco (individual ownership with direct reports)
+- **Dashboard:** Development Plan Tracker per person
+  - Quarterly completion rate by person
+  - Development action status
+  - Trends over V2MOM period
+
+**Baseline:** 0% (no development plans exist before Q2 2026)
+
+**Expected Trend:**
+- Q2 2026: N/A (plans being created)
+- Q3 2026: 70-80% (initial execution, learning curve)
+- Q4 2026: 80-85% (rhythm established)
+- Q1 2027: 80-90% (sustained execution)
+
+**Example Development Actions:**
+- Complete AI literacy training (Q2 2026)
+- Document 2 AI-augmented workflow patterns (Q3 2026)
+- Lead career framework socialization session with team (Q3 2026)
+- Complete AI @ Product platform certification (Q4 2026)
+- Present retrospective transformation progress at staff meeting (Q4 2026)
+- Deliver 1 process automation blueprint (Q1 2027)
+
+**Integration with Other Metrics:**
+- **M5.2a (Career Framework):** Framework informs development action planning
+- **M5.2c (Career Progression):** Consistent execution enables career advancement
+- **M5.1/M5.3:** Development actions often tied to AI enablement or process industrialization work
+
+**SMART Assessment:** ✓ SMART - Clear metric (%), measurable per quarter, target defined (80%), achievable, relevant to career development, time-bound (quarterly)
+
+---
+
+### M5.2c: Career Progression Rate ✓ SMART
+
+**Metric:** Number of team members advancing to next career level during V2MOM period
+
+**Definition:** Count of team members who advance one level in career framework (e.g., Analyst → Senior Analyst)
+
+**Target:** At least 1 team member advances to next career level by Q1 2027
+
+**Rationale:**
+- Career development must result in tangible advancement, not just plans
+- Proves career framework is actionable, not theoretical
+- Demonstrates Vera's effectiveness as people manager
+- Creates positive signal for team retention and motivation
+
+**Measurement Logic:**
+- **Advancement:** Formal promotion or level change based on career framework criteria
+- **Scope:** Within Process Engineering team (direct reports)
+- **Criteria:** Demonstrated competencies at next level per career framework
+
+**Implementation:**
+- **Data Source:** Career level tracking + promotion records
+- **Collection Method:**
+  - Q2 2026: Assess current levels for each team member
+  - Q3-Q4 2026: Execute development plans, assign stretch work
+  - Q4 2026 or Q1 2027: Conduct advancement reviews
+  - Advancement criteria: Demonstrated competencies (per M5.2a framework), manager recommendation, VP approval
+- **Frequency:** Assessed at end of V2MOM period (Q1 2027)
+- **Owner:** Vera Branco (with VP approval)
+- **Dashboard:** Career level tracker per person
+
+**Baseline:** Current career levels as of Q2 2026
+
+**Target Breakdown:**
+- **Minimum (Target):** 1 advancement by Q1 2027
+- **Stretch:** 2 advancements by Q1 2027
+
+**Advancement Decision Factors:**
+- Competency demonstration per career framework (M5.2a)
+- Development plan execution (M5.2b)
+- Business impact and stakeholder feedback
+- Readiness for next level responsibilities
+- Budget and headcount availability
+
+**Limitations & Mitigations:**
+- **Limitation:** Advancement may be blocked by budget/headcount constraints
+- **Mitigation:** Focus on competency development regardless; explore lateral moves if vertical blocked
+- **Limitation:** 1-year timeframe may be short for advancement
+- **Mitigation:** Target individuals already near advancement threshold
+
+**Integration with Other Metrics:**
+- **M5.2a (Career Framework):** Framework defines advancement criteria
+- **M5.2b (Development Plans):** Execution prerequisite for advancement
+- **M5.2d (Retention):** Career advancement opportunity supports retention
+
+**SMART Assessment:** ✓ SMART - Clear metric (count), measurable, target defined (1+), achievable (1-year focus), relevant to career development, time-bound (Q1 2027)
+
+---
+
+### M5.2d: Team Retention Rate ✓ SMART
+
+**Metric:** % of team retained year-over-year (voluntary attrition rate)
+
+**Definition:** Percentage of team members who remain on the team from start to end of V2MOM period
+
+**Target:** > 90% retention (voluntary attrition < 10%)
+
+**Rationale:**
+- Career development and AI enablement are retention investments
+- High attrition undermines organizational capability building
+- Retention validates effectiveness of M5 career development pillar
+- Industry benchmark: ~15% voluntary attrition for tech roles; < 10% is strong performance
+
+**Measurement Logic:**
+- **Retention Rate:** `(Team Members at End / Team Members at Start) × 100`
+- **Voluntary Attrition:** Resignations initiated by employee (not layoffs, role eliminations)
+- **Scope:** Direct reports on Process Engineering team
+
+**Implementation:**
+- **Data Source:** HR records + team roster
+- **Collection Method:**
+  - Q2 2026: Baseline team count
+  - Q1 2027: Final team count
+  - Track voluntary departures during V2MOM period
+  - Calculate retention rate at V2MOM end
+  - Supplemental: Conduct exit interviews to understand reasons
+- **Frequency:** Measured at V2MOM end (Q1 2027)
+- **Owner:** Vera Branco
+- **Dashboard:** Retention tracker with trend over time
+
+**Baseline:** 100% retention as of Q2 2026 (starting point)
+
+**Target:**
+- **Target:** > 90% retention (0-1 departure acceptable for team of ~10)
+- **Stretch:** 100% retention (no voluntary departures)
+
+**Risk Factors:**
+- Competing offers with higher compensation
+- Lack of career advancement opportunities
+- Poor manager relationship
+- Burnout or work-life balance issues
+- Organizational changes or uncertainty
+
+**Retention Drivers (M5 Focus):**
+- Career framework provides clear path (M5.2a)
+- Individual development plans show investment (M5.2b)
+- Career advancement opportunities (M5.2c)
+- AI enablement increases job satisfaction and marketability (M5.1)
+
+**Integration with Other Metrics:**
+- **M5.2a-c (Career Development):** Career clarity, development, and advancement support retention
+- **M5.1 (AI Enablement):** AI skills increase engagement and market value (but also flight risk if over-invested)
+- **M6.1 (Operational Capacity):** Sustainable capacity allocation prevents burnout
+
+**SMART Assessment:** ✓ SMART - Clear metric (%), measurable via HR data, target defined (> 90%), relevant to organizational capability, time-bound (Q1 2027)
+
+---
+
+### M5.3a: Process as Code Blueprint Readiness ✓ SMART
+
+**Metric:** Number of validated Process as Code blueprints completed for high-impact automation candidates
+
+**Definition:** Count of technical blueprints ready for implementation, covering process scope, inputs, logic, outputs, and integration requirements
+
+**Target:** 3-5 validated blueprints by Q1 2027
+
+**Rationale:**
+- Blueprints are the bridge between strategy (automation vision) and execution (skill development)
+- 3-5 blueprints = focused scope, achievable in V2MOM timeframe
+- Blueprint validation with stakeholders ensures Engineering buy-in before development
+- Creates ready-to-code backlog for post-V2MOM execution (Q2 2027+)
+
+**Measurement Logic:**
+- **Blueprint:** Technical design document for a Process as Code automation
+- **Validated:** Reviewed and approved by Engineering stakeholders
+- **Blueprint Components:** Process scope, inputs, logic/decision rules, outputs, integration requirements, success criteria
+
+**Scope - Automation Candidates:**
+- Change Management (RFC validation, routing, compliance checks)
+- Incident Response (triage support, retrospective prep, pattern analysis)
+- Problem Management (trend analysis, action item tracking)
+- Operational governance (CAB prep, reporting, evidence collection)
+
+**Blueprint Quality Criteria:**
+- Clear process scope and workflow to be automated
+- Defined inputs (data sources, triggers, user inputs)
+- Documented logic (decision rules, validations, routing)
+- Specified outputs (actions, notifications, artifacts)
+- Integration requirements identified (Jira, Confluence, Slack, APIs)
+- Success criteria and measurement defined
+- Validated with at least 1 Engineering team
+
+**Implementation:**
+- **Data Source:** Blueprint Repository (Confluence)
+- **Collection Method:**
+  - Q2 2026: Discovery and prioritization of automation candidates
+  - Q2-Q3 2026: Draft blueprints for top 3-5 candidates
+  - Q3-Q4 2026: Validate blueprints with Engineering stakeholders
+  - Q4 2026: Finalize and publish validated blueprints
+  - Track blueprint status: Candidate Identified, Draft, Under Review, Validated
+- **Frequency:** Quarterly tracking
+- **Owner:** TBD (Technical Lead for Process Automation)
+- **Dashboard:** Blueprint Tracker (Confluence)
+  - Blueprint count by status
+  - Validation status by Engineering stakeholder
+
+**Baseline:** 0 blueprints (Q1 2026)
+
+**Expected Trend:**
+- Q2 2026: 3-5 candidates identified, 1-2 blueprints drafted
+- Q3 2026: 3-4 blueprints drafted, 1-2 validated
+- Q4 2026: 3-5 blueprints validated (target achieved)
+
+**Integration with Other Metrics:**
+- **M5.3b (Pilot Skill Deployment):** Pilot skill informs blueprint approach
+- **M5.3c (Backlog Readiness):** Blueprints converted to technical backlogs
+- **M5.1b (Workflow Augmentation):** Team AI workflow patterns inform automation priorities
+
+**SMART Assessment:** ✓ SMART - Clear deliverable (blueprint), measurable (count), target defined (3-5), achievable, relevant to automation, time-bound (Q1 2027)
+
+---
+
+### M5.3b: Pilot Skill Deployment ✓ SMART
+
+**Metric:** Number of pilot skills successfully deployed to production and actively used by Engineering teams
+
+**Definition:** Count of process execution skills built on AI @ Product platform, deployed to production, and demonstrating Engineering team adoption
+
+**Target:** At least 1 pilot skill deployed and operational by Q1 2027
+
+**Rationale:**
+- Validates team can build and ship AI @ Product skills to production
+- Proves Engineering teams will adopt PE automation (demand signal)
+- De-risks M5.3 execution by demonstrating capability early
+- Creates blueprint template for future skills (informs M5.3a blueprints)
+- Shifts from theory (training) to reality (production delivery)
+
+**Measurement Logic:**
+- **Pilot Skill:** Process execution skill built on AI @ Product platform
+- **Deployed:** Skill available in production environment (not dev/test)
+- **Active Usage:** At least 1 Engineering team using skill regularly (usage tracked)
+
+**Scope - Eligible Process Workflows:**
+- Incident Response (triage, RCA generation, post-mortem drafting)
+- Change Management (RFC creation/validation, risk assessment)
+- Problem Management (root cause analysis support, trend analysis)
+- Compliance (FedRAMP evidence collection, control validation)
+
+**Success Criteria:**
+- Skill deployed to AI @ Product production environment
+- Skill addresses PE-owned process executed by Engineering teams
+- At least 1 Engineering team using skill (usage examples documented)
+- Measurable value delivered (time saved, quality improved, compliance increased)
+- Engineering team feedback collected
+
+**Implementation:**
+- **Data Source:** AI @ Product platform registry + usage logs + Engineering feedback
+- **Collection Method:**
+  - Q2 2026: Identify pilot skill candidate with Engineering team input
+  - Q2-Q3 2026: Build, test, iterate with Engineering team
+  - Q3-Q4 2026: Deploy to production
+  - Q4 2026: Track usage and collect feedback
+  - Track: Skill name, process addressed, deployment date, Engineering teams using, usage count, value delivered
+- **Frequency:** Quarterly tracking
+- **Owner:** TBD (Technical Lead for Process Automation)
+- **Dashboard:** Pilot Skill Tracker (Confluence)
+  - Deployment status
+  - Usage metrics
+  - Engineering feedback
+
+**Baseline:** 0 PE skills deployed to production (Q1 2026)
 
 **Risk Mitigation:**
 - Start with narrow scope (single workflow, clear boundaries)
 - Prioritize quick win over complex automation
-- Budget 8-10 weeks for learning curve and iteration
-- Accept "good enough" for v1.0 - iterate after deployment
-
-**SMART Assessment:** ✓ SMART - Clear deliverable (1 production skill), measurable (binary), time-bound (Q2 2026), achievable (narrow scope)
-
----
-
-### M5.2: Process as Code Blueprint Completion Rate (NEW)
-
-**Metric:** % of high-impact automation candidates with completed "Process as Code" blueprints
-
-**Definition:** Completion rate of technical blueprints for prioritized automation use cases
-
-**Target:** 100% of Q2-identified candidates have blueprints by end of Q3 2026
-
-**Measurement Logic:** Track blueprint creation status from use case identification to blueprint delivery
-
-**Implementation:**
-- **Data Source:** Use Case Registry (Confluence) + Blueprint Repository
-- **Collection Method:**
-  - Q2: Identify automation candidates from Incident, Change, Problem workflows
-  - Prioritize: High-impact use cases (top 10-15)
-  - Track blueprint status: Not Started, In Progress, Complete
-  - Blueprint complete criteria: Technical design, AI @ Product integration approach, success criteria defined
-  - Calculation: `(Complete Blueprints / Total Identified Use Cases) * 100`
-- **Frequency:** Quarterly measurement
-- **Owner:** Vera Branco (delegation to team)
-- **Dashboard:** Confluence page with blueprint status tracker
-- **Automation:** Manual tracking
-
-**SMART Assessment:** ✓ SMART - Clear deliverable (blueprint), measurable (%), time-bound
-
----
-
-### M5.3: PE Skills Extension Package Delivery & Adoption
-
-**Metric:** Deliver a Process Engineering Skills Extension Package to production with ≥ 4.0/5.0 satisfaction rating from Engineering teams
-
-**Definition:** A curated, published extension package containing high-impact process execution skills for PE-governed processes (Incident, Change, Problem, Compliance), actively used by Engineering teams with measured satisfaction
-
-**Target:**
-- Extension package published to production by end of Q4 2026
-- Minimum 4.0/5.0 average satisfaction score from engineering users
-- Minimum 3 skills included in package (based on M5.1 pilot + M5.2 blueprints)
-
-**Rationale:**
-- Validates full "Process as Code Industrialization" capability: design → build → package → distribute → adopt
-- Proves Engineering teams value PE automation enough to install and use it
-- Measures quality and impact, not just delivery (satisfaction requirement)
-- Productizes learnings from M5.1 pilot and M5.2 blueprints into reusable asset
-- Extension package becomes foundation for 2027 scale-out
-
-**Measurement Logic:**
-1. **Binary: Package Published** - PE Skills Extension Package available in production registry
-2. **Quantitative: Satisfaction Score** - Average rating from engineering team feedback
-
-**Scope - Skills Extension Package Contents:**
-Curated collection of 3-5 high-impact skills for PE-governed processes:
-- **Incident Response** skill (e.g., RCA generation, post-mortem drafting)
-- **Change Management** skill (e.g., RFC validation, risk assessment)
-- **Problem Management** skill (e.g., root cause analysis support)
-- **Compliance/Audit** skill (e.g., FedRAMP evidence collection)
-- **Failure Management** skill (optional, based on Q3 priorities)
-
-**Success Criteria:**
-- **Package Delivery:**
-  - Extension package published to AI @ Product production registry
-  - Package includes 3-5 working skills addressing PE processes
-  - Documentation complete (README, skill descriptions, usage examples)
-  - Installation instructions clear for Engineering teams
-
-- **Adoption:**
-  - At least 2 Engineering teams have installed the package
-  - Usage logs show active invocations across multiple skills
-
-- **Satisfaction:**
-  - Survey sent to engineering teams using the package
-  - Questions cover: ease of use, time saved, quality improvement, likelihood to recommend
-  - Rating scale: 1-5 (1=poor, 5=excellent)
-  - Target: Average ≥ 4.0/5.0 across all questions
-  - Minimum 5 survey responses for statistical validity
-
-**Implementation:**
-- **Data Source:**
-  - Extension Package Registry (AI @ Product platform)
-  - Usage logs (AI @ Product platform analytics)
-  - Engineering Team Satisfaction Survey (Google Forms or similar)
-
-- **Collection Method:**
-  - Q2: Deliver M5.1 pilot skill
-  - Q3: Select 2-4 additional high-impact skills from M5.2 blueprints
-  - Q3: Build and test remaining skills with Engineering team partners
-  - Q4: Package all skills into unified extension
-  - Q4: Publish to production registry
-  - Q4: Collect satisfaction feedback (2-4 weeks post-installation)
-
-- **Survey Questions (example):**
-  1. How easy was it to install and use PE Skills? (1-5)
-  2. How much time did PE Skills save you on process execution? (1-5)
-  3. How would you rate the quality/accuracy of skill outputs? (1-5)
-  4. How likely are you to recommend PE Skills to other teams? (1-5)
-  5. Open feedback: What should we improve?
-
-- **Frequency:**
-  - Package delivery: One-time (Q4 2026)
-  - Satisfaction survey: Post-deployment (Q4 2026) + quarterly refresh in 2027
-
-- **Owner:** Vera Branco (team execution)
-- **Dashboard:** Confluence tracker with package status, installation count, satisfaction scores
-- **Automation:** AI @ Product platform usage analytics + manual survey collection
-
-**Baseline:** 0 PE Skills Extension Packages exist (as of Q1 2026)
+- Budget 8-12 weeks for learning curve and iteration
+- Partner with friendly Engineering team for co-development
+- Accept "good enough" v1.0 - iterate based on feedback
 
 **Integration with Other Metrics:**
-- **M5.1 (Pilot Skill):** First skill in the extension package
-- **M5.2 (Blueprints):** Blueprints inform which skills to include in package
-- **M2.x/M3.x (Process Metrics):** Skills in package may improve Change/Incident execution quality
-- **M4.x (Training):** Skills reduce training burden by automating process execution
+- **M5.3a (Blueprint Readiness):** Pilot skill creates blueprint template
+- **M5.3c (Backlog Readiness):** Pilot skill may become first item in backlog
+- **M5.3d (Technical Capability):** Pilot skill proves team technical capability
 
-**Risk Mitigation:**
-- Start with 3 skills minimum (achievable) vs 5 (stretch)
-- Select skills with clear, measurable value (time saved, quality improved)
-- Partner with 2 friendly Engineering teams early for co-development
-- Accept "good enough" v1.0 - iterate based on satisfaction feedback
-- If satisfaction < 4.0, conduct follow-up interviews to understand gaps
-
-**SMART Assessment:** ✓ SMART - Clear deliverable (extension package), measurable (satisfaction score), time-bound (Q4 2026), achievable (3-5 skills), relevant (proves industrialization)
+**SMART Assessment:** ✓ SMART - Clear deliverable (pilot skill), measurable (binary + usage), target defined (1+), achievable, relevant to industrialization, time-bound (Q1 2027)
 
 ---
 
-## Summary: Implementation Priorities
+### M5.3c: Post-V2MOM Backlog Readiness ✓ SMART
 
-### Q1 2026 Actions
-1. **Establish baselines:**
-   - M3.1 Public MTTA (assess last 6 months)
-   - M2.1 Change Lead Time (calculate 2024 H2 baseline)
-   - M2.2 Standard Change Promotion (count 2024 H2 baseline)
+**Metric:** % of Process as Code blueprints translated into ready-to-code technical backlogs for post-V2MOM execution
 
-2. **Create tracking mechanisms:**
-   - M3.4 Alert Validation Log (Jira or Confluence)
-   - M2.4 Reviewer Decision Reason field (Jira custom field)
-   - M5.1 Engineering Process Skill Pilot Tracker (Confluence)
+**Definition:** Completion rate of technical user stories and acceptance criteria for validated blueprints, ready for development in Q2 2027+
 
-3. **Define standards:**
-   - M3.2 OLA/Deadline definitions for action items
-   - M4.2 Metrics documentation template
-   - M5.2 Blueprint template
+**Target:** 100% of validated blueprints (M5.3a) translated to technical backlogs by Q1 2027
 
-### Q2 2026 Actions
-1. **Deploy dashboards:**
-   - M1.2 Jira Governance Dashboard (FedRAMP customer filter)
-   - M2.1 Change Lead Time dashboard (Jira or Power BI)
-   - M4.1 Training literacy assessment tool
+**Rationale:**
+- V2MOM focuses on blueprints and pilot; post-V2MOM is scale execution
+- Backlog readiness ensures no delay when scaling automation in Q2 2027+
+- Technical translation is critical: blueprint = what to build, backlog = how to build
+- Demonstrates full Process as Code capability: discover → design (blueprint) → translate (backlog) → build (post-V2MOM)
 
-2. **Automate data collection:**
-   - M2.3 RFC Rejection Velocity (Jira Automation)
-   - M3.1 Public MTTA (Statuspage.io API integration)
-   - M3.2 Action Item SLA tracking (Jira SLA)
+**Measurement Logic:**
+- **Technical Backlog:** Collection of user stories and acceptance criteria for a blueprint
+- **Ready-to-Code:** Stories have clear scope, acceptance criteria, dependencies identified, effort estimated
+- **Calculation:** `(Blueprints with Backlogs / Total Validated Blueprints) × 100`
 
-### Q3-Q4 2026 Actions
-1. **Measure and refine:**
-   - All metrics operational
-   - Quarterly reviews and target adjustments
-   - Continuous improvement based on data
+**Backlog Components (per Blueprint):**
+- User stories with clear scope
+- Acceptance criteria for each story
+- Technical dependencies identified
+- Integration requirements detailed
+- Effort estimates (story points or time)
+- Priority and sequence defined
+- Success metrics and testing approach
+
+**Implementation:**
+- **Data Source:** Technical Backlog Repository (Jira or Confluence)
+- **Collection Method:**
+  - Q3-Q4 2026: As blueprints are validated (M5.3a), begin backlog translation
+  - Q4 2026 - Q1 2027: Complete backlog translation for all validated blueprints
+  - Each backlog includes: User stories, acceptance criteria, dependencies, estimates
+  - Track backlog status: Not Started, In Progress, Complete
+  - Q1 2027: Review and finalize all backlogs for post-V2MOM execution
+- **Frequency:** Quarterly tracking
+- **Owner:** TBD (Technical Lead for Process Automation)
+- **Dashboard:** Backlog Readiness Tracker
+  - % of blueprints with ready-to-code backlogs
+  - Total user stories ready for Q2 2027+ execution
+  - Estimated effort for post-V2MOM automation delivery
+
+**Baseline:** 0% backlog readiness (Q2 2026)
+
+**Expected Trend:**
+- Q2 2026: 0% (discovery phase)
+- Q3 2026: 20-40% (early blueprints being translated)
+- Q4 2026: 60-80% (most blueprints translated)
+- Q1 2027: 100% (all validated blueprints ready for execution)
+
+**Integration with Other Metrics:**
+- **M5.3a (Blueprint Readiness):** Backlog translation follows blueprint validation
+- **M5.3b (Pilot Skill):** Pilot skill experience informs backlog creation approach
+- **M5.3d (Technical Capability):** Team technical skills enable backlog creation
+
+**SMART Assessment:** ✓ SMART - Clear metric (%), measurable, target defined (100%), achievable, relevant to scaling automation, time-bound (Q1 2027)
 
 ---
 
-## Key Recommendations
+### M5.3d: Technical Platform Capability ✓ SMART
 
-1. **Prioritize baseline establishment** - Cannot measure improvement without starting point (M2.1, M2.2, M3.1)
+**Metric:** Number of team members certified on AI @ Product platform capabilities
 
-2. **Implement data collection automation early** - Manual tracking doesn't scale (Jira Automation, API integrations)
+**Definition:** Count of team members who have completed AI @ Product platform training and demonstrated capability through skill deployment
 
-3. **Create dedicated dashboards** - Real-time visibility drives accountability (Jira dashboards, Power BI)
+**Target:** 2-3 team members certified on AI @ Product platform by Q1 2027
 
-4. **Define measurement standards** - Templates and checklists ensure consistency (OLAs, documentation templates, DoR)
+**Rationale:**
+- Core technical team needed to deliver M5.3 automation objectives
+- 2-3 certified members = sustainable capability without single point of failure
+- Certification = training + demonstrated capability (not just course completion)
+- Builds organizational capability beyond V2MOM period
 
-5. **Start with high-value, low-effort metrics** - M1.3 (Training Rate), M4.2 (Documentation Coverage), M5.1 (Engineering Skill Pilot) are straightforward wins
+**Measurement Logic:**
+- **Certified:** Completed AI @ Product platform training AND deployed at least 1 skill to production (or contributed significantly to pilot skill)
+- **Platform Capabilities:** Skills framework, MCP architecture, agent design, integration patterns, deployment processes
 
-6. **Address measurement gaps immediately:**
-   - M3.4 needs Alert Validation practice defined
-   - M5 and M6 need tracking mechanisms created
-   - All metrics need baseline assessment
+**Certification Criteria:**
+- Completed AI @ Product platform training (if formal training exists)
+- Demonstrated practical capability:
+  - Deployed skill to production (solo or lead contributor), OR
+  - Significant contribution to pilot skill (M5.3b), OR
+  - Built and tested skill in dev environment (ready for production)
+- Understands Skills framework, MCP architecture, integration patterns
+
+**Implementation:**
+- **Data Source:** Training records + skill deployment tracking
+- **Collection Method:**
+  - Q2-Q3 2026: Identify core technical team members for AI @ Product focus
+  - Q2-Q4 2026: Provide AI @ Product training and hands-on skill development opportunities
+  - Q3-Q4 2026: Team members deploy skills or contribute to pilot
+  - Q1 2027: Assess certification based on training + demonstrated capability
+  - Track: Team member, training completion date, skill deployment/contribution
+- **Frequency:** Quarterly tracking
+- **Owner:** Vera Branco (with Technical Lead)
+- **Dashboard:** Technical Capability Tracker
+  - Team members certified
+  - Training completion status
+  - Skill deployment contributions
+
+**Baseline:** 0 team members certified (Q1 2026)
+
+**Expected Progression:**
+- Q2 2026: 1-2 members start AI @ Product training
+- Q3 2026: 1-2 members certified (via pilot skill work)
+- Q4 2026: 2 members certified
+- Q1 2027: 2-3 members certified (target achieved)
+
+**Integration with Other Metrics:**
+- **M5.3b (Pilot Skill):** Pilot skill deployment is certification pathway
+- **M5.3a/c (Blueprints/Backlog):** Certified team members create technical blueprints and backlogs
+- **M5.1 (AI Enablement):** Platform capability builds on general AI literacy
+
+**SMART Assessment:** ✓ SMART - Clear metric (count), measurable, target defined (2-3), achievable, relevant to technical capability, time-bound (Q1 2027)
 
 ---
 
-**Next Steps:**
-1. Review and validate proposed measurements with stakeholders
-2. Create implementation backlog (Jira Epics for measurement infrastructure)
-3. Assign owners and timelines for baseline establishment
-4. Schedule monthly V2MOM measurement review cadence
+
+
+## Method 6: Operational Excellence & Sustainability
+
+## Measurements
+
+### M6.1: Operational Capacity Allocation (Overall Method 6)
+
+**Metric:** % of story points completed on operational tasks (M6) vs transformation work (M1-M5)
+
+**Definition:** Track story points delivered on operational activities vs transformation initiatives using existing Jira epic structure
+
+**Target:**
+- Operational Tasks (M6): ~30% of total story points
+- Transformation (M1-M5): ~70% of total story points
+
+**Rationale:**
+- Target: 70% transformation capacity enables significant V2MOM progress while maintaining operational excellence
+- If Operational > 35%: Transformation slows, V2MOM at risk
+- If Operational < 25%: Operational quality degrades, governance gaps emerge
+- Sweet spot: ~30% operational allows both operational excellence and transformation progress
+- Story points = relative effort, good proxy for capacity without manual time tracking overhead
+
+**Measurement Logic:**
+- Each submethod already has dedicated Jira epics
+- Team estimates and tracks story points as normal
+- Aggregate completed story points by epic/method quarterly
+- Calculate: `(M6 Story Points / Total Story Points) × 100`
+
+**Breakdown by Submethod (Target Allocation):**
+- 6.1 Process Governance & CAB: 12-15% (monthly CAB + governance reviews + Operations Review prep + high-stake retrospectives + ad-hoc consultation)
+- 6.2 Audit & Compliance: 5-10% (variable by audit season)
+- 6.3 Documentation & Knowledge: 3-5%
+- 6.4 Measurement Infrastructure Ops: 3-5%
+- 6.5 Continuous Improvement Backlog: 2-4%
+
+**Implementation:**
+- **Data Source:** Jira story points by epic
+- **Collection Method:**
+  - Query completed issues per quarter grouped by epic/method
+  - JQL examples:
+    ```jql
+    # M6 BAU story points
+    project = PE AND "Epic Link" IN (M6.1_epic, M6.2_epic, M6.3_epic, M6.4_epic, M6.5_epic)
+    AND resolved >= startOfQuarter() AND resolved <= endOfQuarter()
+
+    # M1-M5 Transformation story points
+    project = PE AND "Epic Link" IN (M1_epics, M2_epics, M3_epics, M4_epics, M5_epics)
+    AND resolved >= startOfQuarter() AND resolved <= endOfQuarter()
+    ```
+  - Export to spreadsheet or Power BI for calculation
+  - Supplemental: Quarterly capacity retrospective (5 min/person) to validate story points reflect reality
+- **Frequency:** Quarterly reporting (no ongoing manual tracking needed)
+- **Owner:** Vera Branco (team capacity management)
+- **Dashboard:** Capacity Allocation Dashboard
+  - Primary: Operational % vs Transformation % by quarter (target: ~30% Operational, ~70% Transformation)
+  - Breakdown: Story points by submethod (6.1-6.5) and method (M1-M5)
+  - Trend: Quarter-over-quarter capacity shift
+  - Jira gadget: "Story Points by Epic" stacked bar chart
+
+**Baseline:** To be established Q1 2026 (analyze Q4 2025 story points by epic)
+
+**Expected Trend:**
+- Q1 2026: 40-45% Operational (high due to audit season, FedRAMP prep baseline work)
+- Q2 2026: 32-35% Operational (transformation ramp-up, audits complete)
+- Q3-Q4 2026: ~30% Operational (sustainable operating rhythm achieved, target met)
+
+**Calibration:**
+- Quarterly team retrospective question: "Do story points by epic accurately reflect our capacity allocation, or is significant work happening outside Jira?"
+- If significant untracked work exists (e.g., Slack consultations, ad-hoc support, meetings), supplement with quarterly capacity estimate
+
+**Limitations & Mitigations:**
+- **Limitation:** Story points don't capture all work (ad-hoc consultations, urgent support, meetings)
+- **Mitigation:** All operational tasks logged as Jira issues under submethod epics; if untracked work becomes significant, add quarterly retrospective capacity check
+- **Limitation:** Story points = relative effort, not exact time
+- **Mitigation:** Acceptable trade-off for zero ongoing tracking overhead; story points are good enough for V2MOM capacity planning
+
+**SMART Assessment:** ✓ SMART - Clear metric (%), measurable via existing Jira data, target defined, achievable without additional overhead, relevant to capacity planning
+
+---
+
+### M6.2: CAB Orchestration Effectiveness (Submethod 6.1)
+
+**Metric:** CAB operational efficiency measured by preparation time, meeting duration, and decision quality
+
+**Definition:** Track CAB effectiveness to ensure governance doesn't become capacity bottleneck
+
+**Target:**
+- Average CAB prep time < 4 hours per meeting (Q4 2026)
+- Average CAB duration ≤ 60 minutes (Q4 2026)
+- RFC first-pass approval rate > 85% (Q4 2026)
+
+**Rationale:**
+- CAB is monthly recurring event (10-15% of team capacity including prep and follow-up)
+- Inefficient CAB preparation/execution consumes excessive capacity
+- High first-pass approval indicates good pre-meeting RFC quality
+- Shorter meetings with maintained quality = efficient governance
+
+**Measurement Logic:**
+
+**M6.2a: CAB Prep Time**
+- Track: Time spent preparing for monthly CAB (RFC pre-review, agenda creation, material prep)
+- Target: < 4 hours per CAB session
+- Measurement: Manual time logging or Jira worklog
+
+**M6.2b: CAB Duration**
+- Track: Actual meeting duration (start to end)
+- Target: ≤ 60 minutes per CAB session
+- Measurement: Calendar time or meeting recording timestamps
+
+**M6.2c: First-Pass Approval Rate**
+- Track: % of RFCs approved on first CAB review (no rework/re-submission needed)
+- Target: > 85%
+- Numerator: RFCs approved at CAB without rework requests
+- Denominator: Total RFCs reviewed at CAB
+- Calculation: `(RFCs Approved First Review / Total RFCs Reviewed) × 100`
+
+**Implementation:**
+- **Data Source:** CAB meeting logs + Jira RFC project
+- **Collection Method:**
+  - CAB facilitator logs prep time and meeting duration monthly (Confluence CAB log or Jira)
+  - Jira: Track RFCs by review outcome (Approved First Time, Needs Rework, Rejected)
+  - Quarterly aggregate and trend analysis
+- **Frequency:** Monthly tracking, quarterly reporting
+- **Owner:** Laura Ferreira (CAB facilitator)
+- **Dashboard:** CAB Efficiency Dashboard
+  - Prep time trend by month/quarter (target line at 4 hours)
+  - Meeting duration trend (target line at 60 min)
+  - First-pass approval rate trend (target line at 85%)
+  - Capacity impact: Total monthly CAB hours (prep + meeting) trend
+
+**Baseline:** To be established Q1 2026 from historical CAB data (if available)
+
+**Integration with Other Metrics:**
+- **M2.3 (RFC Rejection Velocity):** Faster pre-CAB rejection improves first-pass approval rate
+- **M2.4 (Manual Resilience):** Automating repetitive changes reduces CAB RFC volume
+- **M2.1 (Change Lead Time):** Efficient CAB reduces RFC processing time
+- **M3 (Incident Response):** High-stake retrospective coordination feeds M3 metrics
+
+**SMART Assessment:** ✓ SMART - Multiple clear metrics (time, %), measurable, targets defined, relevant to capacity optimization
+
+---
+
+### M6.3: Audit Request Fulfillment Rate (Submethod 6.2)
+
+**Metric:** % of audit evidence and compliance requests fulfilled within agreed deadline
+
+**Definition:** Track on-time delivery of audit-related requests to ensure compliance obligations are met
+
+**Target:** > 95% on-time fulfillment by Q1 2027
+
+**Rationale:**
+- Audit season creates unpredictable BAU load spikes (10-15% capacity)
+- Late audit responses create organizational compliance risk
+- Explicit tracking ensures audit support doesn't derail transformation work
+- Enables capacity planning for future audit cycles
+
+**Measurement Logic:**
+- **Numerator:** Audit requests delivered by agreed deadline
+- **Denominator:** Total audit requests received
+- **Calculation:** `(On-Time Deliveries / Total Requests) × 100`
+
+**Scope:**
+- **Audit types:** SOC2, FedRAMP, ISO, internal audits
+- **Request types:** Evidence collection, control validation, process documentation, audit interviews, remediation evidence
+- **Deadline:** Agreed SLA with auditor or internal stakeholder (document per request in tracker)
+
+**Implementation:**
+- **Data Source:** Audit Request Tracker (Jira or Confluence)
+- **Collection Method:**
+  - Create "Audit Request" issue type in Jira OR Confluence tracking table
+  - Track per request: Request Date, Audit Type (SOC2/FedRAMP/ISO/Internal), Requester, Deadline, Completion Date, Owner, Status
+  - Flag: On-Time (Yes/No) calculated automatically
+  - Quarterly aggregate: On-time rate, average lead time, capacity consumption
+- **Frequency:** Monthly tracking (during audit seasons), quarterly reporting
+- **Owner:** Process Engineering team (rotational or assigned per audit)
+- **Dashboard:** Audit Fulfillment Tracker
+  - Primary: On-time rate trend by quarter (target line at 95%)
+  - Average lead time: Request to delivery in days
+  - Volume by audit type: SOC2, FedRAMP, ISO, Internal
+  - Capacity impact: Hours spent on audit support per quarter
+  - Upcoming requests: Early warning for capacity planning
+
+**Baseline:** To be established Q1 2026 from Q4 2025 audit request history (if tracked)
+
+**Integration with Other Methods:**
+- **M1 (FedRAMP):** FedRAMP audit support becomes BAU post-authorization (Q3 2026+)
+- **M2-M5:** Audit requests for transformation initiatives tracked here
+
+**SMART Assessment:** ✓ SMART - Clear metric (%), measurable, target defined, relevant to compliance obligations
+
+---
+
+### M6.4: Dashboard Operational Availability (Submethod 6.4)
+
+**Metric:** % of V2MOM dashboards operational and accurate (data quality validated)
+
+**Definition:** Track availability and accuracy of measurement infrastructure built in Method 4
+
+**Target:** > 98% dashboard availability (operational with accurate data) by Q1 2027
+
+**Rationale:**
+- Method 4 builds measurement infrastructure; Method 6.4 sustains it
+- Dashboard downtime or data quality issues undermine V2MOM tracking
+- Proactive monitoring prevents measurement blind spots
+- Measures operational reliability of metrics infrastructure
+
+**Measurement Logic:**
+- **Dashboard Inventory:** List of all V2MOM dashboards (M1-M5 metrics)
+  - Example: Change Lead Time Dashboard (M2.1), Public MTTA Dashboard (M3.1), CAB Efficiency Dashboard (M6.2), etc.
+- **Availability Criteria:**
+  - Dashboard accessible (no errors, loads within 10 seconds)
+  - Data accurate (matches source systems, no stale data)
+  - Visualizations render correctly
+- **Weekly Check:** Automated or manual verification of each dashboard
+- **Calculation:** `(Dashboards Operational / Total Dashboards) × 100`
+
+**Scope:**
+- **Include:** All V2MOM Method 1-6 dashboards
+- **Exclude:** Experimental or draft dashboards not yet in production
+
+**Implementation:**
+- **Data Source:** Dashboard monitoring log (Confluence or Jira)
+- **Collection Method:**
+  - Maintain dashboard inventory (list of all dashboards with URLs, owners, data sources)
+  - Weekly monitoring: Automated checks (if tooling available) OR manual spot-checks
+  - Log issues: Dashboard name, issue type (unavailable/data quality/visualization), detected date, resolved date
+  - Calculate availability rate per month/quarter
+- **Frequency:** Weekly monitoring, monthly reporting, quarterly aggregate
+- **Owner:** Paulo Alves Monteiro (metrics infrastructure)
+- **Dashboard:** Dashboard Health Tracker (meta-dashboard)
+  - Primary: Availability rate trend by month/quarter (target line at 98%)
+  - Issue log: Current open issues, time to resolution
+  - Breakdown: Issues by type (availability, data quality, visualization)
+  - Most impacted dashboards: Which dashboards have frequent issues?
+
+**Baseline:** To be established Q2 2026 (after Method 4 dashboards deployed)
+
+**Integration with Method 4:**
+- M4 creates dashboards (project work)
+- M6.4 sustains dashboards (operational tasks)
+
+**SMART Assessment:** ✓ SMART - Clear metric (%), measurable, target defined, relevant to measurement infrastructure reliability
+
+---

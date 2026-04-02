@@ -6,7 +6,8 @@
 
 ## To Process
 
-<!-- All items processed -->
+- [ ] Create skill for Operations Review preparation (supports Submethod 6.1)
+- [ ] Establish internal quarterly team performance retrospectives (Submethod 6.1)
 
 ---
 
@@ -38,6 +39,7 @@ When processing, ask:
 
 <!-- Completed items move here -->
 
+- [x] review the full V2MOM measurement document → Completed: timeline corrections and obstacles finalized (2026-04-02)
 - [x] Schedule follow-up on metrics implementation discussion → Added to today's daily note as "Complete V2MOM metrics definition exercise"
 
 - [x] Book KODA ramp-up sessions for the team after returning from vacation → Engaged with Maria Chec (TPM for DevEX/KODA). Enablement session scheduled for 2 weeks out for non-tech people
