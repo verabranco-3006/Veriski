@@ -135,6 +135,10 @@
 
 ---
 
+## Method 3: Incident Response Resilience
+
+### Submethod 3.1: Customer Communication Excellence
+
 ### M3.1: Public MTTA (Status Page) ✓ FORMAL V2MOM METRIC
 
 **Metric:** Mean time from system-wide impact declaration to first external status page post
@@ -161,29 +165,7 @@
 
 ---
 
-
-### M3.2: Action Item Plan Closure Rate ✓ FORMAL V2MOM METRIC
-
-**Metric:** % of High/Critical post-mortem action items closed within OLA/Deadline
-
-**Target:** >80% by Q2 2027
-
-**Owner:** Inês Matos
-
-**Data Source:** Jira Problem Management project (action item tracking)
-
-**Context:** Aligned per GS workshop (March 2026) - Problem Management as the ultimate mechanism for:
-1. Action item lifecycle tracking post-incident resolution
-2. Customer-facing progress reporting
-
-**Process Gaps:**
-- **Problem Management project doesn't exist yet** - need Jira project creation with workflow
-- **Action item tracking mechanism** - how to link action items from RCA to Problem Management project?
-- **OLA/Deadline definition** - need clear criteria for setting deadlines per action item priority/complexity
-- **Ownership accountability** - who drives action item closure? (IC? VS Leader? PE? Engineering team?)
-- **Progress visibility for customers** - how to share progress externally without exposing internal JIRA?
-
----
+### Submethod 3.2: Triage & Incident Declaration
 
 ### M3.3: Triage Accuracy (Framework Validation) ✓ FORMAL V2MOM METRIC
 
@@ -206,30 +188,9 @@
 
 ---
 
-### M3.7: Problem Management Coverage ✓ FORMAL V2MOM METRIC
+### Submethod 3.4: Problem Management Integration
 
-**Metric:** % of mandatory incidents with Problem records created
-
-**Target:** >90% by Q4 2026
-
-**Owner:** Inês Matos
-
-**Data Source:** Jira RDINC + Problem Management project
-
-**Context:** Aligned per GS workshop (March 2026) - Problem Management as mechanism for action item tracking and customer communication. Measures adoption of new Problem Management process.
-
-**Process Gaps:**
-- **Mandatory criteria undefined** - what triggers Problem creation? (all status page incidents? High/Critical? customer-impacting?)
-- **Problem Management project doesn't exist** - need Jira project creation with workflow
-- **Retrospective-to-Problem workflow** - no clear handoff process from RCA to Problem creation
-- **Ownership model** - who creates Problem record? (Engineering team? PE? RCA owner? IC?)
-- **Dual purpose complexity** - Problem serves both action tracking (internal) and customer-facing artifact (external)
-
-**Status:** Inês Matos leading M3.4 initiative (Epic RSA-860). Governance model TBD in Q2 2026.
-
----
-
-### M3.4: Alert Validation Accuracy (Event Management) ✓ FORMAL V2MOM METRIC
+### M3.2: Action Item Plan Closure Rate ✓ FORMAL V2MOM METRIC
 
 **Metric:** % of alerts correctly validated and filtered before triggering full incident response
 
@@ -251,7 +212,7 @@
 - **Retrospective validation workload** - comparing validation decisions to actual outcomes requires manual review
 - **Accuracy measurement timing** - when is "actual outcome" known? (incident resolution? RCA completion?)
 
-**Status:** Inês Matos leading initiative (Epic RSA-738). Practice definition Q2 2026, pilot Q3 2026.
+**Status:** Inês Matos leading M3.5 initiative (Epic RSA-738). Practice definition Q2 2026, pilot Q3 2026.
 
 ---
 
@@ -375,6 +336,29 @@
 - **Scoring consistency** - need calibration across teams/assessors (inter-rater reliability)
 - **Baseline establishment** - what's current average maturity? (Q2 2026 baseline needed)
 - **Coaching trigger** - what score triggers PE coaching/support? (Red pillars? Multiple yellow?)
+
+---
+
+### M3.7: Problem Management Coverage ✓ FORMAL V2MOM METRIC
+
+**Metric:** % of mandatory incidents with Problem records created
+
+**Target:** >90% by Q4 2026
+
+**Owner:** Inês Matos
+
+**Data Source:** Jira RDINC + Problem Management project
+
+**Context:** Aligned per GS workshop (March 2026) - Problem Management as mechanism for action item tracking and customer communication. Measures adoption of new Problem Management process.
+
+**Process Gaps:**
+- **Mandatory criteria undefined** - what triggers Problem creation? (all status page incidents? High/Critical? customer-impacting?)
+- **Problem Management project doesn't exist** - need Jira project creation with workflow
+- **Retrospective-to-Problem workflow** - no clear handoff process from RCA to Problem creation
+- **Ownership model** - who creates Problem record? (Engineering team? PE? RCA owner? IC?)
+- **Dual purpose complexity** - Problem serves both action tracking (internal) and customer-facing artifact (external)
+
+**Status:** Inês Matos leading M3.4 initiative (Epic RSA-860). Governance model TBD in Q2 2026.
 
 ---
 

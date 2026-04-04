@@ -22,9 +22,9 @@ Process Engineering's transformation agenda (Methods 1-5) requires dedicated cap
 
 ## Submethods
 
-### Submethod 6.1: Process Governance & CAB Orchestration
+### Submethod 6.1: Process Governance, CAB Orchestration & RCA Facilitation
 
-**Objective:** Maintain effective change governance through monthly CAB operations and process reviews
+**Objective:** Maintain effective change governance through monthly CAB operations, process reviews, and retrospective facilitation
 
 **Activities:**
 - Monthly CAB facilitation and RFC review
@@ -32,6 +32,7 @@ Process Engineering's transformation agenda (Methods 1-5) requires dedicated cap
 - CAB decision documentation and communication
 - Monthly governance reviews (Change, Incident, Problem Management)
 - Operations Review preparation and coordination
+- **RCA orchestration and participation** (team-led retrospectives as per Retrospective Transformation model - M3.3)
 - High-stake retrospective governance (coordinating retrospective process for complex/critical incidents)
 - Process adherence monitoring and exception handling
 - Governance reporting for leadership
@@ -39,12 +40,13 @@ Process Engineering's transformation agenda (Methods 1-5) requires dedicated cap
 - Internal quarterly team performance retrospectives
 
 **Success Criteria:**
-- Monthly CAB operates efficiently (low prep time, short meetings, high first-pass approval)
+- Monthly CAB operates efficiently (low prep time, high first-pass approval)
 - Monthly governance reviews completed on schedule
+- RCA orchestration support provided for mandatory retrospectives
 - Process adherence issues identified and addressed proactively
 - High-stake retrospectives coordinated effectively
 
-**Owner:** Inês Matos
+**Owner:** Inês Matos (CAB & governance), team rotation for RCA facilitation
 
 **Jira Epic:** Submethod 6.1 - Process Governance & CAB
 **Reporting:** All tasks logged under this epic (CAB prep, Operations Review prep, high-stake retrospective coordination, etc.)
@@ -198,22 +200,23 @@ Process Engineering's transformation agenda (Methods 1-5) requires dedicated cap
 
 ---
 
-### M6.2: CAB Orchestration Effectiveness (Submethod 6.1)
+### M6.2: Process Orchestration Effectiveness (CAB & RCA) (Submethod 6.1)
 
-**Metric:** CAB operational efficiency measured by preparation time, meeting duration, and decision quality
+**Metric:** Multiple metrics tracking governance and retrospective orchestration
 
-**Definition:** Track CAB effectiveness to ensure governance doesn't become capacity bottleneck
+**Definition:** Track CAB and RCA orchestration effectiveness to ensure governance and retrospective facilitation don't become capacity bottlenecks
 
-**Target:**
-- Average CAB prep time < 4 hours per meeting (Q4 2026)
-- Average CAB duration ≤ 60 minutes (Q4 2026)
-- RFC first-pass approval rate > 85% (Q4 2026)
+**Target (Q2 2027, quarterly tracking):**
+- CAB Prep Time: < 4 hours per session
+- First-Pass Approval Rate: > 85%
+- RCA Orchestration Coverage: > 90%
 
 **Rationale:**
 - CAB is monthly recurring event (10-15% of team capacity including prep and follow-up)
-- Inefficient CAB preparation/execution consumes excessive capacity
+- RCA orchestration (team-led retrospectives per M3.3 Retrospective Transformation) requires PE facilitation support
+- Inefficient CAB/RCA preparation/execution consumes excessive capacity
 - High first-pass approval indicates good pre-meeting RFC quality
-- Shorter meetings with maintained quality = efficient governance
+- High RCA orchestration coverage ensures mandatory retrospectives receive PE facilitation support
 
 **Measurement Logic:**
 
@@ -222,27 +225,34 @@ Process Engineering's transformation agenda (Methods 1-5) requires dedicated cap
 - Target: < 4 hours per CAB session
 - Measurement: Manual time logging or Jira worklog
 
-**M6.2b: CAB Duration**
-- Track: Actual meeting duration (start to end)
-- Target: ≤ 60 minutes per CAB session
-- Measurement: Calendar time or meeting recording timestamps
-
-**M6.2c: First-Pass Approval Rate**
+**M6.2b: First-Pass Approval Rate**
 - Track: % of RFCs approved on first CAB review (no rework/re-submission needed)
 - Target: > 85%
 - Numerator: RFCs approved at CAB without rework requests
 - Denominator: Total RFCs reviewed at CAB
 - Calculation: `(RFCs Approved First Review / Total RFCs Reviewed) × 100`
 
-**Baseline:** To be established Q1 2026 from historical CAB data (if available)
+**M6.2c: RCA Orchestration Coverage**
+- Track: % of mandatory retrospectives with PE facilitation/orchestration support
+- Target: > 90%
+- Numerator: Mandatory retrospectives with PE orchestration/participation
+- Denominator: Total mandatory retrospectives
+- Calculation: `(RCAs with PE Support / Total Mandatory RCAs) × 100`
+- **Context:** Covers team-led retrospective model from Retrospective Transformation (M3.3) where PE facilitates collaborative RCA sessions
+
+**Baseline:** To be established Q2 2026 (CAB metrics from historical data, RCA orchestration from M3.3 implementation)
+
+**Owner:** Vera Branco (executed in rotation across team)
 
 **Integration with Other Metrics:**
 - **M2.3 (RFC Rejection Velocity):** Faster pre-CAB rejection improves first-pass approval rate
 - **M2.4 (Manual Resilience):** Automating repetitive changes reduces CAB RFC volume
 - **M2.1 (Change Lead Time):** Efficient CAB reduces RFC processing time
-- **M3 (Incident Response):** High-stake retrospective coordination feeds M3 metrics
+- **M3.3 (Retrospective Transformation):** RCA orchestration coverage measures PE facilitation support for team-led retrospectives
+- **M3.5 (RCA Completion Rate):** RCA orchestration enables completion of mandatory retrospectives
+- **M3.6 (Maturity Assessment):** PE facilitation supports maturity assessment during retrospectives
 
-**SMART Assessment:** ✓ SMART - Multiple clear metrics (time, %), measurable, targets defined, relevant to capacity optimization
+**SMART Assessment:** ✓ SMART - Multiple clear metrics (time, %), measurable, targets defined, relevant to capacity optimization and retrospective transformation support
 
 ---
 
@@ -252,10 +262,10 @@ Process Engineering's transformation agenda (Methods 1-5) requires dedicated cap
 
 **Definition:** Track on-time delivery of audit-related requests to ensure compliance obligations are met
 
-**Target:** > 95% on-time fulfillment by Q4 2026
+**Target:** > 95% on-time fulfillment by Q2 2027
 
 **Rationale:**
-- Audit season creates unpredictable BAU load spikes (10-15% capacity)
+- Audit season creates unpredictable operational tasks load spikes (10-15% capacity)
 - Late audit responses create organizational compliance risk
 - Explicit tracking ensures audit support doesn't derail transformation work
 - Enables capacity planning for future audit cycles
@@ -273,7 +283,7 @@ Process Engineering's transformation agenda (Methods 1-5) requires dedicated cap
 **Baseline:** To be established Q1 2026 from Q4 2025 audit request history (if tracked)
 
 **Integration with Other Methods:**
-- **M1 (FedRAMP):** FedRAMP audit support becomes BAU post-authorization (Q3 2026+)
+- **M1 (FedRAMP):** FedRAMP audit support becomes operational tasks post-authorization (Q3 2026+)
 - **M2-M5:** Audit requests for transformation initiatives tracked here
 
 **SMART Assessment:** ✓ SMART - Clear metric (%), measurable, target defined, relevant to compliance obligations
@@ -286,7 +296,7 @@ Process Engineering's transformation agenda (Methods 1-5) requires dedicated cap
 
 **Definition:** Track availability and accuracy of measurement infrastructure built in Method 4
 
-**Target:** > 98% dashboard availability (operational with accurate data) by Q4 2026
+**Target:** > 98% dashboard availability (operational with accurate data) by Q2 2027
 
 **Rationale:**
 - Method 4 builds measurement infrastructure; Method 6.4 sustains it
@@ -404,7 +414,7 @@ To achieve and maintain ~30% operational target:
 
 ### M6 ↔ M1 (FedRAMP Enablement)
 - **M1 is project work** (transformation capacity) during Q1-Q2 2026
-- **M6.3 (Audit Fulfillment)** tracks FedRAMP audit support as BAU post-authorization (Q3 2026+)
+- **M6.3 (Audit Fulfillment)** tracks FedRAMP audit support as operational tasks post-authorization (Q3 2026+)
 
 ### M6 ↔ M2 (Change Management Transformation)
 - **M2.1 (Lead Time Reduction)** reduces RFC review burden on CAB → improves M6.2
@@ -419,7 +429,7 @@ To achieve and maintain ~30% operational target:
 
 ### M6 ↔ M4 (Metrics Orchestration)
 - **M4 creates metrics infrastructure** (dashboards, lineage docs) as project work (M1-M5 capacity)
-- **M6.4 (Measurement Ops)** sustains infrastructure (dashboard maintenance, data quality) as BAU
+- **M6.4 (Measurement Ops)** sustains infrastructure (dashboard maintenance, data quality) as operational tasks
 - **M4.1 (Training)** reduces ad-hoc metric interpretation requests → reduces 6.1 capacity
 
 ### M6 ↔ M5 (Process as Code)
@@ -433,11 +443,13 @@ To achieve and maintain ~30% operational target:
 
 | Metric | Submethod | Target | Owner | Baseline | Status |
 |--------|-----------|--------|-------|----------|--------|
-| M6.1: Operational Capacity Allocation | Overall M6 | ~30% operational story points | Vera | Q1 2026 | Track quarterly |
-| M6.2: CAB Effectiveness | 6.1 | <4h prep, ≤60min, >85% approval | Inês | Q1 2026 | Track monthly |
-| M6.3: Audit Fulfillment | 6.2 | >95% on-time | Laura | Q1 2026 | Track monthly |
-| M6.4: Dashboard Availability | 6.4 | >98% operational | Paulo | Q2 2026 | Track weekly |
+| M6.1: Operational Capacity Allocation | Overall M6 | 50-60% transformation, 40-50% operational tasks by Q2 2027 | Vera | Q2 2026 | Track quarterly |
+| M6.2: Process Orchestration Effectiveness (CAB & RCA) | 6.1 | <4h CAB prep, >85% first-pass approval, >90% RCA orchestration by Q2 2027 | Vera (rotation) | Q2 2026 | Track quarterly |
+| M6.3: Audit Fulfillment | 6.2 | >95% on-time by Q2 2027 | Laura | Q2 2026 | Track monthly |
+| M6.4: Dashboard Availability | 6.4 | >98% operational by Q2 2027 | Paulo | Q2 2026 | Track weekly |
+
+**Coverage Note:** Submethods 6.3 (Documentation & Knowledge Management) and 6.5 (Continuous Improvement Backlog) are covered by M6.1 (Operational Capacity Allocation) rather than having dedicated metrics. This approach avoids excessive measurement overhead for operational activities while maintaining visibility through overall capacity tracking.
 
 ---
 
-**Last Updated:** 2026-04-01
+**Last Updated:** 2026-04-04
