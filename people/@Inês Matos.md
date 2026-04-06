@@ -96,9 +96,20 @@
 
 ---
 
+## Development Activities
+
+### Mentorship with Marina Calado (2026-04-06)
+**Focus:** Strategic voice and confidence development
+**Mentor:** Marina Calado (Technical Knowledge Director)
+**Rationale:** Addresses growth area "Strategic voice & confidence" — speaking up during high-stakes moments, challenging status quo
+**Status:** Set up by Vera, awaiting schedule confirmation
+
+---
+
 ## Action Items
 - [x] Schedule 1:1 with Inês — Completed 2026-03-24
 - [x] Share detailed notes from retrospective process review meeting (2026-03-12) — Completed 2026-03-13
+- [x] Set up mentorship with Marina Calado for strategic voice development — Completed 2026-04-06
 - [ ] Document collaborative model and role definitions (with Vera) — Now part of proposal development
 - [ ] Draft outcome-based narrative template for retrospectives — Part of proposal
 - [ ] Develop quality framework for AI/Koda-assisted RCA auditing

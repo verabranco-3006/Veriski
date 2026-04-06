@@ -1,0 +1,477 @@
+Build your 
+agentic future 
+First Name Last Name
+Title
+with
+
+Thank You
+Thank you for taking the time to meet with me. I’m [name] and I’ve been with OutSystems for [x years].
+One of the things I have been struck by is our global community who are incredibly enthusiastic about our platform and show up for our events all over the world to show off what they’ve built.
+I love hearing their stories because they are building real AI apps and agentic solutions, as opposed to all the AI noise and hype we’re all bombarded with today, and I look forward to sharing one of their stories later on.
+My goal today is to show you how you can use OutSystems to build and deploy exactly what you need, faster than any alternative, with the team and systems you already have in place.
+
+#1in CustomerSatisfactionon G2
+OutSystems is the AI platformfor your agentic future
+your agentic future
+Agents built
+
+16K+
+Certified agentic 
+developers
+2K+
+“OutSystems is paving the AI Agentic Future… especially OutSystems Mentor and OutSystems Agent Workbench.”
+
+G2 Reviewer
+Partners
+Communitymembers
+600+
+900K+
+“AI needs governance, not froth” — Woodson Martin, OutSystems CEO
+OCT 6, 2025
+By Mark Chillingworth
+First let me share a bit of background on OutSystems.
+Since our founding in 2001, we’ve been on a mission to empower organizations to build completely custom solutions for their complex, often mission-critical use cases. 
+We’ve always believed organizations shouldn’t be forced to compromise on getting exactly what they need, with the teams they have today - without the inflexibility of packaged solutions or having to start from scratch with traditional code. 
+In our early years, we pioneered low-code for full lifecycle enterprise development, enabling our customers to deliver custom web and mobile applications faster and with full control.
+Today, we’re enabling our customers to build AI-powered apps and agentic systems that they can trust in production, because they already have their full enterprise context running on OutSystems
+We are seeing incredible momentum with Agent Workbench, our enterprise agent builder - customers have already developed over 16,000 agentic apps and we’ve certified over 2,000 developers! 
+We are also proud to be recently named #1 in customer satisfaction by users on G2, who specifically called out our ease of use, speed of deployment, and platform extensibility.   
+We have a thriving community of over 900,000 developers and 600 partners worldwide ready to help you get started and grow with us.
+
+
+We’re trusted by enterprise leaders across the globe
+across the globe
+Thousands of companies across 70+ countries rely on OutSystems to deploy mission-critical apps in complex, regulated environments 
+To give you an idea of what’s at stake…
+Bentley can’t deliver a car on the production line without OutSystems. 
+For the Portuguese Air Force, OutSystems powers the very backbone of their flight operations with the Aircraft Maintenance Management system - so critical that they told us: ‘Without it, the aircraft will not fly.’
+Private health group Luz Saúde relies on OutSystems to power systems that help doctors make life‑critical decisions, telling us: ‘Be careful with our OutSystems platform, patients’ lives depend on it.’
+Pokémon trusts OutSystems to deliver seamless fan experiences for live global events, supporting a surge of 300,000+ users in one day
+Financial institutions like KeyBank, Axos Bank, and Western Union run critical backend account management systems on OutSystems
+Energy leaders like Chevron and Petrobras are using OutSystems to build agents that deliver breakthrough efficiency 
+Insurance companies like Zurich and Resolution Life operate multi-billion dollar insurance policy systems with modern, regulation-compliant customer experiences
+Manufacturing giants like Toyota, Bosch, and Takeda use OutSystems as their platform for digital transformation  
+Government agencies like Crown Prosecution Service and the New York State Department of Education use the platform to deliver critical constituent services.
+Educational institutions like Yale University have standardized development on OutSystems, creating a Center of Excellence to deliver solutions across all of their departments.
+HEINEKEN has also built a Center of Excellence with OutSystems, scaling development to over 80 countries and enabling them to reuse 80% of code. 
+We partner with all our customers for your long-term success, with a global team of dedicated experts and partners ready to support you 24/7.
+
+
+
+Customer logos: https://docs.google.com/presentation/d/1SEVRJaJob0D2wFjpOy2Fufp8jRTaSDz1n2N6emnrj4w/edit?slide=id.g6e0fdeb6c1_0_0#slide=id.g6e0fdeb6c1_0_0 
+
+Top 3 analyst firms name OutSystems a leader
+OutSystems a leader
+Top 3 analyst firms name OutSystems a leader
+2025 Gartner® Magic Quadrant™ for Enterprise Low-Code Application Platforms 
+
+The Forrester Wave™: 
+Low-Code Platforms 
+For Professional 
+Developers, Q2 2025
+2025 IDC MarketScape®: Worldwide Low-Code 
+and No-Code Developer Technologies
+OutSystems named a Leader, recognized as a "best-in-class AppGen platform."
+OutSystems recognized as a 9X Leader, positioned highest on the Ability to Execute axis.
+OutSystems named a Leader, recognized for advanced AI-powered development capabilities.
+OutSystems a leader
+It’s a testament to our customers’ success that we’re currently named a leader by the top three analyst firms, Gartner (9 times running), Forrester, and IDC.
+We’re proud to be shaping the future of AI-powered enterprise development so our customers can build their own AI apps and agentic solutions that set them apart in their industries 
+
+The race to become AI-first       is on
+is on
+71%
+of CEOs sayAI is a topinvestment priority
+$2T
+Worldwide AIspending forecasted for 2026
+92%
+of companies plan to increase AI spending over thenext three years
+KPMG 2025 Global CEO Outlook
+Gartner Forecast Alert:  AI in IT Spending
+McKinsey & Company
+and the pressure to show ROI is increasing
+Now the race to become AI-first is on…
+71% of CEOs now rank AI as their top investment priority… and with global spending forecasted to hit $2 trillion in 2026 and 92% of companies planning to increase their AI spend…
+It is all adding to the pressure to show the ROI from AI investments and pilots
+
+
+
+AI Today
+T H E   E N T E R P R I S E   G A P
+But, there isa gap between
+AI ambition and
+enterprise reality
+The Agentic Enterprise
+Enterprise systems
+Governance at scale
+Real outcomes
+Endless pilots
+No path to scale
+Big promises
+Despite all this investment, 90% of transformative use cases are currently stuck in pilot mode (McKinsey) - why? 
+Many believe that AI will deliver on its promises with the next generation model or even AGI (general artificial intelligence)
+That assumption has put many companies into a state of “wait and see,” endless AI pilots and disconnected agentic experiments - they are trapped on the wrong side of the “enterprise gap”
+But better AI is not actually going to help you bridge the gap to becoming a truly AI-powered, agentic enterprise 
+Because AI is inherently a probabilistic technology that relies on statistical models to generate variable outputs (and can be incredibly prolific when it comes to generating content and code) - 
+Real enterprise applications are deterministic - they follow predefined rules to produce predictable and reliable results you can trust for core processes and mission-critical operations 
+So how do you get from AI experimentation to enterprise AI that is
+Integrated with core systems?
+Governed and compliant?
+Reliable in production?
+Predictable at scale?
+The key to bridging the enterprise AI gap is to combine the probabilistic nature of AI to accelerate the build phase of development, with a deterministic framework to deliver trusted AI apps and solutions that behave according to your enterprise and industry requirements, every time. 
+
+
+Rapidly build custom apps and AI agents for mission-critical core functions of your business
+Modernize legacy processes with AI and agentic solutions that wrap and extend your core systems and data
+Manage and govern the full lifecycle of your portfolio of apps and agents on one unified platform
+“We needed a platform that was fast and powerful enough to build an AI-powered enterprise system. OutSystems was the clear choice.” 
+Rick Hoebée
+CTO, TravelEssence 
+OutSystems is your AI development platform built for the enterprise
+built for the enterprise
+Mentor
+Agent Workbench
+That’s exactly what OutSystems delivers - one platform that combines the speed of AI with everything you need to build, manage, and govern enterprise apps and agents at scale.
+OutSystems’ AI-driven development platform empowers your teams of any size or skill to:
+Get a fast start at any project in a visual development environment with fully integrated DevOps 
+Deliver production-ready apps with AI, grounded in your full enterprise context 
+Build agents that extend your core processes with clearly defined guardrails
+Our full-stack platform is modular by design, with fine-grained reusable components to iterate apps and agents exponentially faster
+With all your data, APIs, UX, identity, and integrations in one place 
+Making it easy to modernize legacy processes and evolve solutions quickly as business needs change 
+So unlike standalone AI coding tools or packaged solutions, you can deliver exactly what you need, down to pixel-perfect custom user experiences you can trust with your employees and customers
+With complete visibility and control to deliver enterprise-ready AI within your architecture, 
+automate governance, and 
+manage the end-to-end lifecycle with confidence.
+
+
+Enterprise-Proven
+Trusted by thousandsof enterprises for mission-critical apps and durable innovation
+The OutSystems Advantage
+Build your agentic future with the only AI development platform that is unified, agile, and enterprise-proven.
+Unified
+Build, run, and govern 
+apps and agents 
+on one unified platform
+Agile
+Innovate at the speed of AI without compromising quality or control
+Success ecosystem of global support, professional services, 600+ partners, 900k+ community members
+OutSystems is how you move past the pilot phase. 
+We provide the only AI development platform that is unified, agile, and enterprise-proven so you can build your agentic future with AI solutions deeply integrated into your architecture - 
+And our OutSystems success ecosystem is with you every step of the way, with round the clock global support, professional services team, over 600 partners, and 900K+ community members 
+
+
+OUTSYSTEMS AI DEVELOPMENT PLATFORM
+OUTSYSTEMS MODEL
+IntegratedAgenticExperiences
+Design& ManageContext
+IntegrateEverything
+Govern& Deploy
+Run &Operate
+Applications
+(Web, PWA, Native Mobile)
+AGENTS
+Channels 
+(Chatbots, SMS, Email, WhatsApp…)
+Programmatic Endpoints
+(APIs, MCP, A2A)
+User Interfaces& Experiences
+Workflows 
+& Business Logic
+Integrations& Data
+Agentic Behaviors& Skills
+External Systems
+Foundational Models
+Third Party Agents
+Compliance& Security
+Monitoring& Observability
+Agent & App 
+Lifecycle Management
+Cloud Native
+On-Premise
+Hybrid
+UNIFIED
+AGILE
+ENTERPRISE-PROVEN
+Data Sources
+Because you’re not just trying to build agents. You’re trying to make your business agentic.
+This is about improving customer experience, employee productivity, and operational effectiveness. Your applications, channels, and APIs don’t go away; they evolve to be deeply integrated with agents.
+Unlike standalone AI platforms, which can lead to agent sprawl, OutSystems gives you one Unified place to build, manage, and govern your portfolio of integrated apps and agents. 
+We can also orchestrate your other systems, data sources, models, and third party agents with unified identity and workflow management – ensuring your solutions aren’t just isolated “vibe-code” experiments, but production-ready agentic systems grounded in your full enterprise context, and integrated with your existing business.
+But software development doesn’t end at building, and agility is your competitive advantage.
+Agility isn’t just about speed, it’s about adaptability and resilience.
+Our platform is built for Agility. Our unique OutSystems Model (OML) empowers teams to innovate at the speed of AI without compromising quality or control. 
+You get the trust of SaaS, with the infinite possibilities of building exactly what you need.
+OML becomes your enterprise context – custom-built systems, external systems, data sources, and third party agents – are all mapped together before you compile a single line of code.
+OML ensures that all your compiled code is secure, reliable, and scalable by design.
+By automatically tracking dependencies across all the components, OML enables you to build and iterate exponentially faster with modularity and reuse.
+This is backed by fully integrated DevOps with one-click publishing, to automate your path to production while eliminating the manual "glue code" that stalls most AI projects.
+And unlike fragmented toolsets, this model-based approach enables enterprise-level governance and observability at every layer, from portfolio management to precise role-based access control.
+All of this provides the foundation for trusted, high-velocity AI innovation… and with flexible runtime deployment options, built-in reliability, resiliency, and scalability and expert round-the-clock support, that’s why we’re Enterprise-Proven and trusted by thousands of organizations worldwide.
+
+OUTSYSTEMS AI DEVELOPMENT PLATFORM
+OUTSYSTEMS MODEL
+IntegratedAgenticExperiences
+Design& ManageContext
+IntegrateEverything
+Govern& Deploy
+Run &Operate
+Applications
+(Web, PWA, Native Mobile)
+AGENTS
+Channels 
+(Chatbots, SMS, Email, WhatsApp…)
+Programmatic Endpoints
+(APIs, MCP, A2A)
+User Interfaces& Experiences
+Workflows 
+& Business Logic
+Integrations& Data
+Agentic Behaviors& Skills
+External Systems
+Foundational Models
+Third Party Agents
+Compliance& Security
+Monitoring& Observability
+Agent & App 
+Lifecycle Management
+Cloud Native
+On-Premise
+Hybrid
+UNIFIED
+AGILE
+ENTERPRISE-PROVEN
+Data Sources
+Because you’re not just trying to build agents. You’re trying to make your business agentic.
+This is about improving customer experience, employee productivity, and operational effectiveness. Your applications, channels, and APIs don’t go away; they evolve to be deeply integrated with agents.
+Unlike standalone AI platforms, which can lead to agent sprawl, OutSystems gives you one Unified place to build, manage, and govern your portfolio of integrated apps and agents. 
+We can also orchestrate your other systems, data sources, models, and third party agents with unified identity and workflow management – ensuring your solutions aren’t just isolated “vibe-code” experiments, but production-ready agentic systems grounded in your full enterprise context, and integrated with your existing business.
+But software development doesn’t end at building, and agility is your competitive advantage.
+Agility isn’t just about speed, it’s about adaptability and resilience.
+Our platform is built for Agility. Our unique OutSystems Model (OML) empowers teams to innovate at the speed of AI without compromising quality or control. 
+You get the trust of SaaS, with the infinite possibilities of building exactly what you need.
+OML becomes your enterprise context – custom-built systems, external systems, data sources, and third party agents – are all mapped together before you compile a single line of code.
+OML ensures that all your compiled code is secure, reliable, and scalable by design.
+By automatically tracking dependencies across all the components, OML enables you to build and iterate exponentially faster with modularity and reuse.
+This is backed by fully integrated DevOps with one-click publishing, to automate your path to production while eliminating the manual "glue code" that stalls most AI projects.
+And unlike fragmented toolsets, this model-based approach enables enterprise-level governance and observability at every layer, from portfolio management to precise role-based access control.
+All of this provides the foundation for trusted, high-velocity AI innovation… and with flexible runtime deployment options, built-in reliability, resiliency, and scalability and expert round-the-clock support, that’s why we’re Enterprise-Proven and trusted by thousands of organizations worldwide.
+
+OUTSYSTEMS AI DEVELOPMENT PLATFORM
+OUTSYSTEMS MODEL
+IntegratedAgenticExperiences
+Design& ManageContext
+IntegrateEverything
+Govern& Deploy
+Run &Operate
+Applications
+(Web, PWA, Native Mobile)
+AGENTS
+Channels 
+(Chatbots, SMS, Email, WhatsApp…)
+Programmatic Endpoints
+(APIs, MCP, A2A)
+User Interfaces& Experiences
+Workflows 
+& Business Logic
+Integrations& Data
+Agentic Behaviors& Skills
+External Systems
+Foundational Models
+Third Party Agents
+Compliance& Security
+Monitoring& Observability
+Agent & App 
+Lifecycle Management
+Cloud Native
+On-Premise
+Hybrid
+UNIFIED
+AGILE
+ENTERPRISE-PROVEN
+Data Sources
+Because you’re not just trying to build agents. You’re trying to make your business agentic.
+This is about improving customer experience, employee productivity, and operational effectiveness. Your applications, channels, and APIs don’t go away; they evolve to be deeply integrated with agents.
+Unlike standalone AI platforms, which can lead to agent sprawl, OutSystems gives you one Unified place to build, manage, and govern your portfolio of integrated apps and agents. 
+We can also orchestrate your other systems, data sources, models, and third party agents with unified identity and workflow management – ensuring your solutions aren’t just isolated “vibe-code” experiments, but production-ready agentic systems grounded in your full enterprise context, and integrated with your existing business.
+But software development doesn’t end at building, and agility is your competitive advantage.
+Agility isn’t just about speed, it’s about adaptability and resilience.
+Our platform is built for Agility. Our unique OutSystems Model (OML) empowers teams to innovate at the speed of AI without compromising quality or control. 
+You get the trust of SaaS, with the infinite possibilities of building exactly what you need.
+OML becomes your enterprise context – custom-built systems, external systems, data sources, and third party agents – are all mapped together before you compile a single line of code.
+OML ensures that all your compiled code is secure, reliable, and scalable by design.
+By automatically tracking dependencies across all the components, OML enables you to build and iterate exponentially faster with modularity and reuse.
+This is backed by fully integrated DevOps with one-click publishing, to automate your path to production while eliminating the manual "glue code" that stalls most AI projects.
+And unlike fragmented toolsets, this model-based approach enables enterprise-level governance and observability at every layer, from portfolio management to precise role-based access control.
+All of this provides the foundation for trusted, high-velocity AI innovation… and with flexible runtime deployment options, built-in reliability, resiliency, and scalability and expert round-the-clock support, that’s why we’re Enterprise-Proven and trusted by thousands of organizations worldwide.
+
+Connectwith our globalcommunity:
+outsystems.com/community
+Join ourupcoming events:
+outsystems.com/events
+Book an expert-led, 
+personalized 
+Agentic AI Workshop
+Build your agentic future with
+Build your agentic future
+Thank you so much for your time today.
+We’ve seen how organizations like Petrobras build, run, and govern their entire app and agent portfolio in OutSystems to overcome the enterprise AI gap and deliver real outcomes.
+As a next step, I’d love to schedule an expert-led, personalized agentic AI workshop so we can explore how OutSystems can help you tackle your most impactful agentic opportunities.
+
+Thank you
+
+Axos Bank brings legacy apps into the AI era with OutSystems
+Problem
+Large enterprise bogged down by manual processes and legacy apps needed to modernize to better serve today’s customers and reduce technical debt.
+Solution
+Instantly modernizes legacy apps with full enterprise context while using agents to automate complex tasks like log analysis and document mapping.
+85%
+decrease in rework
+
+75%
+reduction in defects
+60%faster development
+Kevin Hearn
+SVP, Head of Consumer Bank Development
+“By creating and embedding agents into our operations, we are building a more intelligent and responsive banking ecosystem that is ready for the future of finance.”
+
+To showcase what this looks like in the real world, let’s talk about Axos Bank.
+Before OutSystems, the team was bogged down by manual document mapping and burdened by costly, time-intensive legacy code maintenance.
+I love this story because they proved you don't have to choose between speed and security, achieving 60% faster development, a 75% reduction in defects, and an 85% decrease in rework.
+And now they’re using Agent Workbench and Mentor to deliver more value. 
+They’ve used Agent Workbench to build an intelligent agent that handles everything from analyzing error logs to mapping complex documents—eliminating hours of manual work.
+They’ve also tackled legacy modernization with Mentor. 
+While moving off legacy COBOL or .NET is usually a 10-step process, Axos was able to skip those steps entirely, modernizing their core apps instantly with full enterprise portfolio context.
+And this is just the beginning of what they have planned.
+
+
+Press release: https://www.outsystems.com/news/agent-workbench-general-availability/ 
+
+Problem
+Multinational energy company had 2,000+ legacy applications and tech debt that hindered innovation, while manual audit research processes remained slow and costly.
+Solution
+Established an agile center of excellence (CoE) to modernize systems at scale, leading to 15x ROI in some cases. The team is now building agentic systems, including one that automates complex audit research.
+Petrobras runs mission-critical processes with OutSystems
+500+professionals develop with OutSystems
+
+400+deploys per month
+48+mission-critical solutions in 8 months
+Silvia Lopes Santa Isabel
+Petrobras
+“The ROI is staggering. What now takes five minutes to research would have taken days to complete.”
+Customer story: Petrobras
+Let’s look at how one company is putting OutSystems to work…
+Petrobras is a global energy leader, ranking among the world’s top 100 public companies with more than 41,000 employees and $91 billion in annual revenue.
+With over 2,000+ legacy applications and a massive IT bottleneck, Petrobras was spending too much time on maintenance, leaving zero room for innovation.
+By adopting OutSystems across 100+ agile teams, they shifted from "keeping the lights on" to high-speed innovation with over 48 mission-critical apps delivered in just 8 months 
+And some projects achieving a 15x ROI
+They’ve become a high-velocity development powerhouse, averaging over 400 deployments every single month.
+And now, they are using OutSystems to build their agentic future. 
+The Petrobras Digital Audit team recently built “Raí,”  AI agent that leverages natural language so their auditors can instantly query regulatory standards, risks, and past audits. 
+A process that used to take days of manual research now takes just minutes, resulting in an 100% increase in research efficiency.
+Soon, Petrobras plans to expand this agentic solution to include agents that auto-generate reports.
+Petrobras agile CoE story: https://www.outsystems.com/case-studies/petrobras-agile-development/ Petrobras agentic AI story: https://www.outsystems.com/case-studies/petrobras-audit-agentic-ai/ 
+
+Pokémon powers mission-critical mobileevent app on OutSystems
+Problem
+One of the world’s most recognizable media brands needed to deploy a mission-critical event app on a tight deadline, but legacy approaches fell short of required scale and localization needs.
+Solution
+Adapted existing code and UI to deploy a scalable, reusable mobile app in just one month, supporting over 300,000 fans across seven languages and increasing event attendance by 70%.
+70%increase in event attendance
+
+300Kfans supported
+<1month to deploy
+“Built and deployed in under a month, the solution was designed for scalability and reusability. Its innovative approach, UX, and comprehensive language support drove significantly higher Pokémon Day attendance.”
+Pat Plude
+Business 
+Systems Analyst
+
+The Pokémon Company International faced a major challenge: delivering a specialized, highly scalable digital event locator for global events like Pokémon Day. 
+They needed a solution robust enough to handle the surge of fan requests immediately after launch, and they needed to do it fast.
+Using OutSystems, the team was able to quickly repurpose existing mobile assets and deploy a new, high-performance event app, load-testing it to handle over 300,000 users.
+The app was built and deployed in less than 1 month, connecting more than 14,000 global users and increasing event attendance by 70%.
+The solution supports seven languages and was built for agility, allowing the team to quickly reuse and evolve it for other events, like Pokéween, guaranteeing a consistent, high-quality fan experience globally.
+
+Full story: https://www.outsystems.com/case-studies/digital-event-locator-pokemon-company-international/
+Video: https://www.outsystems.com/videos/the-pokemon-company-international-event-locator-app/ 
+
+Bosch reduces shadow IT and employee ramp-up time with OutSystems
+Problem
+A multinational engineering leader faced shadow IT and a two-year dev backlog that stalled industrial innovation.
+Solution
+Deployed 500+ productive solutions, including an AI-powered factory and planning app that reduced team ramp-up time for new assembly lines by 85%
+500+productive apps
+
+400active developers
+85%reduction in assembly line ramp-up time
+Valério Matias
+Group Manager of Low-Code Experts 
+“OutSystems is ideal when we need quick and flexible development. It allows us to just build it instead of pushing it into a two-year backlog. That’s the platform’s greatest advantage: the ability to not say no.”
+When one of the world’s most recognizable manufacturing brands needed to deliver digital transformation at scale, OutSystems was at the heart of the solution.
+Bosch built over 500 applications in just four years on OutSystems, including their standout AIoT factory planning and support app. 
+This AI-powered solution enables true human-robot collaboration, using AI to identify skills needed for each machine, match them with the right worker, and account for physical condition or resource availability.
+The result? Team ramp-up times dropped by 85%, supercharging productivity and agility in Bosch’s factories. 
+By leveraging OutSystems, they launched complex apps in a fraction of the time and cost and established a new benchmark for secure, AI-driven manufacturing.
+Full story: https://www.outsystems.com/case-studies/bosch-digital-factory/Video: https://www.outsystems.com/videos/bosch-digital-transformation/ 
+
+Acacium Group drives AI innovation and saves 2,000+ hours with OutSystems
+Problem
+Large healthcare solutions provider struggled with costly, time-consuming development that slowed down productivity and customer experience improvements.
+Solution
+Replaced manual process with AI-powered staff matching app, saving 2,000+ hours. Built-in security and infrastructure gave teams 75% of their time back to focus on innovation.
+2,000+hours saved by AI app
+
+90%user adoption in first 3 months
+75%less infrastructure and security overhead
+Daniel Lynch
+Head of Solution Design
+“We’re a healthcare company, not a software one. We don’t have thousands of engineers to spare to focus just on security and infrastructure. That’s where OutSystems makes the difference.”
+Acacium Group was struggling with an expensive, manual recruitment process that was too slow.
+As a healthcare solutions provider with high security and compliance standards, the team often had to buy and configure software because it was hard to build in-house solutions that reached their industry’s high compliance standards.
+By switching to OutSystems, they got out-of-the-box infrastructure with built-in, enterprise-grade security and compliance they need. The platform’s built-in security handles 75% of the heavy lifting, allowing them to develop 10x faster than before.
+This enabled them to build an AI-powered staff-matching app in just four weeks.
+This intelligent system replaces manual CV screening, saving the team over 2,000 hours.
+And the first three months, they saw a massive 90% user adoption rate.
+Full story: https://www.outsystems.com/case-studies/acacium-group-generative-ai-healthcare/ 
+
+Hollard Insurance drives customer-centric transformation with OutSystems
+Problem
+Leading insurer had multiple legacy, disparate systems that created a disjointed customer experience.
+Solution
+Modernized fragmented systems into a unified experience, saving $100K and streamlining 48K cases through AI-powered workflows.
+$100K+saved by decommissioning legacy systems
+
+300,000customer data searches
+48,000cases processed by new workflow system
+Brighton Ravele
+Senior Manager, Digital Transformation
+“OutSystems Mentor can provide a rudimentary application covering 90% of what is needed, allowing us to start working quickly and fundamentally change how we deliver software across the SDLC.”
+Hollard, a leading South African insurer, needed to tackle back-office fragmentation to accelerate its customer-centric strategy. 
+With partner LINKIT, Hollard used OutSystems to modernize its core systems, saving over $100,000 by decommissioning legacy platforms as well as delivered mission-critical applications, including a claims management system, broker portal, and an app for call center employees with a 360-degree view of customers.
+In addition, the team deployed an AI-powered email triage system that automatically analyzes email content, determines customer intents, classifies and routes incoming email requests to the correct queues with 80% accuracy.
+To further boost speed, Hollard is embracing OutSystems Mentor. 
+Hollard is using Mentor to accelerate development, with a foundational, rudimentary application structure for new projects, providing 90% of what is needed, giving them the assurance of built-in security and reliability from the start.
+
+Full story: https://www.outsystems.com/case-studies/hollard-ai-innovation/ 
+
+Grihum Housing Finance improves customer experience with OutSystems
+Problem
+A fast-growing mortgage lender faced a fragmented landscape of 10+ legacy applications and slow, manual loan processes that hindered growth.
+Solution
+Modernized with a unified platform, resulting in an improved customer journey. The team is now scaling with agentic AI to automate underwriting.
+70%faster customer onboarding
+
+100%paperless loan origination, servicing, and onboarding
+50,000+active loans
+Varun Guliani
+CIO
+“By leveraging Agent Workbench, we’ve been able to automate a critical part of underwriting. The AI agent not only improves accuracy in identifying property deviations but also ensures faster decision making, which directly benefits both our teams and customers.”
+Grihum Housing Finance, a fast-growing Indian mortgage lender, is committed to bringing affordable homeownership to 85,000 customers including underserved Tier 2 and 3 regions. 
+Facing a fragmented and costly landscape of over 10 legacy applications and slow, manual loan processes, Grihum needed a complete digital overhaul without exceeding their IT budget.
+Using OutSystems, they built a unified AI-powered digital mortgage platform that consolidated all systems—from lending and CRM to customer and partner portals. Now, the team is using Agent Workbench to build a specialized AI agent which instantly analyzes complex property reports against credit policies, streamlining a critical part of underwriting.
+The results speak for themselves:
+Customer onboarding is now 70% faster.
+The business achieved 100% paperless loan origination and servicing.
+Grihum successfully increased its digital project scope by an incredible 72% without adding a single rupee to IT costs, setting a new benchmark for speed, scale, and financial inclusion.
+Full story: https://www.outsystems.com/case-studies/mortgage-platform-customer-onboarding/

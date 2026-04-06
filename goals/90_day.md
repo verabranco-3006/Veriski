@@ -39,6 +39,12 @@
 
 ---
 
+## Team Management Practices
+
+- [ ] Establish internal quarterly team performance retrospectives (Submethod 6.1) — Added 2026-04-06
+
+---
+
 ## Not Doing This Quarter
 
 - [Thing you're explicitly choosing not to focus on]

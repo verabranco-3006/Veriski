@@ -15,7 +15,8 @@
       "Bash(mv \"method_5_for_confluence.md\" \"method_5_definition.md\")",
       "Bash(mv \"method_6_for_confluence.md\" \"method_6_definition.md\")",
       "Bash(cd:*)",
-      "Bash(acli jira:*)"
+      "Bash(acli jira:*)",
+      "WebFetch(domain:docs.google.com)"
     ]
   }
 }

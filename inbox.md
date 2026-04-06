@@ -6,8 +6,7 @@
 
 ## To Process
 
-- [ ] Create skill for Operations Review preparation (supports Submethod 6.1)
-- [ ] Establish internal quarterly team performance retrospectives (Submethod 6.1)
+*Empty — all items processed*
 
 ---
 
@@ -39,6 +38,8 @@ When processing, ask:
 
 <!-- Completed items move here -->
 
+- [x] Create skill for Operations Review preparation (supports Submethod 6.1) → Added to `initiatives/active/ai_workflow_opportunities.md` (2026-04-06)
+- [x] Establish internal quarterly team performance retrospectives (Submethod 6.1) → Added to `goals/90_day.md` Team Management Practices (2026-04-06)
 - [x] review the full V2MOM measurement document → Completed: timeline corrections and obstacles finalized (2026-04-02)
 - [x] Schedule follow-up on metrics implementation discussion → Added to today's daily note as "Complete V2MOM metrics definition exercise"
 

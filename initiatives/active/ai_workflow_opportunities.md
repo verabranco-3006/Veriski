@@ -339,6 +339,10 @@ By Q2 2027:
 4. **Documentation:** Create workflow pattern documentation as we implement
 5. **Measurement:** Quarterly time savings survey (M5.1c)
 
+## Action Items
+
+- [ ] Create skill for Operations Review preparation (supports Submethod 6.1) — Added 2026-04-06
+
 ---
 
-*Last updated: 2026-04-04*
+*Last updated: 2026-04-06*
