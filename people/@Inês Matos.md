@@ -1,6 +1,6 @@
 # @Inês Matos
 
-*Last updated: 2026-03-24*
+*Last updated: 2026-04-07*
 
 ## Role & Context
 - **Role:** Senior Process Analyst
@@ -120,6 +120,29 @@
 ---
 
 ## 1:1 History
+
+### April 7, 2026
+
+**1:1 with Inês Matos — April 7, 2026**
+
+**Key Outcomes:** Discussed Product All Hands outcomes and Woodson's notes, clarified V2MOM cascade concerns and new V2MOM content. Plan to finalize Inês's V2MOM in next 1:1.
+
+**Product All Hands Debrief:**
+Discussed outcomes from Q1 Product All Hands and clarified some of the notes given by Woodson. Aligned on key takeaways and implications for Process Engineering work.
+
+**V2MOM Cascade Discussion:**
+Discussed same topics and concerns as Paulo regarding how V2MOM will cascade from team V2MOM to individual V2MOMs. Vera raised concerns about how to structure individual V2MOMs while maintaining alignment with team V2MOM. Aligned that Vera would follow up with approach after team discussion.
+
+**V2MOM Content Clarification:**
+Clarified some of the content of the new V2MOM - discussed methods, measures, and how Inês's work on Method 3 (Incident Response Resilience) should be reflected in her individual V2MOM.
+
+**Next 1:1 Goal:**
+Close Inês's V2MOM once and for all - finalize all content and structure for submission.
+
+**Next Steps:**
+- Inês: Continue V2MOM draft based on today's clarifications
+- Vera + Inês: Finalize V2MOM in next 1:1 (target: complete and ready to submit)
+- Team: Discuss V2MOM cascade approach on Friday
 
 ### March 24, 2026
 

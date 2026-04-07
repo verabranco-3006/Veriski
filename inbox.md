@@ -38,6 +38,7 @@ When processing, ask:
 
 <!-- Completed items move here -->
 
+- [x] organize folder structure for Process Engineering repo → Covered in Friday team meeting agenda: `meetings/prep/2026-04-10-team-meeting.md` (2026-04-07)
 - [x] Create skill for Operations Review preparation (supports Submethod 6.1) → Added to `initiatives/active/ai_workflow_opportunities.md` (2026-04-06)
 - [x] Establish internal quarterly team performance retrospectives (Submethod 6.1) → Added to `goals/90_day.md` Team Management Practices (2026-04-06)
 - [x] review the full V2MOM measurement document → Completed: timeline corrections and obstacles finalized (2026-04-02)

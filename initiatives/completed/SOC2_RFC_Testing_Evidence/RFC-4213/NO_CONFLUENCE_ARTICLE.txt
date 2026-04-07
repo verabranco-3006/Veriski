@@ -1,1 +1,0 @@
-This RFC does not have a Confluence catalog article.\nTesting evidence is documented in Jira comments only.
