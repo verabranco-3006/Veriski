@@ -38,6 +38,8 @@ When processing, ask:
 
 <!-- Completed items move here -->
 
+- [x] Define year-end review success criteria for direct reports once V2MOMs are finalized — create rubrics for "not there yet", "spot on", and "exceeding" to ensure full transparency and agile feedback cycles → Added to `teams/team_development_plan.md` (2026-04-08)
+- [x] share PIM access document with the teams → Added to tomorrow's daily note `log/daily/2026-04-09.md` (2026-04-08)
 - [x] organize folder structure for Process Engineering repo → Covered in Friday team meeting agenda: `meetings/prep/2026-04-10-team-meeting.md` (2026-04-07)
 - [x] Create skill for Operations Review preparation (supports Submethod 6.1) → Added to `initiatives/active/ai_workflow_opportunities.md` (2026-04-06)
 - [x] Establish internal quarterly team performance retrospectives (Submethod 6.1) → Added to `goals/90_day.md` Team Management Practices (2026-04-06)

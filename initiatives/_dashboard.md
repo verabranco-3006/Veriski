@@ -6,15 +6,9 @@
 
 ## Active
 
-| Initiative | Status | Started | Target |
-|------------|--------|---------|--------|
-| Pitch Certification | 🟡 In Progress | 2026-04-06 | 2026-04-08 |
-| V2MOM Definition | ✅ Complete | 2026-03-02 | 2026-04-04 |
-| M3.3 Retrospective Transformation | 🟡 Planning | 2026-03-12 | Q2 2026 |
-| M3.4 Problem Management | 🟡 Planning | 2026-04-04 | Q4 2026 |
-| M3.5 Event Management | 🟡 Planning | 2026-04-04 | Q2 2027 |
-| M2.3 Manual Resilience Identification | 🔵 On Hold | 2026-03-10 | TBD |
-| AI Workflow Opportunities | 🟢 Research | 2026-04-04 | Q2 2027 |
+*Initiatives are managed in ProcessEngineering_Internal workspace.*
+
+See: `ProcessEngineering_Internal/initiatives/_dashboard.md`
 
 ## Completed
 

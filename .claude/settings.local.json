@@ -16,7 +16,9 @@
       "Bash(mv \"method_6_for_confluence.md\" \"method_6_definition.md\")",
       "Bash(cd:*)",
       "Bash(acli jira:*)",
-      "WebFetch(domain:docs.google.com)"
+      "WebFetch(domain:docs.google.com)",
+      "Bash(../ProcessEngineering_Internal/initiatives/active/change-management-gs-sre-transition/_initiative.md:*)",
+      "Bash(../ProcessEngineering_Internal/initiatives/active/change-management-gs-sre-transition/plan.md:*)"
     ]
   }
 }
