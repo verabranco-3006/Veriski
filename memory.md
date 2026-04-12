@@ -145,10 +145,21 @@
 
 ---
 
+## Open Problems
+
+### Workspace Sync: Veriski ↔ ProcessEngineering_Internal
+- **Problem:** Initiative work happens daily in Veriski (personal workspace) but needs to flow to ProcessEngineering_Internal (team repo). Currently no mechanism to keep them in sync.
+- **Example:** m3.4 Problem Management content exists in both repos with different context — Veriski has meeting outcomes, Toyota escalation context, stakeholder alignment from April 10. ProcessEngineering_Internal has GS workshop context, governance model options, detailed implementation phasing, Jira Epic RSA-860 from April 4.
+- **Need:** A routine or mechanism to sync initiative-related content from Veriski to ProcessEngineering_Internal — possibly as part of `/daily-wrap-up` or a dedicated `/sync` skill.
+- **Status:** To address next week (week of April 14, 2026).
+
+---
+
 ## Updates Log
 
 *Track when this file is updated*
 
+- 2026-04-10: Added workspace sync problem (Veriski ↔ ProcessEngineering_Internal) to Open Problems — to address next week
 - 2026-03-05: Added cross-team dynamics pattern (GSSA defensive positioning), decision pattern (disengage from unproductive loops), demonstrates Strategic "No" in action
 - 2026-03-03: Added 2025 performance review feedback — Strengths (Growing People: Exceeding), Growth Edges (Measure Results: Not There Yet), Anti-Patterns (One Woman Show)
 - 2026-03-02: Initial memory file created for Vera Branco

@@ -6,7 +6,17 @@
 
 ## To Process
 
-*Empty — all items processed*
+- [ ] Restructure V2MOM methods — drop FedRAMP (Method 1), move AI Transformation up to Method 1, split into AI Transformation + Team Development
+- [ ] Meeting with António Valiente re: FedRAMP state and PE involvement
+- [ ] Formal V2MOM submission — DL next Friday
+- [ ] Clarify V2MOM process for OCs
+- [ ] Paulo: Present draft AI operating model + roadmap of opportunities — next week
+- [ ] Book escalation meeting with Charola and João Rodrigues — GS+R&D Workshop pending topic on Engineering Coverage
+- [ ] Open conversation with Messias, Miranda, and Rosa about the escalation made by Global Support
+- [ ] Log details from 1:1 with Adolfo Nunes in `people/@Adolfo Nunes.md`
+- [ ] Log details from 1:1 with António Miranda in `people/@António Miranda.md`
+- [ ] Aprovar timesheet da Laura
+- [ ] PE moving under Salman Malik's organization — track transition details
 
 ---
 
@@ -38,6 +48,7 @@ When processing, ask:
 
 <!-- Completed items move here -->
 
+- [x] Update V2MOM Vision/Values to make customer centricity more explicit → Done: Trusted Partnership description updated (2026-04-12)
 - [x] Define year-end review success criteria for direct reports once V2MOMs are finalized — create rubrics for "not there yet", "spot on", and "exceeding" to ensure full transparency and agile feedback cycles → Added to `teams/team_development_plan.md` (2026-04-08)
 - [x] share PIM access document with the teams → Added to tomorrow's daily note `log/daily/2026-04-09.md` (2026-04-08)
 - [x] organize folder structure for Process Engineering repo → Covered in Friday team meeting agenda: `meetings/prep/2026-04-10-team-meeting.md` (2026-04-07)
