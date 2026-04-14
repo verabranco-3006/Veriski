@@ -9,6 +9,12 @@
 # Claude Code auto-memory (personal to each user)
 .claude/projects/
 
+# Claude Code local settings (may contain API tokens)
+.claude/settings.local.json
+
+# Initiatives — tracked in ProcessEngineering_Internal repo (directory junction)
+initiatives/
+
 # OS files
 .DS_Store
 Thumbs.db

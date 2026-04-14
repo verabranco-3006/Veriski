@@ -1,0 +1,227 @@
+<mxfile host="app.diagrams.net" modified="2026-04-10T00:00:00.000Z" agent="Claude" version="21.0.0" type="device">
+  <diagram id="process-lifecycle" name="PE Process Lifecycle">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- DETECT Stage -->
+        <mxCell id="detect_group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#FF9800;strokeWidth=2;verticalAlign=top;fontStyle=1;fontSize=14;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="500" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="detect_label" value="DETECT" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=16;fontColor=#FF9800;" vertex="1" parent="1">
+          <mxGeometry x="250" y="50" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="em" value="&lt;b&gt;Event Management&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Alerts, SLO Breaches,&lt;br&gt;Monitoring&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E1;strokeColor=#FF9800;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="90" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="fm" value="&lt;b&gt;Failure Management&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;CD Failures, Deployment&lt;br&gt;Errors (RDODCF)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E1;strokeColor=#FF9800;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="90" width="200" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- RESPOND Stage -->
+        <mxCell id="respond_group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#F44336;strokeWidth=2;verticalAlign=top;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="600" y="40" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="respond_label" value="RESPOND" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=16;fontColor=#F44336;" vertex="1" parent="1">
+          <mxGeometry x="690" y="50" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="im" value="&lt;b&gt;Incident Management&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Customer-reported,&lt;br&gt;System-wide, Manual&lt;br&gt;(RDINC)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#F44336;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="90" width="200" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- LEARN Stage (widened for 2 boxes) -->
+        <mxCell id="learn_group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8EAF6;strokeColor=#3F51B5;strokeWidth=2;verticalAlign=top;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="940" y="40" width="500" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="learn_label" value="LEARN" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=16;fontColor=#3F51B5;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="50" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="retro" value="&lt;b&gt;Retrospectives&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Root Cause Analysis,&lt;br&gt;Findings, Action Plans&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C5CAE9;strokeColor=#3F51B5;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="90" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="impmgmt" value="&lt;b&gt;Improvement Management&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Action Item Tracking,&lt;br&gt;Continuous Improvement,&lt;br&gt;Accountability&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#D32F2F&quot;&gt;&lt;b&gt;TO ESTABLISH&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C5CAE9;strokeColor=#D32F2F;strokeWidth=3;shadow=1;dashed=1;dashPattern=8 4;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="80" width="200" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- FIX Stage -->
+        <mxCell id="fix_group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#2196F3;strokeWidth=2;verticalAlign=top;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="310" width="500" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="fix_label" value="FIX" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=16;fontColor=#2196F3;" vertex="1" parent="1">
+          <mxGeometry x="265" y="320" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pm" value="&lt;b&gt;Problem Management&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;RPMs — Investigation,&lt;br&gt;Known Errors, Workarounds,&lt;br&gt;Customer Visibility &amp;amp;&lt;br&gt;Deflection&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#2196F3;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="360" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="bm" value="&lt;b&gt;Bug Management&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Bug Lifecycle, Prioritization,&lt;br&gt;Fix Governance,&lt;br&gt;Measurements&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#D32F2F&quot;&gt;&lt;b&gt;TO ESTABLISH&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#D32F2F;strokeWidth=3;shadow=1;dashed=1;dashPattern=8 4;" vertex="1" parent="1">
+          <mxGeometry x="310" y="360" width="200" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- DELIVER Stage -->
+        <mxCell id="deliver_group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#4CAF50;strokeWidth=2;verticalAlign=top;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="600" y="310" width="500" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="deliver_label" value="DELIVER" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=16;fontColor=#4CAF50;" vertex="1" parent="1">
+          <mxGeometry x="805" y="320" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cm" value="&lt;b&gt;Change Management&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;RFCs, CAB, Standard/&lt;br&gt;Normal/Emergency Changes&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#4CAF50;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="370" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rn" value="&lt;b&gt;Release Notes&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Customer-facing&lt;br&gt;Documentation&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#D32F2F&quot;&gt;&lt;b&gt;GOVERNANCE GAP&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#4CAF50;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="370" width="200" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- CUSTOMER VISIBILITY Stage -->
+        <mxCell id="vis_group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#9C27B0;strokeWidth=2;verticalAlign=top;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="300" y="600" width="500" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="vis_label" value="CUSTOMER VISIBILITY" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=16;fontColor=#9C27B0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="610" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pp" value="&lt;b&gt;Problem Portal&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Status, Workarounds,&lt;br&gt;Deflection&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#9C27B0;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="650" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="sp" value="&lt;b&gt;Status Page&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;System-wide Impact&lt;br&gt;Communications&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#9C27B0;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="650" width="200" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- CONNECTIONS: Detection feeds Response -->
+        <mxCell id="e1" value="triggers" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;strokeColor=#666666;strokeWidth=2;fontSize=10;" edge="1" source="em" target="im" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="triggers" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.7;entryDx=0;entryDy=0;strokeColor=#666666;strokeWidth=2;fontSize=10;" edge="1" source="fm" target="im" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Response feeds Learning -->
+        <mxCell id="e3" value="system-wide&#xa;incidents" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#666666;strokeWidth=2;fontSize=10;" edge="1" source="im" target="retro" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Retrospectives feeds Improvement Management -->
+        <mxCell id="e3b" value="action items &amp;&#xa;findings" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#666666;strokeWidth=2;fontSize=10;" edge="1" source="retro" target="impmgmt" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Response feeds Problem Management -->
+        <mxCell id="e4" value="recurring/complex&#xa;issues" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#666666;strokeWidth=2;fontSize=10;" edge="1" source="im" target="pm" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="740" y="280" />
+              <mxPoint x="170" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Improvement Management feeds Problem Management -->
+        <mxCell id="e5" value="process&#xa;improvements" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#666666;strokeWidth=2;fontSize=10;" edge="1" source="impmgmt" target="pm" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1310" y="280" />
+              <mxPoint x="170" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Improvement Management feeds Bug Management -->
+        <mxCell id="e6" value="bugs identified" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#666666;strokeWidth=2;fontSize=10;" edge="1" source="impmgmt" target="bm" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1310" y="290" />
+              <mxPoint x="410" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Improvement Management feeds Change Management (process changes) -->
+        <mxCell id="e6b" value="process changes&#xa;&amp; improvements" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#666666;strokeWidth=2;fontSize=10;" edge="1" source="impmgmt" target="cm" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1310" y="295" />
+              <mxPoint x="730" y="295" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Problem Management feeds Bug Management -->
+        <mxCell id="e7" value="investigation&#xa;identifies bugs" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#666666;strokeWidth=2;fontSize=10;" edge="1" source="pm" target="bm" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Problem Management feeds Customer Visibility -->
+        <mxCell id="e8" value="known errors &amp;&#xa;workarounds" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#666666;strokeWidth=2;fontSize=10;" edge="1" source="pm" target="pp" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="560" />
+              <mxPoint x="170" y="710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Bug Management feeds Delivery -->
+        <mxCell id="e9" value="fix ready&#xa;for deployment" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#666666;strokeWidth=2;fontSize=10;" edge="1" source="bm" target="cm" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Delivery internal -->
+        <mxCell id="e10" value="change deployed&#xa;to production" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#666666;strokeWidth=2;fontSize=10;" edge="1" source="cm" target="rn" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Release Notes feeds Customer Visibility -->
+        <mxCell id="e11" value="published to&#xa;customers" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#666666;strokeWidth=2;fontSize=10;" edge="1" source="rn" target="pp" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="970" y="560" />
+              <mxPoint x="970" y="710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Incident feeds Status Page -->
+        <mxCell id="e12" value="system-wide&#xa;impact" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#666666;strokeWidth=2;fontSize=10;" edge="1" source="im" target="sp" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="740" y="270" />
+              <mxPoint x="1450" y="270" />
+              <mxPoint x="1450" y="560" />
+              <mxPoint x="670" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- FEEDBACK LOOPS (dashed) -->
+        <mxCell id="f1" value="deflects repeat&#xa;tickets" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#999999;strokeWidth=1;dashed=1;dashPattern=8 4;fontSize=9;fontColor=#999999;" edge="1" source="pp" target="im" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="570" />
+              <mxPoint x="580" y="570" />
+              <mxPoint x="580" y="260" />
+              <mxPoint x="740" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f2" value="failed change" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#999999;strokeWidth=1;dashed=1;dashPattern=8 4;fontSize=9;fontColor=#999999;" edge="1" source="cm" target="fm" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="730" y="300" />
+              <mxPoint x="410" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Title -->
+        <mxCell id="title" value="&lt;font style=&quot;font-size:20px&quot;&gt;&lt;b&gt;PE Process Lifecycle — SDLC Pipeline Integration&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:12px;color:#666666&quot;&gt;DETECT &amp;rarr; RESPOND &amp;rarr; LEARN &amp;rarr; FIX &amp;rarr; DELIVER &amp;rarr; CUSTOMER VISIBILITY&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="400" y="850" width="500" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Key Message -->
+        <mxCell id="keymsg" value="&lt;font style=&quot;font-size:11px&quot;&gt;&lt;b&gt;Bug Management and Improvement Management are the missing governed processes.&lt;/b&gt;&lt;br&gt;Without them, the chain from Problem &amp;rarr; Fix &amp;rarr; Release &amp;rarr; Customer Visibility breaks,&lt;br&gt;and retrospective action items have no accountability mechanism.&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#D32F2F;fillColor=#FFEBEE;rounded=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="920" width="620" height="60" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

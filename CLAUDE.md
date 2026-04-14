@@ -40,7 +40,10 @@ EngineeringOS/
 ├── memory.md                    # Accumulated patterns and insights (CRITICAL)
 ├── frameworks/                  # Mental models and frameworks
 ├── meetings/
-│   ├── raw/                     # Dump of meeting notes per day
+│   ├── prep/                    # Prepped meetings — prep + notes in same file. Outcomes feed initiative trackers. Draft comms after.
+│   ├── raw/                     # Quick-capture notes for meetings with no prep
+│   ├── drafts/                  # Message drafts (Slack, email) — YYYY-MM-DD-message-<recipient>.md
+│   ├── recurring/               # Recurring meetings with master docs (e.g., staff-meeting/)
 │   ├── summaries/               # summary of the meeting for  (YYYY-MM-DD.md)
 ├── log/
 │   ├── daily/                   # Current week's daily notes (YYYY-MM-DD.md)
@@ -54,13 +57,20 @@ EngineeringOS/
 │   ├── 1_year.md                # This year's goals
 ├── teams/                       # Team health and context
 ├── people/                      # Person notes (@Name.md format)
-├── initiatives/
-│   ├── _dashboard.md            # Overview of all initiatives
-│   ├── active/                  # Active initiative folders
-|       ├── [initiative_name]/   # Each initiative is a folder
-│           ├── _initiative.md   # Tracker (status, tasks, work log)
-│           ├── plan.md          # Working document
-│   └── completed/               # Completed initiatives
+├── initiatives/                  # ⟶ JUNCTION to ProcessEngineering_Internal/initiatives/
+│   ├── _dashboard.md            #   Shared with team — tracked in team repo
+│   ├── active/                  #   Active initiative folders (one per V2MOM submethod: mX.X_short_name/)
+│   │   └── [mX.X_short_name]/  #   Each initiative is a folder
+│   │       ├── _initiative.md   #   Tracker (status, scope, decisions, work log)
+│   │       └── working-sessions/#   Meeting notes for this initiative (YYYY-MM-DD-topic.md)
+│   └── completed/               #   Completed initiatives
+├── private-initiatives/          # Private — team management, coaching, sensitive work (M5.x lives here)
+│   ├── _dashboard.md            #   Private initiatives overview
+│   ├── active/                  #   Same structure as shared initiatives
+│   │   └── [mX.X_short_name]/
+│   │       ├── _initiative.md
+│   │       └── working-sessions/
+│   └── completed/
 ├── decisions/                   # Decision log and ADRs
 └── uploads/                     # Past reviews, notes to process
 ```
@@ -185,6 +195,25 @@ All workflows are available as skills. Use them with `/skill-name`.
 - **Format:** Minimal formatting, no excessive headers or bullets
 - **Reviews:** I do daily (5min), weekly (15min), monthly (20min), quarterly (60min)
 - **Energy:** Track patterns to optimize my schedule
+
+---
+
+## Shared Folders
+
+The `initiatives/` folder is a **Windows directory junction** pointing to `ProcessEngineering_Internal/initiatives/`. This means:
+
+- **initiatives/ is shared with the team** — any edits here are immediately visible in the team repo
+- **Git tracking happens in ProcessEngineering_Internal**, not Veriski (initiatives/ is in Veriski's .gitignore)
+- **When committing initiative changes**, commit in ProcessEngineering_Internal, not Veriski
+- **During daily wrap-up**, commit and push both repos: Veriski (private content) and ProcessEngineering_Internal (initiative content)
+- **Team members edit initiatives directly** in ProcessEngineering_Internal — no dependency on Vera
+
+**What stays private in Veriski:** meetings/prep, meetings/raw, people/, memory.md, log/, goals/, private-initiatives/
+**What is shared via junction:** initiatives/ (dashboard, active initiatives, completed initiatives)
+
+### Private Initiatives
+
+`private-initiatives/` follows the same structure as `initiatives/` but is tracked only in Veriski. Use for team management, coaching plans, performance-related work, or anything sensitive that shouldn't be visible to the team.
 
 ---
 

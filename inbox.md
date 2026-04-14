@@ -6,17 +6,15 @@
 
 ## To Process
 
-- [ ] Restructure V2MOM methods — drop FedRAMP (Method 1), move AI Transformation up to Method 1, split into AI Transformation + Team Development
-- [ ] Meeting with António Valiente re: FedRAMP state and PE involvement
-- [ ] Formal V2MOM submission — DL next Friday
-- [ ] Clarify V2MOM process for OCs
-- [ ] Paulo: Present draft AI operating model + roadmap of opportunities — next week
-- [ ] Book escalation meeting with Charola and João Rodrigues — GS+R&D Workshop pending topic on Engineering Coverage
-- [ ] Open conversation with Messias, Miranda, and Rosa about the escalation made by Global Support
 - [ ] Log details from 1:1 with Adolfo Nunes in `people/@Adolfo Nunes.md`
-- [ ] Log details from 1:1 with António Miranda in `people/@António Miranda.md`
-- [ ] Aprovar timesheet da Laura
-- [ ] PE moving under Salman Malik's organization — track transition details
+- [ ] Aprovar timesheet da Laura — approved until week 17, pending remaining weeks
+- [ ] Discuss story points tracking framework with Inês — leverage her Agile Coach skills to define how we track story points spent (not just assigned). Applies to M6.1 (Operational Capacity Allocation via Jira epics, assigned vs spent) and M6.2a (CAB Prep measurement)
+- [ ] PE moving under Salman Malik's organization — no news yet, still reporting to Brandão. Track transition details when available
+- [ ] Share escalation meeting alignment details (Charola + João Rodrigues, April 13) — need to document what was agreed
+- [ ] Build problem statement for Event Management — how many RDINCs marked as alerts, sources of alerts, how many alerts not explicitly converted to incident but were worked as such (e.g. through active Jira commenting) — **this week**
+- [ ] Build framework for process reviews — define the controls and the operating model. Must align with how we should run Operations Review as a whole — **30-day plan**
+- [ ] Organize Process Engineering documentation on GitHub and Confluence — define operating model for what lives where (GitHub for initiative tracking & working docs, Confluence for process documentation & team-facing content, Jira for execution). Align with team. — **next week**
+- [ ] Refine expected outputs in v2mom_definition/v2mom_execution_draft.md — current descriptions too generic, need concrete deliverables per submethod — **this week (Friday with Laura)**
 
 ---
 
@@ -48,6 +46,13 @@ When processing, ask:
 
 <!-- Completed items move here -->
 
+- [x] Restructure V2MOM methods — drop FedRAMP (Method 1), move AI Transformation up to Method 1, split into AI Transformation + Team Development → Done (2026-04-14)
+- [x] Meeting with António Valiente re: FedRAMP state and PE involvement → Done (2026-04-14)
+- [x] Formal V2MOM submission — DL next Friday → In progress, on track for submission (2026-04-14)
+- [x] Clarify V2MOM process for OCs → Clarified: OCs will not have V2MOMs on the tool. Vera will create one and assume ownership as Team Lead (2026-04-14)
+- [x] Paulo: Present draft AI operating model + roadmap of opportunities — next week → Ongoing: Paulo shared draft offline, discussing. Initiatives to be created per submethod in ProcessEngineering_Internal (2026-04-14)
+- [x] Open conversation with Messias, Miranda, and Rosa about the escalation made by Global Support → Done — message sent, meeting happened, no actions for PE (2026-04-14)
+- [x] Log details from 1:1 with António Miranda in `people/@António Miranda.md` → Not needed for now (2026-04-14)
 - [x] Update V2MOM Vision/Values to make customer centricity more explicit → Done: Trusted Partnership description updated (2026-04-12)
 - [x] Define year-end review success criteria for direct reports once V2MOMs are finalized — create rubrics for "not there yet", "spot on", and "exceeding" to ensure full transparency and agile feedback cycles → Added to `teams/team_development_plan.md` (2026-04-08)
 - [x] share PIM access document with the teams → Added to tomorrow's daily note `log/daily/2026-04-09.md` (2026-04-08)
@@ -63,4 +68,5 @@ When processing, ask:
 - [x] Prepare Operations Review → Added to today's daily note
 - [x] Prepare 1:1 with Arul Livingston (our area VP) → Added to `people/@Arul Livingston.md`
 - [x] create 1:1 with Ines → Added to `people/@Inês Matos.md`
+- [x] Book escalation meeting with Charola and João Rodrigues — GS+R&D Workshop pending topic on Engineering Coverage → Meeting happened April 13. Follow-up: share alignment details (2026-04-14)
 

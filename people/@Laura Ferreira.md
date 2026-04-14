@@ -1,6 +1,6 @@
 # @Laura Ferreira
 
-*Last updated: 2026-03-24*
+*Last updated: 2026-04-14*
 
 ## Role & Context
 - **Role:** Senior Process Analyst
@@ -15,23 +15,53 @@
 - Build CFR technical implementation for asset-to-incident correlation
 
 ## Strengths
-- [What she excels at]
-- [Skills or capabilities]
+- Thorough and detail-oriented — builds comprehensive analyses when given clear scope
+- Responds well to bounded, concrete deliverables (March strategy of smaller challenges worked)
+- Collaborative — works well with Inês and Paulo when paired
 
 ## Growth Areas
-- [Development areas]
-- [Skills she's building]
+- Tends to over-invest in administrative polish (Jira hygiene, plan formatting) instead of meaningful progress
+- Asks for help late — pattern of escalating only when stress is already high (identified March 12, still recurring April 14)
+- Confidence in autonomous decision-making — still building comfort with owning direction, not just execution
+- Risk of over-complicating deliverables (e.g., M2.2 framework) — needs coaching on simplicity
 
 ## Career Goals
-- [Where she wants to go]
-- [What she's interested in]
+- Building towards leading transformational initiatives independently (same level as Inês and Paulo)
 
 ## Notes
-- [Ongoing observations]
-- [Context about her work style, preferences, blockers]
-- [Feedback themes]
+- Started October 2025 — still in extended onboarding/ramp-up phase
+- Not used to this level of leader engagement and investment — responded positively when framed as long-term investment
+- Works closely with Paulo on Change Management track
+- #pattern: stress surfaces as over-engineering deliverables and over-focusing on admin tasks — redirect to outcomes
 
 ## 1:1 History
+
+### April 14, 2026
+
+**Key Outcomes:** Identified root cause of Laura's stress — over-indexing on Jira hygiene and initiative planning polish rather than meaningful progress. Realigned expectations on what I value as a leader. Agreed on a month of close collaboration to accelerate her autonomy.
+
+**Stress and Expectations:**
+Laura seemed stressed with having too much on her plate. After digging in, the real issue surfaced: she was too concerned about keeping Jira updated and initiative plans sharp — administrative overhead rather than actual progress. We discussed what I value as a leader so she can stop spending energy on the wrong things.
+
+**Leadership Investment:**
+Laura shared she was not used to this level of engagement and concern from a lead. I told her we are making a long-term investment in her knowledge and autonomy. She is not only a task executor — she is part of the team and will lead transformational initiatives just like Inês and Paulo.
+
+**Close Collaboration Plan:**
+Agreed on working closely together for one month on her initiatives so she can feel she is progressing fast towards the goals and build the confidence to become autonomous.
+
+**Friday V2MOM Planning:**
+Agreed that this Friday (April 18) we will plan the full V2MOM Method 2 together — align on the outcomes needed for each submethod, make sure we capture everything required, and ensure it is properly sized.
+
+**M2.2 Review Framework:**
+Reviewed Laura's initial framework for reviewer empowerment — it was over-complicated. Simplified to a set of questions reviewers should answer when assessing an RFC, designed for future automation. Draft saved in `initiatives/active/m2_transform_change_management/m2.2_reviewer_empowerment/review-framework.md`.
+
+**Next Steps:**
+- Work closely on M2 initiatives for the next month — Vera + Laura
+- Friday April 18: Plan full V2MOM Method 2 (outcomes per submethod, sizing) — Vera + Laura
+- Laura to refine M2.2 review questions with real RFC examples for Friday — Laura
+- Stop over-investing in Jira hygiene and plan polish — Laura
+
+---
 
 ### March 24, 2026
 
@@ -89,4 +119,6 @@ Laura is updating documentation with new links and ensuring the space reflects c
 ---
 
 ## Action Items
-- [ ] [Open items]
+- [ ] Work closely with Laura on M2 initiatives for 1 month (April 14 – May 14)
+- [ ] Friday April 18: Plan full V2MOM Method 2 together (outcomes, sizing)
+- [ ] Laura to refine M2.2 review questions with real RFC examples
