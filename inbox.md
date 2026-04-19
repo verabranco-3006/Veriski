@@ -15,6 +15,9 @@
 - [ ] Build framework for process reviews — define the controls and the operating model. Must align with how we should run Operations Review as a whole — **30-day plan**
 - [ ] Organize Process Engineering documentation on GitHub and Confluence — define operating model for what lives where (GitHub for initiative tracking & working docs, Confluence for process documentation & team-facing content, Jira for execution). Align with team. — **next week**
 - [ ] Refine expected outputs in v2mom_definition/v2mom_execution_draft.md — current descriptions too generic, need concrete deliverables per submethod — **this week (Friday with Laura)**
+- [ ] Prepare 1:1 with Salman Malik
+- [ ] Prepare a people file of Salman Malik
+- [ ] Ask Jira team about Epic-level SP rollup from tasks — need Epic SP to auto-sum from child task SP for capacity model integration
 
 ---
 

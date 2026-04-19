@@ -78,4 +78,5 @@ See [2026-04-10 prep](2026-04-10-staff-meeting-prep.md) for full details on each
 
 ## Previous Meetings
 
+- [2026-04-16](2026-04-16-staff-meeting.md) — Retro transformation announced, Day-0 vulnerability intake, Paulo AI model approved
 - [2026-04-10](2026-04-10-staff-meeting-prep.md) — V2MOM decisions, AI Transformation, org change under Salman Malik
