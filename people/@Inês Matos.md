@@ -1,6 +1,6 @@
 # @Inês Matos
 
-*Last updated: 2026-04-07*
+*Last updated: 2026-04-20*
 
 ## Role & Context
 - **Role:** Senior Process Analyst
@@ -120,6 +120,27 @@
 ---
 
 ## 1:1 History
+
+### April 20, 2026
+
+**1:1 with Inês Matos — April 20, 2026**
+
+**Key Outcomes:** Clear division of Method 3 work — Vera takes M3.3 (Triage & OLAs), Inês progresses M3.2 (Status Page Governance) and M3.5 (Retrospective Transformation). BCDR policy update completed and sent for approval.
+
+**BCDR Policy Update:**
+Names updated in the policy document and sent to Arul for approval. This closes an action item that had been open since March 24.
+
+**Retrospective Transformation & SRE Engagement:**
+Ongoing conversations with both Ricardo Silva and Kevin Tek on retrospective transformation rollout and ICL elimination. Both topics progressing through direct engagement — no blockers flagged.
+
+**Method 3 Work Split:**
+Agreed on clear ownership split: Vera will revamp conversations on M3.3 (Triage Models & OLAs), while Inês focuses on M3.2 (Status Page Governance) and M3.5 (Retrospective Transformation). This gives Inês focused scope while Vera handles the stakeholder-heavy triage discussions.
+
+**Next Steps:**
+- Inês: Continue M3.2 and M3.5 progress
+- Inês: Follow up on BCDR policy approval with Arul
+- Vera: Revamp M3.3 — Triage and OLAs conversations
+- Next 1:1: Discuss V2MOM finalization and career goals
 
 ### April 7, 2026
 
