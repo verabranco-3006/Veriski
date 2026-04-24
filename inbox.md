@@ -18,6 +18,7 @@
 - [ ] Prepare 1:1 with Salman Malik
 - [ ] Prepare a people file of Salman Malik
 - [ ] Ask Jira team about Epic-level SP rollup from tasks — need Epic SP to auto-sum from child task SP for capacity model integration
+- [ ] Improve /daily-wrap-up skill to automatically ship Jira updates to corresponding Jira items when work is done on initiatives linked to a Jira ticket (e.g., today's retro skill update went to RSA-890 instead of RSA-894)
 
 ---
 

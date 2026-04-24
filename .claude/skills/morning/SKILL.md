@@ -18,11 +18,14 @@ Create today's daily note in `log/daily/` with the filename format YYYY-MM-DD.md
 2. Share a motivational sentence to give confidence to win the day
 3. Get the 3 most important topics to work on today
 4. **Show today's calendar:**
-   - Check today's daily note (`log/daily/YYYY-MM-DD.md`) for scheduled meetings
-   - Parse meeting entries in format: `- HH:MM - Meeting Title (@Attendee1, @Attendee2)`
+   - **Primary:** Fetch today's events using the `claude.ai Google Calendar` MCP server tools (list events for today's date range)
+   - **Fallback:** If the MCP is not authenticated or unavailable, use Playwright to navigate to `https://calendar.google.com/calendar/u/0/r/day`, take an accessibility snapshot (`mcp__playwright__browser_snapshot`), and parse events from the snapshot
+   - Parse each event: extract time, title, attendees, RSVP status, location
+   - Skip lunch blocks, focus time, all-day informational events (holidays, OOO)
    - For each meeting with a person, check if `people/@Name.md` exists and pull recent context
    - Flag which meetings need prep (1:1s, staff meetings, skip-levels)
    - Present calendar in clean format with time, title, attendees, and prep status
+   - Detect and flag any scheduling conflicts
 6. Ask the following questions one at a time, wait for response before moving to the next:
    - Which initiatives or projects are you focusing on today? What are your top priorities?
    - Any specific meeting I should help you get context with?
@@ -40,6 +43,5 @@ Keep the format clean and scannable.
 - Focus on what matters today
 - Don't overwhelm with too many tasks
 - Be encouraging and supportive
-- Calendar is automatically shown in morning routine
+- Calendar is fetched from Google Calendar via MCP — if not authenticated, prompt user to run `/mcp`
 - For standalone calendar view, use `/calendar today`
-- Add meeting times to daily notes in format: `- HH:MM - Meeting Title (@Person1, @Person2)`

@@ -132,6 +132,14 @@ All workflows are available as skills. Use them with `/skill-name`.
 | Prep Skip-Level | `/prep-skip-level` | Prepares skip-level 1:1 with person context, manager context, team health signals, and trust-building questions |
 | Staff Meeting Prep | `/staff-prep` | Prepares staff/leadership meetings with context, agenda, and decisions needed |
 
+### Operations Review
+
+| Skill | Command | What it does |
+|-------|---------|--------------|
+| Ops Review Prep | `/ops-review-prep` | Full prep — orchestrates retro + CM data, generates narrative, publishes Confluence report |
+| Retro Review Prep | `/retro-review-prep` | Retrospective section — Power BI charts + Jira detail + trend analysis |
+| CM Review Prep | `/cm-review-prep` | Change Management section — Power BI charts + DAX drill-down + trend analysis |
+
 ### Decisions & Leverage
 
 | Skill | Command | What it does |

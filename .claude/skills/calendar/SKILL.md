@@ -1,7 +1,7 @@
 ---
 skill_name: calendar
 title: Calendar View
-description: View today's or this week's calendar from Google Calendar via Playwright
+description: View today's or this week's calendar from Google Calendar
 ---
 
 # Calendar View
@@ -18,39 +18,33 @@ View your Google Calendar schedule parsed into a clean markdown table with confl
 
 ## Instructions
 
-### Step 1: Navigate to Google Calendar
+### Step 1: Fetch events from Google Calendar
 
-Based on the argument (default: today):
-- **today** → navigate Playwright browser to `https://calendar.google.com/calendar/u/0/r/day`
-- **week** → navigate Playwright browser to `https://calendar.google.com/calendar/u/0/r/week`
+**Primary — Google Calendar MCP:**
 
-Use `mcp__playwright__browser_navigate` to open the URL.
+Use the `claude.ai Google Calendar` MCP server tools to fetch calendar events.
 
-Wait 3 seconds for the page to fully load using `mcp__playwright__browser_wait_for`.
+- **today** → list events with `timeMin` = today 00:00 and `timeMax` = today 23:59 (ISO 8601 with timezone)
+- **week** → `timeMin` = Monday of current week, `timeMax` = Friday end of day
 
-### Step 2: Take an accessibility snapshot
+**Fallback — Playwright (if MCP is not authenticated or unavailable):**
 
-Use `mcp__playwright__browser_snapshot` — NOT a screenshot.
+- **today** → navigate to `https://calendar.google.com/calendar/u/0/r/day`
+- **week** → navigate to `https://calendar.google.com/calendar/u/0/r/week`
 
-The snapshot returns the accessibility tree with all calendar events as interactive elements.
+Use `mcp__playwright__browser_navigate` to open the URL. Wait 3 seconds for the page to load using `mcp__playwright__browser_wait_for`. Then take an accessibility snapshot with `mcp__playwright__browser_snapshot` (NOT a screenshot). Events appear as button elements with text like: `"9:30 AM to 10 AM, Meeting Name, Organizer Name, Accepted, No location, Color: Grape"`
 
-### Step 3: Parse events from the snapshot
-
-Events typically appear as button elements with text patterns like:
-```
-"9:30 AM to 10 AM, Meeting Name, Organizer Name, Accepted, No location, Color: Grape"
-"2 PM to 3 PM, Sprint Planning, Team Lead, Tentative, Room 4B, Color: Banana"
-```
+### Step 2: Parse events
 
 For each event, extract:
 - **Time range** — start and end time
-- **Event name** — the meeting title
+- **Event name** — the meeting title/summary
 - **RSVP status** — Accepted, Tentative, Declined, or Not responded
-- **Location** — room or "No location"
-- **Category** — the color label (Grape, Banana, Sage, etc.)
+- **Location** — meeting room, video link, or empty
+- **Organizer** — who created the event
 
 **SKIP these entries** — do not include in the active events table:
-- "Working location" buttons
+- "Working location" buttons (Playwright only)
 - Lunch blocks or meals
 - Focus time / Do not disturb blocks
 - All-day events that are informational (holidays, OOO notices)
@@ -63,26 +57,26 @@ For each event, extract:
 - Compare all active (non-declined) event time ranges
 - If any two events overlap, flag them as a conflict
 
-### Step 4: Output as markdown
+### Step 3: Output as markdown
 
 For each day, output:
 
 ```
 ### [Day of week], [Month] [Day], [Year]
 
-| Time | Event | Status | Category |
-|------|-------|--------|----------|
-| 09:30–10:00 | Meeting Name | Accepted | Color |
-| 10:00–11:00 | Another Meeting | :warning: Tentative | Color |
+| Time | Event | Status |
+|------|-------|--------|
+| 09:30–10:00 | Meeting Name | Accepted |
+| 10:00–11:00 | Another Meeting | :warning: Tentative |
 ...
 
 **Conflicts:** [list overlapping events, or "None"]
 **Declined:** [list declined events, or "None"]
 ```
 
-Use 24h or AM/PM format matching what the snapshot provides. Use en-dash (–) for time ranges.
+Use 24h format. Use en-dash (–) for time ranges.
 
-### Step 5: Add summary
+### Step 4: Add summary
 
 After all days, add:
 
@@ -97,7 +91,8 @@ Focus time = gaps between meetings that are at least 30 minutes, within working 
 
 ## Tips
 
-- If the browser is not authenticated to Google, tell the user to log in manually and retry.
-- If the snapshot is empty or shows a login page, say so clearly — don't guess at events.
+- **Prefer MCP** — try Google Calendar MCP first. If it returns an auth error or is unavailable, fall back to Playwright.
+- If using Playwright and the browser is not authenticated to Google, tell the user to log in manually and retry.
+- If the Playwright snapshot is empty or shows a login page, say so clearly — don't guess at events.
 - For week view, organize events by day with a section header per day.
 - Keep output clean and scannable — this feeds into `/morning` and daily planning.
