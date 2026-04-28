@@ -19,6 +19,7 @@
 - [ ] Prepare a people file of Salman Malik
 - [ ] Ask Jira team about Epic-level SP rollup from tasks — need Epic SP to auto-sum from child task SP for capacity model integration
 - [ ] Improve /daily-wrap-up skill to automatically ship Jira updates to corresponding Jira items when work is done on initiatives linked to a Jira ticket (e.g., today's retro skill update went to RSA-890 instead of RSA-894)
+- [ ] Prepare spec to evolve the Process Ecosystem tool — define requirements for the next iteration (standalone site at `ProcessEngineering_Internal/tools/process-ecosystem/`)
 
 ---
 
