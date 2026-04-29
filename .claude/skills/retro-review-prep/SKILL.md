@@ -73,7 +73,7 @@ Action items are **linked issues** on RDINC tickets. Primary link type is "is re
 
 ## Step 1: Gather previous context
 
-1. Read `metrics/retro-review-metrics.md` for historical trend data
+1. Read `initiatives/active/m6.1_cab_process_reviews/metrics/retro-review-metrics.md` for historical trend data
 2. Use `mcp__claude_ai_Atlassian__searchConfluenceUsingCql`:
    - CQL: `ancestor = 5316116528 AND type = page ORDER BY created DESC`
    - Space: EEO
@@ -392,7 +392,7 @@ Save to `meetings/prep/YYYY-MM-DD-retro-review-data.md`:
 
 ## Step 5: Update running metrics log
 
-Append current metrics to `metrics/retro-review-metrics.md`:
+Append current metrics to `initiatives/active/m6.1_cab_process_reviews/metrics/retro-review-metrics.md`:
 - Add new row to each running table
 - Bold current period row
 - Update alert status

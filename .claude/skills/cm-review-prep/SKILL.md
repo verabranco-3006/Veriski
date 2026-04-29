@@ -23,7 +23,9 @@ Change Management data comes from the **RFC Jira project**, fed into the **ODC C
 
 **Process documentation:** [Change Management Process (V6)](https://outsystemsrd.atlassian.net/wiki/spaces/RKB/pages/3862331705/Change+Management+Process)
 
-**Power BI report:** [ODC Change Management Dashboard](https://app.powerbi.com/groups/me/apps/3a45f9da-1b76-4e56-8d53-f5ecca33e50c/reports/449e7964-c785-47c4-b17b-b1a4fbcc2d9b/33cb60d0853417cd4e37?ctid=1e7930e6-1ca4-40df-ac06-adabc2b139a3&experience=power-bi)
+**Power BI report:** [ODC Change Management Dashboard](https://app.powerbi.com/groups/me/apps/3a45f9da-1b76-4e56-8d53-f5ecca33e50c/reports/449e7964-c785-47c4-b17b-b1a4fbcc2d9b/33cb60d0853417cd4e37?ctid=1e7930e6-1ca4-40df-ac06-adabc2b139a3&experience=power-bi) — the **Operations Review** page is the source of truth for headline volumes. All numbers on the Confluence report must reconcile to this page's tooltip values.
+
+**Operations Review page scope (locked):** RFCs created in window with at least one production-ring execution (ring+1/osall, ring+2/ea, ring+3/ga). Excludes Cancelled. Match this scope in all DAX queries — do NOT use unfiltered RFC_DISTINCT counts.
 
 **Power BI report with date filter** (append to URL):
 ```
@@ -108,19 +110,35 @@ Navigate to the Power BI report and take accessibility snapshots of each relevan
 
 **Date format:** The slicer uses DD-MM-YYYY format (Portuguese locale).
 
-**What Playwright reads (charts only):** The snapshot captures chart shapes, axis values, legend entries, and stacked bar proportions. Use this for visual pattern comparison with previous period. Raw numbers come from DAX queries.
+**What Playwright reads (charts only):** The snapshot captures chart shapes, axis values, legend entries, and stacked bar proportions. The accessibility tree exposes data point values as `option` elements (e.g., `option "17"`). For authoritative volumes, **always confirm via tooltips** (next step).
 
-**Linked Incidents table:** Read the "Linked Incidents" table from the snapshot for Emergency compliance — check which Emergency RFCs are linked to incidents without system-wide impact and the incident type.
+**Tooltip validation (REQUIRED for Ops Review page):**
 
-Extract from the charts:
-- RFC volume by type (Standard, Normal, Emergency)
-- Incident-driven RFC rate and count
-- Risk classification distribution
-- Ring distribution
-- Status distribution
-- Category/reason for change breakdown
-- Operation type breakdown
-- Any trend charts or period comparisons the report shows
+After taking the snapshot, hover over each headline data point with `mcp__playwright__browser_hover` to surface the tooltip — then take a follow-up snapshot and grep for the `alert` element. Tooltips disclose the underlying RFC count, execution count, and grouping context that resolves the RFC-level vs execution-level ambiguity.
+
+```
+mcp__playwright__browser_hover → target the chart segment ref
+mcp__playwright__browser_snapshot → save with descriptive filename
+Grep "alert.*\[ref=e\d+\]:" → tooltip text appears here
+```
+
+Hover at minimum:
+1. Largest bar in **RFC Risk Classification** → confirms RFC-level volume (e.g., `Contagem de ISSUE_KEY 17`)
+2. Largest bar in **# Change Execution per RFC type** → confirms execution-level volume
+3. **Fast Track** segment in **Changes by Category Reason** → tooltip discloses BOTH `#RFCs` and `#Change Executions` (e.g., `#RFCs 6, #Change Executions 13`)
+4. Normal Planned bar in **How RFCs are being used** → tooltip shows `# Changes Linked to Incidents X, # Changes Not Linked to Incidents Y` (RFC-level)
+
+**Operations Review page chart guide (locked April 2026 fine-tuning):**
+
+| Chart | Level | Tooltip discloses | Use for |
+|-------|-------|------------------|---------|
+| RFC Risk Classification | **RFC** | `Contagem de ISSUE_KEY` | Total RFC volume by type x risk |
+| # Change Execution per RFC type | **Execution** | Execution count per ring x type | Operational volume, ring distribution |
+| % RFCs used to fix Incidents (headline tile) | **RFC** | Percentage of total RFCs | Incident-driven rate (e.g., 23.40% = 11/47) |
+| How RFCs are being used | **RFC** | `# Changes Linked to Incidents`, `# Changes Not Linked` | Incident vs planned by type |
+| Changes by Category Reason | **Mixed (% on Execution)** | Both `#RFCs` AND `#Change Executions` | Fast Track count + execution share |
+| Emergency Changes and Incidents | RFC | — | Emergency volume + linkage |
+| Linked Incidents (table) | — | — | Emergency compliance check (system-wide impact) |
 
 ### Secondary: DAX queries for drill-down
 
@@ -342,7 +360,7 @@ project = RFC AND created >= "[START_DATE]" AND created <= "[END_DATE]" ORDER BY
 | RFC volume by type | RFC | Standard vs Normal vs Emergency breakdown | -- | -- |
 | Incident-Driven RFC Rate | RFC | % of RFCs linked to incidents | > 35% | -- |
 | Normal Planned Usage | RFC | % of Normal Changes for planned ops ("Shadow SDLC") | > 60% | M2.1 |
-| Fast Track Usage | RFC | % of changes with CHANGE_CATEGORY = "Fast Track" | > 5% | M2.2 |
+| Fast Track Usage | **Execution + RFC** | Report BOTH: (a) % of executions with CHANGE_CATEGORY = "Fast Track" — this is what the dashboard surfaces; (b) distinct RFC count for follow-up. Tooltip on Fast Track segment in "Changes by Category Reason" gives both numbers. | > 5% (execution level) | M2.2 |
 | Emergency Volume | RFC | Count + system-wide impact compliance | > 3 per period | -- |
 | Emergency Compliance | RFC | ERFCs without linked system-wide-impact incident | Any non-compliant | -- |
 | Change Type x Usage | RFC | % distribution of Standard/Normal/Emergency by usage: incident-driven vs planned operations | -- | -- |
@@ -367,8 +385,11 @@ Save to `meetings/prep/YYYY-MM-DD-cm-review-data.md`:
 ```markdown
 # Change Management Review Data -- [DATE]
 **Review period:** [START_DATE] to [END_DATE]
-**Total RFCs:** X (Y Standard, Z Normal, W Emergency)
-**Total Change Executions:** X (Y with ring assigned, Z ring not assigned)
+**Scope:** RFCs created in window with at least one production-ring execution (ring+1/osall, ring+2/ea, ring+3/ga). Excludes Cancelled. Matches Operations Review dashboard.
+**Total RFCs (RFC level, tooltip-confirmed):** X (Y Standard, Z Normal, W Emergency)
+**Total Production-Ring Executions (Execution level, tooltip-confirmed):** X (Y Standard, Z Normal)
+
+> Source of truth: ODC Change Management Power BI report > Operations Review page. All headline numbers below reconcile to that page's tooltip values.
 
 ---
 
@@ -444,11 +465,12 @@ Save to `meetings/prep/YYYY-MM-DD-cm-review-data.md`:
 | Metric | V2MOM | [Period -2] | [Period -1] | Current | Target | Change |
 |--------|-------|-------------|-------------|---------|--------|--------|
 | Normal Lead Time (days) | M2.1 | X | Y | Z | 11 days | +/-N |
-| Standard Change % | M2.4 | X% | Y% | Z% | >60% | +/-pp |
+| Standard Change % (RFC level) | M2.4 | X% | Y% | Z% | >60% | +/-pp |
 | Emergency Accuracy | M2.5 | X% | Y% | Z% | >95% | +/-pp |
 | Incident-Driven RFC Rate | — | X% | Y% | Z% | <35% | +/-pp |
 | Normal Planned % | M2.2a proxy | X% | Y% | Z% | — | +/-pp |
-| Fast Track % | M2.2 | X% | Y% | Z% | <5% | +/-pp |
+| Fast Track % (execution level) | M2.2 | X% | Y% | Z% | <5% | +/-pp |
+| Fast Track count (RFCs / Executions) | M2.2 | X/Y | X/Y | X/Y | — | +/- |
 | Emergency count | — | X | Y | Z | <3 | +/-N |
 
 ## Compliance signals
@@ -466,7 +488,7 @@ Return: "CM review data ready at `meetings/prep/YYYY-MM-DD-cm-review-data.md`. R
 
 ## Step 6: Update running metrics log
 
-Append the current period's data to `metrics/cm-review-metrics.md`.
+Append the current period's data to `initiatives/active/m6.1_cab_process_reviews/metrics/cm-review-metrics.md`.
 
 1. Read the existing log file
 2. Add a new row to each running metrics table with the current period's values:
@@ -503,8 +525,17 @@ Calculated columns: `LEADTIME (Days)` (creation to resolution), `Aging (days)`, 
 ## Tips
 
 - Prefer Playwright reading of the Power BI report -- it matches what stakeholders see
+- **Always tooltip-validate the headline volumes** -- the accessibility snapshot exposes data point values, but tooltips are the only authoritative source for the underlying RFC and execution counts
+- **Always call out the metric level explicitly** (RFC level vs Execution level) -- the Operations Review dashboard mixes both denominators on the same page. The Confluence report and prep file must label every metric to avoid trend confusion
 - Use DAX for drill-down only (specific RFCs, emergency compliance detail, paradox detection)
 - Always show trend data -- a single data point means nothing without context
 - Flag compliance signals explicitly -- Emergency misuse, ring distribution inversion, Fast Track spikes are audit-relevant
 - Connect findings to V2MOM initiatives -- PE is actively working on root causes, not just reporting
 - This skill produces data analysis and narrative (markdown tables + text), not chart visuals -- Power BI is the visual layer, dashboard screenshots for slides are a manual step
+
+## Known data gaps
+
+- **M2.4 Standard Change % denominator** -- not formally locked. Default to RFC-level (Standard RFCs / Total RFCs) for Confluence reporting and label it accordingly. Pending decision before next Ops Review.
+- **M2.1 Normal lead time baseline** (16 days) does not match current Operations Review scope (Normal-only avg ~1.79 days for production-ring + ex-Cancelled). Baseline likely covers a different cohort -- align with M2.1 owner.
+- **Trend back-fills** -- Apr 16 and earlier figures from Confluence may have used a different scope. Apples-to-apples comparison requires re-running prior periods with the locked production-ring + ex-Cancelled scope.
+- **First-Pass Approval (M6.2b)** -- definition agreed but Jira field/transition not implemented. No tracking yet.

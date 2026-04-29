@@ -137,9 +137,17 @@ Save to `meetings/prep/YYYY-MM-DD-ops-review-prep.md`:
 [3-5 bullet points for verbal delivery during the meeting -- the key messages to land]
 ```
 
-### Step 6: Generate Confluence report
+### Step 6: Manual data confirmation gate
 
-Generate the Confluence page content matching the established format (see previous reports). Include:
+**Do not generate the Confluence report yet.** Pause here and ask the person preparing the ops review to validate the prep document, retro detail, and CM detail. The Confluence report is only drafted after they have explicitly confirmed the numbers are correct.
+
+Ask: "Prep is ready at `meetings/prep/YYYY-MM-DD-ops-review-prep.md` (with retro and CM detail alongside). Please review the numbers — once you confirm the data is correct, I'll draft the Confluence report."
+
+Wait for explicit confirmation before proceeding to Step 7. If corrections are flagged, fix them in the prep files first and re-confirm.
+
+### Step 7: Generate and publish Confluence report
+
+Only after Step 6 confirmation. Generate the Confluence page content matching the established format (see previous reports). Include:
 - Supporting Materials section with dashboard links
 - Retrospective Data section with narrative
 - Change Management Data section with narrative and tables
@@ -154,15 +162,48 @@ If approved, use `mcp__claude_ai_Atlassian__createConfluencePage` to publish:
 - Title: `[DATE]` (e.g., `[April 30, 2026]`)
 - Format: matches previous reports
 
-### Step 7: Close Jira tracking task
+Capture the page URL from the response — it's required for Step 8 (Jira comment).
 
-After Confluence publish is confirmed, transition the M6.1 tracking task (created in Step 2) to Done.
+### Step 8: Post Confluence link to Jira task and close it
 
-Use `mcp__claude_ai_Atlassian__transitionJiraIssue`:
+Once the Confluence page is published, post a comment on the M6.1 tracking task with the Confluence link and a one-line headline summary, then transition the task to Done.
+
+**8a. Post comment with Confluence link** — use `mcp__claude_ai_Atlassian__addCommentToJiraIssue`:
+- Issue key: the `RSA-XXX` key from Step 2
+- Comment format:
+  ```
+  Published: <Confluence page URL>
+
+  <One-line headline summary, e.g.: "47 RFCs (20 Std / 27 Normal / 0 Emergency), incident-driven rate 23.40%, Fast Track 13.68% at execution level.">
+  ```
+
+This comment is the durable handoff — even if the transition fails or the task is reopened later, the link to the published report is on the ticket.
+
+**8b. Transition to Done** — use `mcp__claude_ai_Atlassian__transitionJiraIssue`:
 - Issue key: the `RSA-XXX` key from Step 2
 - Transition to: Done
 
-Add a comment to the task with a link to the Confluence page and a one-line summary (e.g., "Published. 53 RFCs, 0 Emergency, incident-driven rate at 20.75%.").
+Do not skip 8a. The comment must land before the transition so the audit trail records publish → close in that order.
+
+### Step 9: Archive prep documents under M6.1
+
+Move the three prep files out of `meetings/prep/` and into the M6.1 initiative folder so the historical record lives with the initiative that owns it.
+
+**Destination:** `initiatives/active/m6.1_cab_process_reviews/ops-reviews/YYYY-MM-DD/`
+
+Create the dated subfolder if it doesn't exist, then move:
+
+1. `meetings/prep/YYYY-MM-DD-ops-review-prep.md` → `initiatives/active/m6.1_cab_process_reviews/ops-reviews/YYYY-MM-DD/ops-review-prep.md`
+2. `meetings/prep/YYYY-MM-DD-retro-review-data.md` → `initiatives/active/m6.1_cab_process_reviews/ops-reviews/YYYY-MM-DD/retro-review-data.md`
+3. `meetings/prep/YYYY-MM-DD-cm-review-data.md` → `initiatives/active/m6.1_cab_process_reviews/ops-reviews/YYYY-MM-DD/cm-review-data.md`
+
+Use Bash `mv` (Unix syntax — destination is a Windows directory junction to ProcessEngineering_Internal, edits there are version-controlled with the team).
+
+**Why this matters:**
+- `meetings/prep/` is for active prep — clearing finished prep keeps that folder focused on the next cycle
+- M6.1 is the V2MOM initiative responsible for CAB and process reviews — the prep history belongs there
+- Filenames drop the date prefix because the folder already encodes the date
+- The Confluence page remains the canonical published artifact; these files are the working notes that produced it
 
 ---
 
@@ -172,7 +213,7 @@ Run after the meeting.
 
 ### What to read
 
-1. The prep file at `meetings/prep/YYYY-MM-DD-ops-review-prep.md`
+1. The prep file — first check `initiatives/active/m6.1_cab_process_reviews/ops-reviews/YYYY-MM-DD/ops-review-prep.md` (archived after publish). If not yet archived, fall back to `meetings/prep/YYYY-MM-DD-ops-review-prep.md`.
 2. Any notes added during the meeting
 
 ### What to do
