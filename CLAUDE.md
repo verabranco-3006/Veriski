@@ -87,6 +87,7 @@ When helping me, always read these files first:
 4. **teams/health_tracker.md** — Team health overview
 5. **initiatives/_dashboard.md** — What I'm working on
 6. **inbox.md** — Quick capture for tasks and ideas
+7. **docs/confluence-templates.md** — Required structure for any Confluence page or project charter in the EEO space (read this BEFORE drafting Confluence content)
 
 ---
 

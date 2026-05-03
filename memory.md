@@ -127,6 +127,22 @@
 
 ---
 
+## Skill ROI Tracking
+
+*Tracking time spent on recurring workflows to justify skill investments and quantify productivity gains. Supports the "Measure Results Constantly" growth edge.*
+
+### Ops Review Prep (`/ops-review-prep`, `/retro-review-prep`, `/cm-review-prep`)
+
+| Date | Focused prep time | Skill investment | Notes |
+|------|-------------------|------------------|-------|
+| 2026-04-29 | ~1h 46min (15:19→17:05) | +12min skill updates (21:20→21:32) | First full cycle with Step 6 confirmation gate + Step 8a/8b comment-then-transition. Three CM dashboard iterations (v1→v3) — tooltip validation drove the rework. Subjective perception: "absorbed the day" — actual: ~2h. |
+
+**Baseline to establish:** Pre-skill cycles (manual prep) — estimate next cycle by checking calendar blocks and Confluence draft history before the skill existed.
+
+**Hypothesis:** With the skill, prep time should compress further as confirmation gates remove backtracking.
+
+---
+
 ## Anti-Patterns
 
 ### Things I've Learned the Hard Way
@@ -159,6 +175,7 @@
 
 *Track when this file is updated*
 
+- 2026-04-30: Added Skill ROI Tracking section — first entry: Ops Review prep on 2026-04-29 took ~2h actual vs perceived "full day". Track future cycles to quantify skill value.
 - 2026-04-10: Added workspace sync problem (Veriski ↔ ProcessEngineering_Internal) to Open Problems — to address next week
 - 2026-03-05: Added cross-team dynamics pattern (GSSA defensive positioning), decision pattern (disengage from unproductive loops), demonstrates Strategic "No" in action
 - 2026-03-03: Added 2025 performance review feedback — Strengths (Growing People: Exceeding), Growth Edges (Measure Results: Not There Yet), Anti-Patterns (One Woman Show)
