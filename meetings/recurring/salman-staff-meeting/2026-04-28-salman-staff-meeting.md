@@ -1,7 +1,7 @@
 # Salman Staff Meeting
 *April 28, 2026*
 
-**Attendees:** Salman Malik, Anabela Cesário, Pedro Charola, Paulo Garcia, Vera Branco
+**Attendees:** Salman Malik, Anabela Cesário (out of office), Pedro Charola, Paulo Garcia, Vera Branco
 
 ---
 

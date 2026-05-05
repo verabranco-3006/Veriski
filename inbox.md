@@ -21,6 +21,7 @@
 - [ ] Improve /daily-wrap-up skill to automatically ship Jira updates to corresponding Jira items when work is done on initiatives linked to a Jira ticket (e.g., today's retro skill update went to RSA-890 instead of RSA-894)
 - [ ] Prepare spec to evolve the Process Ecosystem tool — define requirements for the next iteration (standalone site at `ProcessEngineering_Internal/tools/process-ecosystem/`)
 - [ ] Build /create-charter skill — end-to-end workflow that drafts a project charter from initiative context and publishes to Confluence (EEO space) under the right parent, following docs/confluence-templates.md structure. Target: next week.
+- [ ] Draft a high level strategic document explaining what we are aiming for with Method 2 of Transforming Change Management. If you want you can start drafting it on the background
 
 ---
 
