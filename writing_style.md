@@ -93,7 +93,7 @@ Confident in direction, but frames as "we" not "I."
 - Frame as a problem to solve together
 - Acknowledge friction/impact: "you have frequently been the impacted stakeholders"
 - Present data/context before proposing change
-- "I'd love to get your thoughts on..."
+- "What do you think?"
 
 ### How I Close Messages
 - **Informative messages:** No closing (just end)
@@ -107,7 +107,7 @@ Confident in direction, but frames as "we" not "I."
 - "What this means for you:"
 - "Thanks for your cooperation"
 - "Let's align on..."
-- "I'd love to get your thoughts on..."
+- "What do you think?"
 - "Find below details about..."
 - "Your support is greatly appreciated"
 

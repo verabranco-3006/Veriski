@@ -109,6 +109,13 @@
 - STOP: "One woman show" during crises, over-committing to every intake request
 - CONTINUE: Growing people, strategic alignment, demonstrating vulnerability
 
+### Process Constraints Discovered (2026)
+
+**ODC release pathway — no emergency change category today**
+ODC platform changes go through standard CAB. No compressed-window release pathway exists. In the Day-0 vulnerability process, the assumption is that situation room authority replaces CAB within a defined emergency scope — but this has not been formally established. This is a Change Management constraint that needs to be resolved independently before the Day-0 process is drillable for ODC. Do not conflate designing the Day-0 response process with designing the Change Management solution — those are separate conversations.
+
+---
+
 ### Quarterly Review Insights
 
 *Add insights from quarterly reviews here*

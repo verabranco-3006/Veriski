@@ -84,10 +84,10 @@
 **Key Action Items from M3.3 Drill-down (2026-03-09):**
 - [ ] Refine Salesforce-based support case vs incident model
 - [ ] Validate heuristic for differentiating support case vs service incident
-- [ ] Create workflow diagrams showing artifact integration (cases, incidents, problems, action items)
+- [X] Create workflow diagrams showing artifact integration (cases, incidents, problems, action items)
 - [x] Review and update retrospective mechanisms (In Progress — transformation initiative launched)
-- [ ] Define mandatory retrospective criteria with auditing mechanisms
-- [ ] Ensure retrospective quality and completion tracking for Operations Review
+- [X] Define mandatory retrospective criteria with auditing mechanisms
+- [X] Ensure retrospective quality and completion tracking for Operations Review
 
 **Links:**
 - M3.3 Drill-down notes: `meetings/raw/2026-03-09-submethod-m33-ines.md`
@@ -111,15 +111,36 @@
 - [x] Share detailed notes from retrospective process review meeting (2026-03-12) — Completed 2026-03-13
 - [x] Set up mentorship with Marina Calado for strategic voice development — Completed 2026-04-06
 - [ ] Document collaborative model and role definitions (with Vera) — Now part of proposal development
-- [ ] Draft outcome-based narrative template for retrospectives — Part of proposal
-- [ ] Develop quality framework for AI/Koda-assisted RCA auditing
-- [ ] Plan Brown Bag sessions for RCA best practices
-- [ ] Define metrics baseline per area (# incidents, detection ratio, RCA lead time)
+- [X] Draft outcome-based narrative template for retrospectives — Part of proposal
+- [X] Develop quality framework for AI/Koda-assisted RCA auditing
+- [X] Plan Brown Bag sessions for RCA best practices
+- [X] Define metrics baseline per area (# incidents, detection ratio, RCA lead time)
 - [ ] Complete BCDR Policy update for auditors (provide latest version) — Added 2026-03-24
 
 ---
 
 ## 1:1 History
+
+### May 25, 2026
+
+**1:1 with Inês Matos — May 25, 2026**
+
+**Key Outcomes:** BCDR policy closure plan set for June 1 Task Force Meeting. Inês proactively raised the Process Release Framework gap between PE Space and R&D Knowledge Base — needs operating model definition.
+
+**BCDR Strategy Document:**
+Glenn and João Rodrigues raised foundational questions about the document. Decision: close the current version of the policy for the next auditing cycle, regardless of the broader BCDR revamp that will be needed. Target: bring to next Task Force Meeting on June 1.
+
+**Process Release Framework:**
+Inês raised the concern about the mirror pages between PE Space (drafts and pre-release documentation) and R&D Knowledge Base (customer-facing documentation). Current approach creates friction on updates and has gaps with Confluence features (e.g. hyperlinks). Needs assessment of the best solution. Vera to add this to the V2MOM operating model method.
+
+**V2MOM Finalization:**
+Inês committed to completing and submitting her V2MOM this week. Two methods confirmed: Method 3 execution (Incident Response Resilience, team V2MOM alignment) as primary ownership area, plus a personal development method covering her own growth goals.
+
+**Next Steps:**
+- Inês: Submit V2MOM by end of week (week of 25-May)
+- Inês + Vera: Close BCDR policy current version — target Task Force Meeting June 1
+- Vera: Add Process Release Framework operating model to V2MOM (M5.1)
+- Vera: Assess best solution for PE Space ↔ R&D Knowledge Base documentation flow
 
 ### April 20, 2026
 
