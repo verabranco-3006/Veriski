@@ -178,10 +178,18 @@ ODC platform changes go through standard CAB. No compressed-window release pathw
 
 ---
 
+## Workflow Preferences
+
+### 1:1 Notes → Outperform Notes
+The structured 1:1 summary written into each person's file (under `## 1:1 History`) doubles as the Outperform note. No separate document needed. When processing 1:1 notes, write the summary directly into the person file — that is the artifact to publish in Outperform.
+
+---
+
 ## Updates Log
 
 *Track when this file is updated*
 
+- 2026-06-09: Added Workflow Preferences — 1:1 summary in person file = Outperform note. No separate document needed.
 - 2026-04-30: Added Skill ROI Tracking section — first entry: Ops Review prep on 2026-04-29 took ~2h actual vs perceived "full day". Track future cycles to quantify skill value.
 - 2026-04-10: Added workspace sync problem (Veriski ↔ ProcessEngineering_Internal) to Open Problems — to address next week
 - 2026-03-05: Added cross-team dynamics pattern (GSSA defensive positioning), decision pattern (disengage from unproductive loops), demonstrates Strategic "No" in action

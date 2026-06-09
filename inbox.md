@@ -26,6 +26,7 @@
 - [ ] Draft a high level strategic document explaining what we are aiming for with Method 2 of Transforming Change Management. If you want you can start drafting it on the background
 - [ ] **RSA-939 — Operational Readiness Exercise:** Vera to share context on previous exercises; review what to do better and trace plan for this one
 - [ ] Simulate mode final testing + polish — verify console error in v2mom_roadmap.html, test shift buttons move bars + update capacity panel, consider auto-switching to Full Year view on simulate entry. Ref: `capacity_model/v2mom_roadmap.html`
+- [ ] Map capacity model start/end dates to Jira fields via bulk update — link shared-data.js month phases to Jira start/due date fields for all V2MOM epics and tasks
 
 ---
 

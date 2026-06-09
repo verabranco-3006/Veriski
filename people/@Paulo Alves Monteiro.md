@@ -39,6 +39,30 @@
 
 ## 1:1 History
 
+### June 9, 2026
+
+**1:1 with Paulo Alves Monteiro — June 9, 2026**
+
+**Key Outcomes:** Aligned on Q3 focus priorities across V2MOM methods, confirmed Paulo's role leading the Retrospective section of the next Operations Review on behalf of Inês, and agreed on approach for the Ops Review presentation.
+
+**Q3 Focus (by priority):**
+- **M4.1 completion:** Continue progress on Strategic Metrics Orchestration, navigating dependencies on CPTO M5 method (DRI: Liam Doyle). In parallel, start documenting metrics and building the metric library.
+- **M2.4 and M2.5 execution:** Begin work on Change Failure Rate and asset-version correlation, including the support case use case.
+- **Process Industrialization and AI Transformation:** Continue as a touch-point across all processes, supporting the team.
+- **Team V2MOM measurement mechanism:** Define and implement the measurement framework, building on the team repository structure and the initiative.md files in each submethod folder.
+
+**Operations Review — Retrospective Section:**
+Paulo will lead the Retrospective section of the next Ops Review on behalf of Inês. Agreed approach:
+- Present the preliminary dashboard (web, new process data only, excluding MTTR)
+- Include a slide with next steps for the initiative
+- Plan for handling legacy retrospective data available in Power BI
+- Implement monitoring of Action Items and follow-ups
+
+**Next Steps:**
+- Vera: Discuss with Brandão who is leading Paulo's compensation review.
+
+---
+
 ### April 7, 2026
 
 **1:1 with Paulo Alves Monteiro — April 7, 2026**
@@ -102,3 +126,4 @@ Paulo shared that Vijay requested a review on Bug Escape metrics to separate cus
 - [ ] Confirm Method 3 technical ownership approach in V2MOM training - Vera
 - [ ] Communicate Method 3 decision to Paulo and Laura - Vera (after V2MOM training confirmation)
 - [ ] Discuss career paths with Paulo in next 1:1 - Vera
+- [ ] Discuss with Brandão who is leading Paulo's compensation review - Vera
