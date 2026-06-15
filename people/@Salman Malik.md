@@ -20,7 +20,10 @@ Key framing from Blando:
 **New function announced:** "Engineering Operations" — to focus on improving the quality and efficiency of delivery and operation processes. **This is where PE most likely lands.**
 
 ## Current Focus
-- [TBD — to be discovered in first 1:1]
+- Building the operating system for P&E — starting from customer impact and working backwards
+- Wants a clear headline vision for the org (Amazon-style "press release first" approach)
+- Driving improvements via Pareto: identify the most impactful problems, not all problems
+- Active areas: business process mapping, BCDR ownership clarity, GS/Engineering collaboration
 
 ## Topics for First 1:1
 
@@ -97,12 +100,38 @@ Key framing from Blando:
 
 **Vera's growth edge connection:** This 1:1 is a chance to practice "Strategic No" — don't over-commit to new scope just to impress. Show the V2MOM, show the execution, let the work speak.
 
+## Operating Style (observed — June 11 1:1)
+- Starts from customer impact, works backwards — not from engineering concerns upward
+- Pareto-oriented: focus energy on highest-impact problems
+- Amazon-style thinking: headline vision first, then work backwards
+- Plans to draft his own problem list and share for input — collaborative approach
+- Comfortable with direct framing of org challenges
+
+## Relationship to PE
+- PE reports directly to Salman. Transition complete as of June 2026.
+- Sees PE as a partner in building the operating system, not a team to absorb
+- Key shared area: business process mapping (PDLC end-to-end), BCDR execution, Ops Review transformation, GS/Engineering friction
+
 ## Notes
-- Transition announced but no details yet — still reporting to Brandão
-- First 1:1 not yet scheduled
 - Salman is based in Lisbon, new to OutSystems
+- Customer signals he's tracking: Axos, Entel — ODC reliability and log visibility concerns raised directly
+- Rick Pruss is working on Confluence-based process mapping — three-way alignment needed (Vera + Rick + Salman)
+
+## 1:1 History
+
+### June 11, 2026 — First catch-up
+See full notes: `meetings/prep/2026-06-11-1o1-salman-malik.md`
+
+**Key outcomes:**
+- BCDR: Architecture owns strategy/scenarios; PE owns execution and testing
+- Business process mapping: Vera to engage Rick Pruss, then 3-way meeting
+- GS/Engineering friction: workshop planned with Salman + Paul Garcia
+- Salman drafting problem list from last 2 months → will share with Vera
 
 ## Action Items
 - [X] Schedule first 1:1
 - [X] Prepare V2MOM overview summary for context sharing
-- [ ] Understand Salman's org structure and where PE fits
+- [X] Understand Salman's org structure and where PE fits — PE reports directly to Salman
+- [ ] Engage Rick Pruss on process mapping work and coordinate 3-way meeting
+- [ ] Write up GS/Engineering friction for Salman + Paul Garcia workshop
+- [ ] Prepare for and participate in Salman + Paul Garcia workshop

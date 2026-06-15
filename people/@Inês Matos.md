@@ -1,6 +1,6 @@
 # @Inês Matos
 
-*Last updated: 2026-04-20*
+*Last updated: 2026-06-15*
 
 ## Role & Context
 - **Role:** Senior Process Analyst
@@ -110,16 +110,39 @@
 - [x] Schedule 1:1 with Inês — Completed 2026-03-24
 - [x] Share detailed notes from retrospective process review meeting (2026-03-12) — Completed 2026-03-13
 - [x] Set up mentorship with Marina Calado for strategic voice development — Completed 2026-04-06
-- [ ] Document collaborative model and role definitions (with Vera) — Now part of proposal development
+- [X] Document collaborative model and role definitions (with Vera) — Now part of proposal development
 - [X] Draft outcome-based narrative template for retrospectives — Part of proposal
 - [X] Develop quality framework for AI/Koda-assisted RCA auditing
 - [X] Plan Brown Bag sessions for RCA best practices
 - [X] Define metrics baseline per area (# incidents, detection ratio, RCA lead time)
-- [ ] Complete BCDR Policy update for auditors (provide latest version) — Added 2026-03-24
+- [x] Complete BCDR Policy update for auditors (provide latest version) — Closed June 2026
+- [x] V2MOM submitted — week of May 25, 2026
 
 ---
 
 ## 1:1 History
+
+### June 15, 2026
+
+**1:1 with Inês Matos — June 15, 2026**
+
+**Key Outcomes:** Aligned on M3.5 next steps after vacation week and set Q3 focus on M3.3. O11 Incident Response likely added as out-of-strategy initiative pending Messias Peralta confirmation on June 16.
+
+**Vacation Catch-Up:**
+Inês was on vacation last week. This 1:1 was used to bring her up to speed on what happened in her absence before moving into Q3 alignment.
+
+**M3.5 — Retrospective Transformation Next Steps:**
+Three concrete next steps defined: evolve action items monitoring, handle legacy retrospectives to prevent the agentic platform from gathering unnecessary context, and work with SRE on MTTR calculation methodology to include in the dashboard.
+
+**Q3 Priorities:**
+Primary focus is M3.3 (Triage Models & OLAs) — milestones to be defined by end of July, in execution through Q3. A second priority may emerge as an out-of-strategy mandate: O11 Incident Response launch, pending confirmation with Messias Peralta on June 16.
+
+**Next Steps:**
+- Evolve action items monitoring on M3.5 — Inês
+- Handle legacy retrospectives to clean agentic platform context — Inês
+- Work with SRE on MTTR calculation for the dashboard — Inês
+- Validate all Jira tasks and review estimations before PE quarter retrospective (July 3) — Inês
+- Confirm O11 Incident Response out-of-strategy scope with Messias Peralta — Vera (June 16)
 
 ### May 25, 2026
 
