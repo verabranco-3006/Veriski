@@ -8,25 +8,27 @@
 
 - [ ] Create operating model for Releasing and Managing Processes — define how the team handles process lifecycle (drafting, review, release, updates across PE Space and R&D Knowledge Base). M5.1 scope. Triggered by Inês's concern on mirror pages (1:1 25-May).
 
-- [ ] Log details from 1:1 with Adolfo Nunes in `people/@Adolfo Nunes.md`
-- [ ] Aprovar timesheet da Laura — approved until week 17, pending remaining weeks
+- [X] Log details from 1:1 with Adolfo Nunes in `people/@Adolfo Nunes.md`
+- [X] Aprovar timesheet da Laura — approved until week 17, pending remaining weeks
 - [ ] Discuss story points tracking framework with Inês — leverage her Agile Coach skills to define how we track story points spent (not just assigned). Applies to M6.1 (Operational Capacity Allocation via Jira epics, assigned vs spent) and M6.2a (CAB Prep measurement)
-- [ ] PE moving under Salman Malik's organization — no news yet, still reporting to Brandão. Track transition details when available
-- [ ] Share escalation meeting alignment details (Charola + João Rodrigues, April 13) — need to document what was agreed
+- [X] PE moving under Salman Malik's organization — no news yet, still reporting to Brandão. Track transition details when available
+- [X] Share escalation meeting alignment details (Charola + João Rodrigues, April 13) — need to document what was agreed
 - [ ] Build problem statement for Event Management — how many RDINCs marked as alerts, sources of alerts, how many alerts not explicitly converted to incident but were worked as such (e.g. through active Jira commenting) — **this week**
 - [ ] Build framework for process reviews — define the controls and the operating model. Must align with how we should run Operations Review as a whole — **30-day plan**
-- [ ] Organize Process Engineering documentation on GitHub and Confluence — define operating model for what lives where (GitHub for initiative tracking & working docs, Confluence for process documentation & team-facing content, Jira for execution). Align with team. — **next week**
+- [X] Organize Process Engineering documentation on GitHub and Confluence — define operating model for what lives where (GitHub for initiative tracking & working docs, Confluence for process documentation & team-facing content, Jira for execution). Align with team. — **next week**
 - [x] Refine expected outputs in v2mom_definition/v2mom_execution_draft.md — done
-- [ ] Prepare 1:1 with Salman Malik
-- [ ] Prepare a people file of Salman Malik
-- [ ] Ask Jira team about Epic-level SP rollup from tasks — need Epic SP to auto-sum from child task SP for capacity model integration
+- [X] Prepare 1:1 with Salman Malik
+- [X] Prepare a people file of Salman Malik
+- [X] Ask Jira team about Epic-level SP rollup from tasks — need Epic SP to auto-sum from child task SP for capacity model integration
 - [ ] Improve /daily-wrap-up skill to automatically ship Jira updates to corresponding Jira items when work is done on initiatives linked to a Jira ticket (e.g., today's retro skill update went to RSA-890 instead of RSA-894)
 - [ ] Prepare spec to evolve the Process Ecosystem tool — define requirements for the next iteration (standalone site at `ProcessEngineering_Internal/tools/process-ecosystem/`)
-- [ ] Build /create-charter skill — end-to-end workflow that drafts a project charter from initiative context and publishes to Confluence (EEO space) under the right parent, following docs/confluence-templates.md structure. Target: next week.
-- [ ] Draft a high level strategic document explaining what we are aiming for with Method 2 of Transforming Change Management. If you want you can start drafting it on the background
-- [ ] **RSA-939 — Operational Readiness Exercise:** Vera to share context on previous exercises; review what to do better and trace plan for this one
-- [ ] Simulate mode final testing + polish — verify console error in v2mom_roadmap.html, test shift buttons move bars + update capacity panel, consider auto-switching to Full Year view on simulate entry. Ref: `capacity_model/v2mom_roadmap.html`
+- [X] Build /create-charter skill — end-to-end workflow that drafts a project charter from initiative context and publishes to Confluence (EEO space) under the right parent, following docs/confluence-templates.md structure. Target: next week.
+- [X] Draft a high level strategic document explaining what we are aiming for with Method 2 of Transforming Change Management. If you want you can start drafting it on the background
+- [X] **RSA-939 — Operational Readiness Exercise:** Vera to share context on previous exercises; review what to do better and trace plan for this one
+- [X] Simulate mode final testing + polish — verify console error in v2mom_roadmap.html, test shift buttons move bars + update capacity panel, consider auto-switching to Full Year view on simulate entry. Ref: `capacity_model/v2mom_roadmap.html`
 - [ ] Map capacity model start/end dates to Jira fields via bulk update — link shared-data.js month phases to Jira start/due date fields for all V2MOM epics and tasks
+
+- [ ] Prepare the plan to implement the remaining part of M2.1 - Catalog Management process and integrations with Jira and changes in Change Management with M2.2 - definition of new roles and responsibilities on the Change Management execution layer (e.g. checklists for each role, changes in Jira, etc) - we might need to get extra help to Laura to ensure the rollout date of September 30.
 
 ---
 

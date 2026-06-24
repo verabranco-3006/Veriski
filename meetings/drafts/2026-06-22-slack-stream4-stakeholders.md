@@ -12,11 +12,11 @@ We've completed a significant update to the Day-0 emergency response process and
 
 **What we need from you**
 - Review the process and flag anything that doesn't match your operational reality
-- Validate the open questions assigned to you in the tracker — several have been sitting since the last working session
-- Confirm the Jira field set and transition conditions are workable before we brief Charola's team on the Rootly automation
+- Validate the open questions assigned to you in the Open Questions document
+
 
 **Where to review**
-- Process v0.6: https://outsystemsrd.atlassian.net/wiki/spaces/EEO/pages/6400573923
-- Open questions: https://outsystemsrd.atlassian.net/wiki/spaces/EEO/pages/6475546863
+- Process v0.7: https://outsystemsrd.atlassian.net/wiki/spaces/EEO/pages/6400573923/Emergency+Vulnerability+Response+Process
+- Open questions: https://outsystemsrd.atlassian.net/wiki/spaces/EEO/pages/6474203689/To-Be+-+XMAN+Jira+Project
 
 What do you think? Happy to walk through it together if it's easier than async. :rocket:

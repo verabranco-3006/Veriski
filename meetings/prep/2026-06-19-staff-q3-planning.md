@@ -32,11 +32,11 @@ This is a problem because:
 
 ---
 
-### Gap 2: M2.2 — No Jira epic
+### Gap 2: M2.2 — Epic exists, no tasks
 
-M2.2 (CM Role Accountability — Laura) is a Q3 commitment with no Jira epic at all. There's a strong initiative tracker in the repo, but nothing in Jira to track, assign, or report on.
+M2.2 (CM Role Accountability — Laura) has a Jira epic but no task breakdown yet. Without tasks, there's nothing to assign or estimate.
 
-**Action needed:** Laura creates the epic and breaks it down into tasks before June 19 (or we do it together in this meeting).
+**Action needed:** Laura breaks it down into tasks before Q3 starts (or we do it together in this meeting).
 
 ---
 
@@ -105,13 +105,15 @@ The Q3 goal is "milestones defined by end of July." We're in June and there's no
 
 ---
 
-### Gap B: M2.1 + M2.2 — No momentum (Laura)
+### Gap B: M2.2 — Pacing risk from M2.1 dependency (Laura)
 
-Both show "Not Started" in the dashboard. The Q3 commitment is both completed by end of September. That's tight from zero.
+M2.1 (RSA-753) is active and well underway — Implementation status, 4/9 tasks done, 2 in progress. No concern there.
+
+M2.2 (RSA-813) is In Design with 8 tasks. RSA-905 (role accountability model) is in progress. But 5 of the remaining 7 tasks are explicitly blocked on M2.1 catalog articles — they can't move until M2.1 delivers. With M2.2 due end of September, the question is whether M2.1 completes with enough runway.
 
 **Questions for Laura:**
-- What's blocking M2.1 from starting?
-- Is the M2.2 scope clear enough to start task definition?
+- When does M2.1 realistically complete? Does the remaining work (RSA-779, 783, 785, 788) land before end of July?
+- Given the M2.1 dependency, is September still realistic for M2.2, or does that need to be renegotiated?
 
 ---
 
@@ -145,7 +147,7 @@ Paulo is assigned to define and implement the V2MOM measurement mechanism in Q3.
 | # | Decision | Who |
 |---|----------|-----|
 | 1 | Story point estimation — before Q3 or first-week deadline? | Team |
-| 2 | M2.2 Jira epic — create now or this meeting? | Laura |
+| 2 | M2.2 task breakdown — do now or this meeting? | Laura |
 | 3 | M3.3 task ownership — transfer to Inês or stay with Vera? | Vera + Inês |
 | 4 | M5.1 closure — which 3 open tasks close before July 1? | Vera |
 | 5 | M3.6 owner — assign or park? | Team |
@@ -158,7 +160,7 @@ Paulo is assigned to define and implement the V2MOM measurement mechanism in Q3.
 | Person | Ask | Deadline |
 |--------|-----|----------|
 | Inês | Proposed milestone structure for M3.3 | June 19 |
-| Laura | M2.2 task breakdown draft (or in meeting) | June 19 |
+| Laura | M2.2 task breakdown (or in meeting) | June 19 |
 | Paulo | M2.5 task breakdown + M4.2 missing tasks + M4.1 dependency clarification | June 19 |
 | Paulo | First draft of V2MOM measurement mechanism proposal | June 19 |
 | Vera | M5.1 closure decision (RSA-897, 899, 900) | Before meeting |
