@@ -28,6 +28,8 @@
 - [X] Simulate mode final testing + polish — verify console error in v2mom_roadmap.html, test shift buttons move bars + update capacity panel, consider auto-switching to Full Year view on simulate entry. Ref: `capacity_model/v2mom_roadmap.html`
 - [ ] Map capacity model start/end dates to Jira fields via bulk update — link shared-data.js month phases to Jira start/due date fields for all V2MOM epics and tasks
 
+- [ ] **Capacity model — tomorrow session:** (1) automated Jira data fetch so model stays current without manual updates; (2) update remaining visualization files (roadmap, schedule, etc.) to reflect Q3 changes; (3) add out-of-strategy initiatives as a visible category across quarters in all charts; (4) define how to share the model with the team.
+
 - [ ] Prepare the plan to implement the remaining part of M2.1 - Catalog Management process and integrations with Jira and changes in Change Management with M2.2 - definition of new roles and responsibilities on the Change Management execution layer (e.g. checklists for each role, changes in Jira, etc) - we might need to get extra help to Laura to ensure the rollout date of September 30.
 
 ---

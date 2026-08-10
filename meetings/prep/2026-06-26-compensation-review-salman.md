@@ -88,3 +88,28 @@ Direct, not aggressive. You're not threatening. You're making clear you have vis
 
 ## Notes
 
+---
+
+## Draft — Follow-up Email to Salman
+
+**Subject:** Scope Alignment — Process Engineering
+
+Hi Salman,
+
+Following our conversation on Friday, there's something I want to address before we're fully into Q3: I want us to be explicit about what scope Process Engineering should own, and what that implies for how the team is positioned.
+
+**What we're running today**
+Five domains, formally owned: Incident Response (including Event and Failure Management), Change Management, Problem Management, Root Cause Analysis, and CPTO V2MOM Measurement Governance. My team of three each own a vertical — I set the strategy, define the operating model, and make prioritization calls in full alignment with key stakeholders. 
+
+Beyond what PE formally owns, I'm consistently being pulled into work at the intersection of Engineering+SRE, Support, and Security:
+- Global Support does not engage Engineering directly on process matters — that conversation comes through me. It's a structural relationship, not a project one. 
+- Security brings PE into audits, process definitions, and compliance initiatives because they can't close these with Engineering teams without us. ISO-9001 and SOC2 active participation and their own vulnerability response process are both active examples. This is recurring, not exceptional.
+
+I've made myself available for this because the work is important and doesn't happen otherwise. But I need us to be intentional going forward as I need your sponsorship to achieve these ambitious goals we're setting. For that, scope needs to be clear and communicated across.
+
+Also and on a personal note -  which, of course, relates but I'd like to keep the strategy and operation of PE separate from this conversation - The scope makes sense to me, as demanding as it is for the team size but more than that, I have been having few to no support from leadership in navigating these decisions and stakeholders (most from leadership positions).
+
+While I'm ok and actually think I thrive in such an environment, as it allows me to learn more and grow by being exposed, I believe it does not reflect my current career level, and given our recent conversation on it and how the organization perceives me, I believe there's a misalignment here that we should address. That's the conversation I want to have with you — and I'd rather have it now than let it sit.
+
+Vera
+
