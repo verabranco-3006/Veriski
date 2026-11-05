@@ -1,0 +1,1080 @@
+<meta charset="utf-8">
+<title>The Space Between Teams</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Narrow:wght@600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+  :root {
+    --paper:      #EFF1F2;
+    --frame:      #FBFCFC;
+    --ink:        #14181B;
+    --steel:      #5A646B;
+    --steel-dim:  #8A939A;
+    --rule:       #C9CFD3;
+    --grid:       rgba(90,100,107,.09);
+    --accent:     #C4451F;
+    --accent-dim: rgba(196,69,31,.16);
+    --blue:       #1B5E9E;
+    --blue-dim:   rgba(27,94,158,.12);
+    --shadow:     0 1px 2px rgba(20,24,27,.06), 0 8px 24px rgba(20,24,27,.05);
+
+    --display: "Archivo Narrow", "Arial Narrow", Helvetica, sans-serif;
+    --body:    "Archivo", -apple-system, "Segoe UI", Helvetica, sans-serif;
+    --mono:    "IBM Plex Mono", ui-monospace, "SF Mono", Consolas, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:      #0C1013;
+      --frame:      #141A1E;
+      --ink:        #E8ECEE;
+      --steel:      #8A959C;
+      --steel-dim:  #656F76;
+      --rule:       #2A3238;
+      --grid:       rgba(138,149,156,.08);
+      --accent:     #E86A42;
+      --accent-dim: rgba(232,106,66,.18);
+      --blue:       #7FB3E0;
+      --blue-dim:   rgba(127,179,224,.14);
+      --shadow:     0 1px 2px rgba(0,0,0,.4), 0 8px 28px rgba(0,0,0,.32);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --paper:      #0C1013;
+    --frame:      #141A1E;
+    --ink:        #E8ECEE;
+    --steel:      #8A959C;
+    --steel-dim:  #656F76;
+    --rule:       #2A3238;
+    --grid:       rgba(138,149,156,.08);
+    --accent:     #E86A42;
+    --accent-dim: rgba(232,106,66,.18);
+    --blue:       #7FB3E0;
+    --blue-dim:   rgba(127,179,224,.14);
+    --shadow:     0 1px 2px rgba(0,0,0,.4), 0 8px 28px rgba(0,0,0,.32);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* ── masthead ───────────────────────────────────────── */
+
+  .masthead {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px 24px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 20px;
+  }
+  .masthead h1 {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: -.01em;
+    margin: 0;
+  }
+  .masthead .meta {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    letter-spacing: .04em;
+    color: var(--steel);
+    text-transform: uppercase;
+  }
+  .howto {
+    font-size: 14.5px;
+    color: var(--steel);
+    max-width: 70ch;
+    margin: 0 0 24px;
+  }
+  .howto strong { color: var(--ink); font-weight: 600; }
+  .howto code {
+    font-family: var(--mono);
+    font-size: .92em;
+  }
+
+  /* ── slide frame ────────────────────────────────────── */
+
+  .slide-block { display: flex; flex-direction: column; gap: 0; }
+
+  .crop {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--steel-dim);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  .crop::after {
+    content: "";
+    flex: 1;
+    border-top: 1px dashed var(--rule);
+  }
+
+  .slide {
+    container-type: inline-size;
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background: var(--frame);
+    border: 1px solid var(--rule);
+    box-shadow: var(--shadow);
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 44px 44px, 44px 44px;
+    overflow: hidden;
+  }
+
+  .slide::before,
+  .slide::after {
+    content: "";
+    position: absolute;
+    width: 14px; height: 14px;
+    border-color: var(--steel-dim);
+    opacity: .5;
+    pointer-events: none;
+  }
+  .slide::before { top: 12px; left: 12px; border-top: 1px solid; border-left: 1px solid; }
+  .slide::after { bottom: 12px; right: 12px; border-bottom: 1px solid; border-right: 1px solid; }
+
+  .inner {
+    position: absolute;
+    inset: 0;
+    padding: 4.6cqw 5.2cqw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 1.15cqw;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--steel);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: .8cqw;
+    border-bottom: 1px solid var(--rule);
+  }
+  .eyebrow .no { color: var(--accent); }
+
+  /* ── shared: the headline pair every slide opens on ─── */
+
+  .head {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 3.5cqw;
+    line-height: 1.06;
+    letter-spacing: -.022em;
+    margin: 1.7cqw 0 0;
+  }
+  .head em { font-style: normal; color: var(--accent); }
+  .head .blue { color: var(--blue); }
+
+  .sub {
+    font-size: 1.42cqw;
+    line-height: 1.45;
+    color: var(--steel);
+    margin: .9cqw 0 0;
+    max-width: 92ch;
+  }
+  .sub strong { color: var(--ink); font-weight: 600; }
+
+  /* ── slide 1 ────────────────────────────────────────── */
+
+  .s1-body {
+    margin-top: 2.4cqw;
+    flex: 1;                 /* fills the frame so the commitments can spread */
+    display: grid;
+    grid-template-columns: 19cqw 4.6cqw 1fr;
+    gap: 1.4cqw;
+    align-items: stretch;
+  }
+  .s1-right { display: flex; flex-direction: column; }
+
+  /* the tie: an elbow from the portrait down the side of the three — same idiom
+     as the bridge cables on slides 2 and 3. Two lines, nothing more. */
+  .tie {
+    position: relative;
+    align-self: stretch;
+  }
+  .tie::before {
+    content: "";
+    position: absolute;
+    top: 7cqw;
+    left: -3.9cqw;                    /* reaches back to the portrait's edge */
+    width: calc(100% + 3.9cqw);
+    border-top: 2px solid var(--accent);
+    opacity: .55;
+  }
+  .tie::after {
+    content: "";
+    position: absolute;
+    top: 7cqw;
+    bottom: 1.4cqw;
+    right: 0;
+    border-right: 2px solid var(--accent);
+    opacity: .55;
+  }
+
+  .me { text-align: center; align-self: start; }
+  .me .portrait {
+    width: 14cqw;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    display: grid;
+    place-items: center;
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 3.4cqw;
+    color: var(--steel-dim);
+  }
+  .me .name {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 1.95cqw;
+    line-height: 1.15;
+    color: var(--accent);
+    margin-top: 1.2cqw;
+  }
+  .me .role {
+    font-size: 1.14cqw;
+    line-height: 1.3;
+    color: var(--steel);
+    margin-top: .2cqw;
+  }
+  /* the personal line — the origin story, in nine words */
+  .me .origin {
+    font-family: var(--mono);
+    font-size: .96cqw;
+    line-height: 1.55;
+    color: var(--steel-dim);
+    margin-top: 1.1cqw;
+    padding-top: .9cqw;
+    border-top: 1px solid var(--rule);
+  }
+  .me .origin b { color: var(--accent); font-weight: 500; }
+
+  /* the personal header — turns the three into promises, and owns them */
+  .hold {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 2.05cqw;
+    line-height: 1.15;
+    letter-spacing: -.012em;
+    color: var(--ink);
+    margin: 0 0 1.6cqw;
+    padding-bottom: 1.2cqw;
+    border-bottom: 1px solid var(--rule);
+  }
+  .hold em { font-style: normal; color: var(--accent); }
+
+  .commitments {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1.7cqw;
+  }
+  .commitments li {
+    display: grid;
+    grid-template-columns: 3.4cqw 1fr;
+    gap: 1.4cqw;
+    align-items: start;
+  }
+  .cm-num {
+    width: 3.4cqw;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: var(--blue);
+    color: var(--frame);
+    display: grid;
+    place-items: center;
+    font-family: var(--body);
+    font-weight: 600;
+    font-size: 1.4cqw;
+    line-height: 1;
+  }
+  /* the commitment and the value it serves, on one line — that pairing is the alignment */
+  .cm-top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1.2cqw;
+  }
+  .cm-head {
+    display: block;
+    font-weight: 700;
+    font-size: 1.52cqw;
+    line-height: 1.2;
+    color: var(--ink);
+  }
+  .val {
+    flex-shrink: 0;
+    font-family: var(--mono);
+    font-size: .95cqw;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border: 1px solid var(--accent-dim);
+    background: var(--accent-dim);
+    padding: .35cqw .75cqw;
+    white-space: nowrap;
+  }
+
+  /* the footing: one continuous layer the three commitments stand on */
+  .footing {
+    margin-top: 2.2cqw;
+    border-top: 1px solid var(--rule);
+    border-bottom: 3px solid var(--accent);
+    background: var(--paper);
+    padding: 1.3cqw 1.6cqw;
+    display: flex;
+    align-items: center;
+    gap: 1.6cqw;
+  }
+  .footing .val {
+    background: var(--accent);
+    color: var(--frame);
+    border-color: var(--accent);
+  }
+  .footing p {
+    margin: 0;
+    font-size: 1.28cqw;
+    line-height: 1.4;
+    color: var(--steel);
+  }
+  .footing strong { color: var(--ink); font-weight: 600; }
+  .cm-text {
+    display: block;
+    font-size: 1.24cqw;
+    line-height: 1.42;
+    color: var(--steel);
+    margin-top: .25cqw;
+  }
+
+  /* ── slide 2: the bridge and the seams ──────────────── */
+
+  /* the deck must clear the frame — it is the whole metaphor */
+  .bridge {
+    margin: auto 0 0;   /* the assembly bottom-weights; slack opens under the sub line */
+    width: 100%;
+    color: var(--steel-dim);
+  }
+  .bridge svg { display: block; width: 100%; height: auto; }
+  .bridge .deck { stroke: var(--accent); }
+  .bridge .pylon { stroke: var(--steel); }
+
+  .seams {
+    margin-top: 1.6cqw;
+    display: grid;
+    grid-template-columns: 1fr 25cqw 1fr;
+    grid-template-rows: repeat(3, auto);
+    column-gap: 0;
+    row-gap: 1.5cqw;
+    align-items: center;
+  }
+  /* the questions live in one box in the gap — that is the whole idea */
+  .qbox {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    align-self: stretch;
+    border: 1px solid var(--blue);
+    background: var(--blue-dim);
+    border-radius: .8cqw;
+    padding: 1.4cqw 1.2cqw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1.2cqw;
+    text-align: center;
+  }
+  .qbox .q {
+    font-weight: 600;
+    font-size: 1.3cqw;
+    line-height: 1.25;
+    color: var(--blue);
+  }
+
+  .side {
+    display: flex;
+    align-items: center;
+    gap: .8cqw;
+  }
+  .side.left  { grid-column: 1; justify-content: flex-end; text-align: right; }
+  .side.right { grid-column: 3; justify-content: flex-start; text-align: left; }
+  .side .who { flex-shrink: 0; }
+  .side .team {
+    display: block;
+    font-weight: 700;
+    font-size: 1.38cqw;
+    line-height: 1.15;
+    color: var(--accent);
+  }
+  .side .owns {
+    display: block;
+    font-size: 1.14cqw;
+    line-height: 1.3;
+    color: var(--ink);
+    margin-top: .1cqw;
+  }
+  .side .link {
+    flex: 1;
+    min-width: 2cqw;
+    height: 0;
+    border-top: 2px solid var(--ink);
+    position: relative;
+  }
+  .side .link::before {
+    content: "";
+    position: absolute;
+    top: -.4cqw;
+    width: .8cqw;
+    height: .8cqw;
+    border-radius: 50%;
+    background: var(--ink);
+  }
+  .side.left  .link::before { left: 0; }
+  .side.right .link::before { right: 0; }
+
+  .s2-close {
+    margin: 1.7cqw 0 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.62cqw;
+    color: var(--blue);
+  }
+
+  /* ── slide 3: the takeaway ──────────────────────────── */
+
+  .kicker {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 2.5cqw;
+    line-height: 1.1;
+    letter-spacing: -.018em;
+    margin: 1.5cqw 0 0;
+    color: var(--ink);
+  }
+  .kicker em { font-style: normal; color: var(--accent); }
+
+  .takeaway {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 3.9cqw;
+    line-height: 1.04;
+    letter-spacing: -.024em;
+    margin: 2.6cqw 0 0;
+  }
+  .takeaway em { font-style: normal; color: var(--blue); }
+
+  .s3-sub {
+    font-size: 1.42cqw;
+    line-height: 1.45;
+    color: var(--steel);
+    margin: .9cqw 0 0;
+    max-width: 94ch;
+  }
+  .s3-sub strong { color: var(--ink); font-weight: 600; }
+
+  .pe-label {
+    margin: .4cqw 0 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.55cqw;
+    color: var(--blue);
+  }
+
+  /* the four of us, hanging off the pylon */
+  .crew {
+    margin: 1.1cqw auto 0;
+    width: 62cqw;
+    border: 1px solid var(--blue);
+    background: var(--blue-dim);
+    border-radius: .8cqw;
+    padding: 1.2cqw 1.6cqw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.4cqw;
+  }
+  .crew figure { margin: 0; text-align: center; }
+  .crew .portrait {
+    width: 6.2cqw;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto .55cqw;
+    border-radius: 50%;
+    border: 1px solid var(--rule);
+    background: var(--frame);
+    display: grid;
+    place-items: center;
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 1.9cqw;
+    color: var(--steel-dim);
+  }
+  .crew figcaption {
+    font-weight: 600;
+    font-size: 1.14cqw;
+    line-height: 1.2;
+    color: var(--blue);
+  }
+
+  /* ── speaker notes ──────────────────────────────────── */
+
+  .notes {
+    border: 1px solid var(--rule);
+    border-top: none;
+    background: transparent;
+    padding: 22px 26px 24px;
+  }
+  .notes h3 {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 12px;
+  }
+  .notes p {
+    margin: 0 0 11px;
+    max-width: 76ch;
+    font-size: 15px;
+    line-height: 1.62;
+    color: var(--steel);
+  }
+  .notes p:last-child { margin-bottom: 0; }
+  .notes strong { color: var(--ink); font-weight: 600; }
+  .notes code {
+    font-family: var(--mono);
+    font-size: .9em;
+  }
+  .notes .flag {
+    border-left: 2px solid var(--accent);
+    padding-left: 14px;
+    margin-top: 16px;
+  }
+  .notes .flag p { color: var(--ink); }
+  .notes .fix {
+    border-left: 2px solid var(--blue);
+    padding-left: 14px;
+    margin-top: 16px;
+  }
+  .notes .fix p { color: var(--ink); }
+  .notes .fix h4 {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin: 0 0 10px;
+  }
+
+  .spacer { height: 34px; }
+
+  @media (max-width: 720px) {
+    .page { padding: 28px 14px 64px; }
+    .masthead h1 { font-size: 21px; }
+    .notes { padding: 18px; }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    a:focus-visible, .slide:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  }
+</style>
+
+<div class="page">
+
+  <header class="masthead">
+    <h1>The Space Between Teams</h1>
+    <div class="meta">Product &amp; Eng Ops All Hands · Sep 8 &amp; 9 · ~4 min</div>
+  </header>
+
+  <p class="howto">
+    <strong>Synced to the live Google Slides deck (Sep 7 export)</strong>, with one exception: <strong>slide 1
+    is a proposal that is ahead of the deck</strong> — it adds the personal origin line and makes the values
+    alignment visible. Slides 2 and 3 mirror the export exactly. <strong>The speaker script lives in
+    <code>2026-09-08-all-hands-prep.md</code></strong>; everything that needs changing in the deck is flagged
+    in blue below each frame, and collected in the script's <em>Deck fixes</em> table.
+  </p>
+
+  <!-- ════════════════ SLIDE 1 ════════════════ -->
+  <section class="slide-block">
+    <div class="crop">Slide 1 · who we are as leaders — crop above this line</div>
+
+    <div class="slide">
+      <div class="inner">
+        <div class="eyebrow">
+          <span>Process Engineering</span>
+          <span class="no">01 / 03</span>
+        </div>
+
+        <h2 class="head">Move fast. <em>Know it will hold</em>.</h2>
+        <p class="sub">
+          How R&amp;D changes and recovers at scale: fast, risk managed, outcomes predictable.
+          ODC and O11, all of R&amp;D.
+        </p>
+
+        <div class="s1-body">
+          <div class="me">
+            <div class="portrait">VB</div>
+            <div class="name">Vera Branco</div>
+            <div class="role">Team Lead</div>
+            <p class="origin">Mechanical engineer by training. <b>Process engineer by choice.</b></p>
+          </div>
+
+          <div class="tie" role="presentation"></div>
+
+          <div class="s1-right">
+            <p class="hold">Four things you can hold <em>me</em> to.</p>
+
+            <ul class="commitments">
+              <li>
+                <span class="cm-num">1</span>
+                <span>
+                  <span class="cm-head">Diagnostics, not verdicts</span>
+                  <span class="cm-text">Metrics and compliance are instrumentation — they show where the system strains, not who to blame.</span>
+                </span>
+              </li>
+              <li>
+                <span class="cm-num">2</span>
+                <span>
+                  <span class="cm-head">Tolerances, not instructions</span>
+                  <span class="cm-text">Flexibility with guidance — you know what is expected, and you own the outcome.</span>
+                </span>
+              </li>
+              <li>
+                <span class="cm-num">3</span>
+                <span>
+                  <span class="cm-head">If it doesn't carry load, it comes out</span>
+                  <span class="cm-text">We challenge the value of our own work first. What stays is what makes the system hold.</span>
+                </span>
+              </li>
+              <li>
+                <span class="cm-num">4</span>
+                <span>
+                  <span class="cm-head">Zero surprises, not zero problems</span>
+                  <span class="cm-text">Transparency and humbleness are not negotiable in this team. You hear it from us first — our gaps, and anything about to change.</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="notes">
+      <h3>Build notes — slide 1</h3>
+      <p>
+        <strong>Script is in <code>2026-09-08-all-hands-prep.md</code></strong>, which stays the single source
+        of truth for what gets said. ~2 min as written, and it is the longest slide in the segment.
+      </p>
+      <div class="fix">
+        <h4>This frame is a proposal — it is ahead of the deck</h4>
+        <p>
+          Slides 2 and 3 mirror the export exactly. This one changes three things, all of them cheap to
+          build — a text box, two lines, and one replaced sentence.
+        </p>
+        <p>
+          <strong>1 · Replace "At that ratio, trust is the operating model."</strong> That line no longer
+          works: it used to follow <em>"Four people — ODC and O11, for all of R&amp;D"</em>, which supplied
+          the ratio. The subtitle now gives the surface but never says <strong>four people</strong>, and the
+          photos moved to slide 3 — so there is no ratio on the slide to refer back to. Replace it with
+          <strong>"Three things you can hold me to."</strong> That fixes the dangling reference, signposts the
+          count, and turns the three from a values list into <em>personal promises</em>.
+        </p>
+        <p>
+          <strong>2 · Tie the three to you, with two lines.</strong> One horizontal line from the right edge
+          of your portrait, then one vertical line down the left side of the three commitments. That is the
+          whole device: <em>these three hang off me.</em> It is also the <strong>same idiom as the bridge</strong>
+          on slides 2 and 3 — a support with things hanging from it — so slide 1 now speaks the deck's visual
+          language instead of being a text slide with a photo. Keep it thin and at partial opacity; it is
+          structure, not a highlight.
+        </p>
+        <p>
+          <strong>3 · Under your name, two small lines:</strong> <em>Team Lead</em>, then under a thin rule,
+          <strong>"Mechanical engineer by training. Process engineer by choice."</strong> Nine words carrying
+          the origin story your narration spends 35 seconds on. Small and quiet — a margin note, not a
+          headline.
+        </p>
+      </div>
+      <div class="flag">
+        <p>
+          <strong>The three are now stated in engineering language, not management language.</strong> Same
+          three commitments, same source in <code>principles.md</code> — restated so they read as the
+          instincts of the engineer the origin line describes:
+        </p>
+        <p>
+          <strong>1 · Diagnostics, not verdicts</strong> — <em>metrics and compliance as diagnostic tools, not
+          gatekeepers</em>. Instrumentation is what an engineer calls a gauge, and this room is the one whose
+          numbers get reported upward, so <em>"not who to blame"</em> is the half that matters to them.<br>
+          <strong>2 · Tolerances, not instructions</strong> — <em>autonomy with accountability</em>. A spec
+          gives you tolerances and leaves the method open, which is exactly the trade being offered. Keeps
+          your phrase <em>flexibility with guidance</em> intact.<br>
+          <strong>3 · If it doesn't carry load, it comes out</strong> — <em>outcomes over activities</em>. A
+          structural-engineering sentence, falsifiable, and <em>load</em> and <em>hold</em> tie straight into
+          the bridge on slides 2 and 3.<br>
+          <strong>4 · Zero surprises, not zero problems</strong> — <em>transparency and humbleness are
+          non-negotiable</em>. <em>Zero surprises</em> alone would be a boast; the turn is what makes it land.
+          It concedes the failures in the same breath as it promises the disclosure, so <strong>transparency
+          and humbleness are both delivered in five words</strong> without either word appearing. It is also
+          the only line on the slide that admits something, which is what keeps the other three reading as
+          confident rather than as marketing. And it covers more ground than a promise about audits: a process
+          change will never land on their team unannounced, which is this room's actual friction with PE.
+        </p>
+        <p>
+          <strong>All four are now a couplet or a rule</strong> — no management phrasing, and the forms are
+          mixed rather than uniform: couplet (3 words), couplet (3), rule (7), couplet (5). Four identical
+          constructions would have read as a tic. <strong>The rule alternative for #4</strong> is
+          <em>"If it surprises you, we got it wrong"</em> — same content, pairs structurally with #3, slightly
+          less memorable. The couplet wins because <em>not zero problems</em> is the part people repeat.
+        </p>
+        <p>
+          <strong>If you want only one couplet in the set, change #1 — not #2.</strong>
+          <em>Tolerances, not instructions</em> is the best expression of "flexibility with guidance"
+          available. A non-couplet #1 would be <em>"We measure to find the slack"</em>, which echoes the origin
+          paragraph directly, but in an ops room "finding the slack" can be heard as hunting for waste to cut,
+          i.e. headcount. <em>Diagnostics, not verdicts</em> does the reassurance without that risk.
+        </p>
+        <p>
+          <strong>#4 was a spoken closing beat and is now a bullet.</strong> That is an upgrade: it was the
+          strongest thing on slide 1 and it was invisible. The narration now runs <em>"Fourth — no surprises.
+          And this is the one I hold hardest…"</em>, so slide 1 ends on it rather than trailing off. The
+          urgency-and-limits line (<em>"if it needs heroics to hold, we designed it wrong"</em>) follows as a
+          coda to all four rather than sitting inside #4 — it is a different principle and it dilutes the
+          transparency point if merged.
+        </p>
+        <p>
+          <strong>Why this beats the management phrasing it replaced.</strong> Each head is now a reframe
+          couplet — <em>X, not Y</em> — which is the move your spoken voice already makes (<em>"blameless does
+          not mean nameless"</em>). More importantly the triad stops being a values list any leader could show
+          and becomes the behavioural signature of the person in the photo beside it. The origin line, the tie
+          and the three heads now all say the same thing, which is what makes the slide personal without a
+          single extra sentence.
+        </p>
+        <p>
+          <strong>Audience check:</strong> this is an engineering-ops room — SRE, Release Engineering, Quality
+          Engineering. <em>Tolerances</em> and <em>carries load</em> are their vocabulary, not jargon you are
+          importing. In a non-engineering room the plain-language heads would be the safer choice.
+        </p>
+        <p>
+          <strong>The surroundings do the personal work too.</strong> <em>"Hold me to"</em> makes them promises
+          with a name attached, the tie makes them visibly <em>yours</em> rather than a list that could belong
+          to any team, and the origin line says where they came from.
+        </p>
+        <p>
+          <strong>"me" or "us" — your call, and it is a real one.</strong> <code>writing_style.md</code>
+          reserves "I" for facilitation and uses "we" for team work, so <em>"hold me to"</em> is a deliberate
+          exception: on a slide titled <em>who we are as leaders</em>, a leader owning the promise is the point,
+          and it is the most personal word available at no cost. <strong>"Hold us to"</strong> is the safer
+          variant, matches the rest of the script's voice, and still works with the tie and the origin line.
+          The accent sits on that one word either way, so swapping it is a one-word edit.
+        </p>
+        <p>
+          <strong>The V2MOM values are deliberately not here.</strong> An earlier draft paired each commitment
+          with one of Operational Excellence / Automation First / Trusted Partnership and stood them on a
+          Continuous Improvement footing. It was accurate but it made the slide a mapping exercise, and the
+          three commitments <em>are</em> the values this room needs. The four remain in the narration and in
+          the V2MOM; they are not on any slide.
+        </p>
+        <p>
+          <strong>Mirrored from the export, unchanged:</strong> the vision headline with <em>Know it will
+          hold</em> in the accent, the definition subtitle, your portrait, and the three numbered commitments
+          in blue circles. <strong>Commitment 2's rename to "Accountable autonomy"</strong> is carried through
+          to the script.
+        </p>
+        <p>
+          <strong>Still worth adding "four people" to the subtitle</strong> — <em>"…outcomes predictable. Four
+          people, ODC and O11, all of R&amp;D."</em> The scale mismatch is the strongest single fact you have,
+          the photos no longer supply it, and it costs four words. Independent of the changes above.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="spacer"></div>
+
+  <!-- ════════════════ SLIDE 2 ════════════════ -->
+  <section class="slide-block">
+    <div class="crop">Slide 2 · how that shapes our strategy — crop above this line</div>
+
+    <div class="slide">
+      <div class="inner">
+        <div class="eyebrow">
+          <span>Process Engineering</span>
+          <span class="no">02 / 03</span>
+        </div>
+
+        <h2 class="head">Two strong shores don't make a <em>bridge</em>.</h2>
+        <p class="sub">
+          Nobody here works alone. The <strong>hard part is alignment,</strong> not ownership.
+        </p>
+
+        <figure class="bridge">
+          <svg viewBox="0 0 1400 96" role="img"
+               aria-label="A cable-stayed bridge: one central pylon, cables fanning to a single continuous deck that spans the full width.">
+            <g stroke="currentColor" stroke-width="1" fill="none" opacity=".55">
+              <line x1="700" y1="6" x2="60"   y2="70"/>
+              <line x1="700" y1="6" x2="230"  y2="70"/>
+              <line x1="700" y1="6" x2="400"  y2="70"/>
+              <line x1="700" y1="6" x2="570"  y2="70"/>
+              <line x1="700" y1="6" x2="830"  y2="70"/>
+              <line x1="700" y1="6" x2="1000" y2="70"/>
+              <line x1="700" y1="6" x2="1170" y2="70"/>
+              <line x1="700" y1="6" x2="1340" y2="70"/>
+            </g>
+            <line class="pylon" x1="700" y1="6" x2="700" y2="92" stroke-width="1.5"/>
+            <line class="deck" x1="10" y1="70" x2="1390" y2="70" stroke-width="2.5"/>
+          </svg>
+        </figure>
+
+        <div class="seams">
+          <span class="side left">
+            <span class="who">
+              <span class="team">Global Support</span>
+              <span class="owns">owns the customer relationship</span>
+            </span>
+            <span class="link"></span>
+          </span>
+
+          <div class="qbox">
+            <div class="q">What does the customer know?</div>
+            <div class="q">How much risk is worth carrying?</div>
+            <div class="q">What stops it from happening again?</div>
+          </div>
+
+          <span class="side right">
+            <span class="link"></span>
+            <span class="who">
+              <span class="team">SRE</span>
+              <span class="owns">owns the system</span>
+            </span>
+          </span>
+
+          <span class="side left">
+            <span class="who">
+              <span class="team">Security</span>
+              <span class="owns">owns knowing the risk</span>
+            </span>
+            <span class="link"></span>
+          </span>
+          <span class="side right">
+            <span class="link"></span>
+            <span class="who">
+              <span class="team">Engineering</span>
+              <span class="owns">owns the fix</span>
+            </span>
+          </span>
+
+          <span class="side left">
+            <span class="who">
+              <span class="team">SRE</span>
+              <span class="owns">owns the response</span>
+            </span>
+            <span class="link"></span>
+          </span>
+          <span class="side right">
+            <span class="link"></span>
+            <span class="who">
+              <span class="team">The Asset owner team</span>
+              <span class="owns">owns the code</span>
+            </span>
+          </span>
+        </div>
+
+        <p class="s2-close">Build the bridge, make it hold</p>
+      </div>
+    </div>
+
+    <div class="notes">
+      <h3>Build notes — slide 2</h3>
+      <p>
+        <strong>Script is in <code>2026-09-08-all-hands-prep.md</code>.</strong> ~1 min 45 — one seam gets
+        explained in full, one example gets told, and the rest is promised for a future all hands. Every figure
+        in the talk is spoken here; none are on a slide.
+      </p>
+      <div class="fix">
+        <h4>One typo to fix in the deck</h4>
+        <p>
+          <strong>"What stops from happening again?"</strong> is missing a word — it should read
+          <strong>"What stops <em>it</em> from happening again?"</strong> Corrected in this reference. It is the
+          third question in the blue box.
+        </p>
+      </div>
+      <div class="flag">
+        <p>
+          <strong>The single-pylon bridge is a better drawing than the two-tower version it replaced.</strong>
+          One pylon carrying one continuous deck across shores that never touch is exactly the argument, and it
+          sets up slide 3, where <em>Process Engineering</em> is labelled at the foot of that same pylon. Keep
+          the pylon crossing below the deck line — that overhang is what slide 3 hangs the team off.
+        </p>
+        <p>
+          <strong>The questions in one box in the middle is the whole idea.</strong> Both accountabilities stay
+          visible on either side, the question sits physically in the gap between them, and the connector line
+          runs from each team to the box edge. Team names in the accent, what-they-own in the strong text
+          colour, questions in the blue.
+        </p>
+        <p>
+          <strong>Tone rule, because the layout enforces it:</strong> every row shows <em>both</em>
+          accountabilities on screen, on purpose. Nothing here may imply a seam had no owner — that would read
+          as "those teams dropped something and we picked it up," which is untrue and unfair to the leaders in
+          the room. <em>Two strong shores</em> is the whole rule in three words: neither side is the weak one.
+        </p>
+        <p>
+          <strong>"Build the bridge, make it hold"</strong> replaced the payoff paragraph, and it is the better
+          trade — it is the two moves in six words, and <em>hold</em> ties back to slide 1's vision. The
+          reasoning that paragraph carried (<em>"bridging that gap is the work, and it is ours"</em>) is spoken
+          instead.
+        </p>
+        <p>
+          <strong>Change Management is deliberately not one of the three rows.</strong> It governs configuration
+          changes outside the SDLC pipeline — it does not gate code releases. Laura's work is named in the
+          spoken reliability example instead (<strong>1,800 → 61</strong> operation types, which <em>are</em>
+          out-of-pipeline operations, so that framing is accurate). If you want it named here it is a fourth
+          row, roughly +5s.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="spacer"></div>
+
+  <!-- ════════════════ SLIDE 3 ════════════════ -->
+  <section class="slide-block">
+    <div class="crop">Slide 3 · the one thing to remember — crop above this line</div>
+
+    <div class="slide">
+      <div class="inner">
+        <div class="eyebrow">
+          <span>Process Engineering</span>
+          <span class="no">03 / 03</span>
+        </div>
+
+        <p class="kicker">The <em>one thing</em> to remember.</p>
+
+        <h2 class="takeaway">We own the <em>space between the teams</em></h2>
+        <p class="s3-sub">
+          You own your shore — your operations, your tools, your decisions. We <strong>build the crossing</strong>,
+          and <strong>whether it holds</strong> is ours.
+        </p>
+
+        <figure class="bridge">
+          <svg viewBox="0 0 1400 96" role="img"
+               aria-label="The same cable-stayed bridge, with Process Engineering labelled at the foot of the pylon that carries the deck.">
+            <g stroke="currentColor" stroke-width="1" fill="none" opacity=".55">
+              <line x1="700" y1="6" x2="60"   y2="70"/>
+              <line x1="700" y1="6" x2="230"  y2="70"/>
+              <line x1="700" y1="6" x2="400"  y2="70"/>
+              <line x1="700" y1="6" x2="570"  y2="70"/>
+              <line x1="700" y1="6" x2="830"  y2="70"/>
+              <line x1="700" y1="6" x2="1000" y2="70"/>
+              <line x1="700" y1="6" x2="1170" y2="70"/>
+              <line x1="700" y1="6" x2="1340" y2="70"/>
+            </g>
+            <line class="pylon" x1="700" y1="6" x2="700" y2="92" stroke-width="1.5"/>
+            <line class="deck" x1="10" y1="70" x2="1390" y2="70" stroke-width="2.5"/>
+          </svg>
+        </figure>
+
+        <p class="pe-label">Process Engineering</p>
+
+        <div class="crew">
+          <figure>
+            <div class="portrait">VB</div>
+            <figcaption>Vera Branco</figcaption>
+          </figure>
+          <figure>
+            <div class="portrait">IM</div>
+            <figcaption>Inês Matos</figcaption>
+          </figure>
+          <figure>
+            <div class="portrait">LF</div>
+            <figcaption>Laura Ferreira</figcaption>
+          </figure>
+          <figure>
+            <div class="portrait">PM</div>
+            <figcaption>Paulo Monteiro</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="notes">
+      <h3>Build notes — slide 3</h3>
+      <p>
+        <strong>Script is in <code>2026-09-08-all-hands-prep.md</code>.</strong> ~35 seconds.
+      </p>
+      <div class="fix">
+        <h4>Two things I'd change back</h4>
+        <p>
+          <strong>1 · "Come find us" is gone, and it was the payload.</strong> The takeaway used to end
+          <em>"Standing between two teams with a question neither side can answer alone? That is not friction
+          you have to live with. Come find us."</em> Without it the slide states an identity; with it, the
+          slide gives the room <strong>an instruction they can act on</strong> — which is the whole reason this
+          is the last slide. It is one line and there is white space for it between the sub and the bridge. It
+          is still in the script, so at minimum say it out loud; better, put it back on the slide.
+        </p>
+        <p>
+          <strong>2 · "space between the teams" → "space between teams."</strong> Dropping <em>the</em> makes it
+          a category rather than a specific set of teams, which is what you want in a line built to be repeated
+          secondhand. It also scans better. And the headline is missing its full stop while the line above and
+          below both have one.
+        </p>
+      </div>
+      <div class="flag">
+        <p>
+          <strong>Labelling the pylon "Process Engineering" is the best idea in the deck.</strong> The team is
+          not on the shores and not on the deck — it is the structure in the middle holding the span up, and
+          the four of you hang directly off it. That says <em>we own the space between teams</em> better than
+          the sentence does. <strong>Do not let this get rebuilt as a logo or a footer</strong>; the label has
+          to sit at the foot of the pylon, and the crew box has to sit under the label.
+        </p>
+        <p>
+          <strong>The photos work here in a way they would not on slide 1.</strong> On the opening slide they
+          read as an org chart; here, arriving after the claim and hanging off the pylon, they read as
+          <em>these are the four people who do that</em>. Moving them was right.
+        </p>
+        <p>
+          <strong>Keep it spare.</strong> Kicker, claim, one sub line, the bridge, the label, the faces. No
+          figures — every number is spoken on slide 2, which means they can be softened or dropped live without
+          a slide contradicting the speaker, and it keeps the takeaway from becoming a scoreboard.
+          <em>Resist adding receipts here.</em>
+        </p>
+      </div>
+    </div>
+  </section>
+
+</div>

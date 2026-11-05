@@ -310,6 +310,57 @@ Find below details about scheduling, roles assigned and useful documentation. Th
 
 ---
 
+## Spoken & Presentation Voice
+
+*Distinct from written comms. Derived from: R&D Process Engineering Team Pitch (2024), ODC Incident Response Brown Bag handouts, and the Operations Review presenting V2MOM Methods 2 & 3.*
+
+**Self-description:** storyteller. Connects the dots out loud — the audience should be able to follow the reasoning, not just receive the conclusion.
+
+### The moves I actually make
+
+| Move | How it sounds |
+|---|---|
+| **Why before what** | Every deck opens on the problem, never the solution. The team pitch literally opens *"Why a Process Engineering Team?"*; the brown bag has a slide titled *"The why?"*. Never lead with the artifact. |
+| **Name the thing** | Coin a portable name for the problem or the model, then use it as a handle: *the Invisible Risk Surface · the Change Journey Cycle · the Compliance Trap · the O11–ODC Escalation Bridge · Hub & Spoke Engagement Model*. A named concept travels; a described one doesn't. |
+| **Signpost the count first** | *"Two methods today."* · *"Three pillars."* · *"Post Mortem has 3 main stages."* · *"The goal of the drill is three-fold."* State how many, then enumerate. |
+| **The derived number is the punchline** | Not the raw figure — the ratio that reframes it. *"Around 750 (seven hundred and fifty) RFCs produced nearly 1000 (one thousand) manual mutations — inducing a 1.35x multiplier on what one approval actually authorizes."* · *"1,800 raw operation types collapsed into 61 mapped operations."* Big numbers get spelled out in parentheses because they're being **spoken**. |
+| **Baseline and target as a pair** | Never a target alone. *"Average RCA lead time of 14 days — versus today's 72 days."* · *"A 30% reduction in review-and-approval lead time — today's baseline is 45 hours."* |
+| **"What this looks like operationally:"** | The concretizing move after any strategic claim. Signature phrase — use it. |
+| **Name the leverage point out loud** | *"The unblocker is Pipeline Integrity — without the catalog, nothing else downstream lands safely."* · *"The leverage points are Classify Intake and Close the Loop. If we get triage and learning right, the rest follows."* Tell the room which piece carries the others. |
+| **Credit the team by name, in flight** | *"Laura is in flight on the Foundations work."* · *"M3.3 is already in flight under Inês."* Named people, present tense. |
+| **Reframe couplets** | Short epigram that turns the idea: *"blameless does not mean nameless."* · *"Not just responding faster — classifying cleaner, responding transparently, and learning systematically."* |
+| **Lean / Kaizen as real furniture** | Kaizen, 5-Whys, toil, continual improvement, Taiichi Ohno, Toyota Production System. Genuine intellectual grounding, quoted directly — not decoration. |
+| **Honest about the gaps** | *"Today we have gaps on all three axes."* · *"This is not intended to be an exhausting list."* State what isn't solved. |
+| **Say what's coming later** | *"We'll come back with the deeper measurement story when the empirical work is ready to land."* Scope the talk explicitly. |
+| **State collaborative intent openly** | *"…so the direction is visible, the trade-offs are surfaced, and we can shape the path together before any of it shows up as a process change you're absorbing."* |
+| **Bridges and common ground** | Long-running self-description, in use since the 2024 pitch: *"creating bridges and common ground with Global Support and other R&D key stakeholders."* |
+
+### Signature asides
+
+- *"Allow me to do a parenthesis here…"* — the digression marker
+- *"I dare to say…"* — the hedge that isn't
+- *"First of all, thank you for joining us today."* — warm open, thanks the room
+- *"A couple of things you can include:"* / *"A couple of best practices…"*
+
+### Grammar of the spoken voice
+
+- **"We"** for the team, **"you / your teams"** for the audience. Never "I" for team work — "I" only for facilitation ("I'm Vera Branco, and I will guide you through this session").
+- Present progressive for live work: *"We're attacking that across three pillars."* · *"Laura is in flight on…"*
+- Full sentences, medium length. Explains rather than declaims.
+- Slight formality is authentic — don't sand it into American ad copy.
+
+### Anti-patterns in spoken voice
+
+| Don't | Why |
+|---|---|
+| Punchy three-word fragments as a substitute for reasoning | Reads as ad copy, not as her. She earns the short line by deriving it first. |
+| A slogan with no number or mechanism behind it | Every memorable line in her decks is anchored to a figure, a named model, or a mechanism. |
+| Conclusion first, reasoning optional | Inverts the why-before-what arc that defines her. |
+| Numbers without a baseline | A target with nothing to compare it to is one she'd never say. |
+| Skipping the team credit | She names who is doing the work, always. |
+
+---
+
 ## Anti-Patterns
 
 *Things that would make writing NOT sound like you:*
@@ -342,9 +393,10 @@ When drafting anything for me:
 1. **Read this document first** to understand my voice
 2. **Use my actual phrases** from the samples above
 3. **Avoid all words on the avoid list** — no exceptions
-4. **Match the context** — email vs Slack vs document
+4. **Match the context** — email vs Slack vs document vs **spoken/presentation** (see Spoken & Presentation Voice)
 5. **Err on the side of shorter** — I can always expand
 6. **Don't add enthusiasm I wouldn't add** — stay authentic
+7. **For anything I will say out loud** — speaker notes, decks, talk tracks — use the Spoken & Presentation Voice section, not the written-comms rules. Why before what, signpost the count, anchor every claim to a number or a mechanism, credit the team by name.
 
 ---
 
@@ -358,4 +410,4 @@ Before sending anything Claude drafted, ask:
 
 ---
 
-*Last updated: 2026-03-02*
+*Last updated: 2026-09-03 — added Spoken & Presentation Voice, derived from the 2024 team pitch, the ODC Incident Response brown bag, and the Methods 2 & 3 Operations Review.*

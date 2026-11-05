@@ -32,6 +32,8 @@
 
 - [ ] Prepare the plan to implement the remaining part of M2.1 - Catalog Management process and integrations with Jira and changes in Change Management with M2.2 - definition of new roles and responsibilities on the Change Management execution layer (e.g. checklists for each role, changes in Jira, etc) - we might need to get extra help to Laura to ensure the rollout date of September 30.
 
+- [ ] Add Visual 6 to `initiatives/active/out_of_strategy/vulnerability_exposure_unification/03-visuals/visuals-process-overview_04.html` — a tooling/artifact relationship diagram supporting §2 Tooling Architecture of technical-implementation_04.md. Must show the cardinality between VUL Vulnerability, RPM Problem Record (O11/ODC), RFC/Change Record, Rootly, Slack channels, and development issue types. Do after Vera's review of technical-implementation_04.md is complete.
+
 ---
 
 ## Processing Guide
